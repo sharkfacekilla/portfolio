@@ -19,7 +19,6 @@ const HomePage = () => {
                         <Button variant="outlined">Yeet</Button>
                     </div>
                 </div>
-                <a href='https://pngtree.com/freepng/hand-painted-blue-technology-texture_5640849.html'>png image from pngtree.com/</a>
             </section>
         </>
     );
