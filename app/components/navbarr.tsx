@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import Logo from "./nav/logo";
+import { Button } from "@mui/material";
+import SendIcon from '@mui/icons-material/Send';
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
     return (
@@ -18,18 +20,18 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                         </button>
                         <ul className="hidden md:flex gap-x-6 text-white">
                             <li>
-                                <Link href="/components/about">
-                                    <p>About</p>
+                                <Link href="/pages/about">
+                                    <p className="mt-1">About</p>
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/components/projects">
-                                    <p>Projects</p>
+                                <Link href="/pages/projects">
+                                    <p className="mt-1">Projects</p>
                                 </Link>
                             </li>
                             <li>
                                 <Link href="/components/contact">
-                                    <p>Contact</p>
+                                    <Button className="bg-light-blue text-black hover:bg-green border-transparent" variant="contained" endIcon={<SendIcon />} disableElevation>Contact</Button>
                                 </Link>
                             </li>
                         </ul>
