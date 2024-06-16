@@ -25,8 +25,9 @@ export default function Footer() {
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:underline">Gage Patenaude</a>. All Rights Reserved.
           </span>
+          <a href='https://pngtree.com/freepng/hand-painted-blue-technology-texture_5640849.html' className="text-sm text-white hover:underline">Background Image Source: pngtree</a>
           <div className="flex mt-4 sm:justify-center sm:mt-0">
           <Link className="text-muted" href="https://www.linkedin.com/in/gpatenaude94" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
                     <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943
