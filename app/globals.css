@@ -13,6 +13,10 @@
   --light-blue: #3EE2F4;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -65,4 +69,18 @@ body {
   background-repeat:no-repeat;
   background-image: url('/img/tech.png');
   background-attachment: fixed; /* This makes the background image fixed */
+}
+
+.nav {
+  /* transition-timing-function: ease-in; */
+  transition: 0.5s ease-in;
+}
+
+
+.nav.show {
+  transform: translateY(0);
+}
+
+.nav.hide {
+  transform: translateY(-100%);
 }
