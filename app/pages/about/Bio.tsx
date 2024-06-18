@@ -7,7 +7,7 @@ export default function Bio() {
       <section className=" h-3/6">
         <div className="container mx-auto mb-80 px-4 h-full grid grid-cols-2 grid-rows-2 flex items-center justify-center">
           <h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">
-            Who Am I?
+            A bit about me...
           </h1>
           <p className="text-white">
             Since the age of three, computers have been an integral part of my
