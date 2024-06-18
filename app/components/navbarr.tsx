@@ -53,6 +53,11 @@
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link href="/pages/resume">
+                                        <p className="mt-1">Resume</p>
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link href="/components/contact">
                                         <Button className="bg-light-blue text-black hover:bg-green border-transparent" variant="contained" endIcon={<SendIcon />} disableElevation>Contact</Button>
                                     </Link>
