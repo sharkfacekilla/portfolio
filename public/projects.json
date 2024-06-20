@@ -1,0 +1,34 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
+            "link": "https://www.youtube.com/watch?v=KvT9lH3R2pc&t=207s",
+            "lang": "C#",
+            "altTxt": "shadowed depths gameplay"
+        },
+        {
+            "id": "2",
+            "name": "GigPlanr",
+            "shortDesc": "Setlist Planning Web Application",
+            "img" : "",
+            "description": "",
+            "link": "",
+            "lang": "Laravel/Vue",
+            "altTxt": "gigplanr web app"
+        },
+        {
+            "id": "3",
+            "name": "Capstone Project",
+            "shortDesc": "Capstone Project for Graduation",
+            "img": "",
+            "description": "",
+            "link": "",
+            "lang": "Laravel/React",
+            "altTxt": "capstone project"
+        }
+    ]
+}

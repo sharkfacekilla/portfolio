@@ -1,26 +1,39 @@
-export default function() {
+"use client"
+import React, { useState, useEffect } from 'react';
+import CustomCard from '@/app/components/CustomCard';
+import { Grid } from '@mui/material';
+import { promises as fs } from 'fs';
+import { Project } from '@/app/utils/project';
+
+
+export default function page() {
+    const [projects, setProjects] = useState<Project[]>([]); // Assuming Project is the correct type
+
+    useEffect(() => {
+        const fetchProjects = async () => {
+            try {
+                const response = await fetch('/projects.json'); // Adjust the path as per your project structure
+                const data = await response.json();
+                setProjects(data.projects); // Assuming projects is an array in your JSON
+            } catch (error) {
+                console.error('Error fetching projects:', error);
+            }
+        };
+
+        fetchProjects();
+    }, []);
+
     return (
         <>
-            <section className=" h-3/6">
-                <div className="container mx-auto mb-80 px-4 h-full grid grid-cols-2 grid-rows-2 flex items-center justify-center">
-                    <h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">Who Am I?</h1>
-                    <p className="text-white">
-                        I am an aspiring computer scientist who enjoys a new
-                        challenges: be it learning something new, or solving an
-                        issue that people before me have tried. I have strong
-                        technical skills and an academic background in
-                        programming, web building and design. My passion lies in
-                        having that "a-ha" moment when solving problems, using
-                        tools that I have learned how to use in my academic and
-                        professional journey. In my studies, I've worked in a
-                        team environment, as well as on my own, creating
-                        different project. I'm graduating in 2025, and
-                        interested in a full-time development career. I also
-                        have interests in music, and photography. I have listed
-                        some of my personal passions below.
-                    </p>
-                    <div className="flex items-center justify-center">
-                    </div>
+            <section>
+                <div className="container mx-auto px-4 h-screen flex items-center justify-center">
+                    <Grid container spacing={2} justifyContent="center" alignItems="center">
+                        {projects.map((project) => (
+                            <Grid item key={project.id}>
+                                <CustomCard id={project.id} image={project.img} altText={project.altTxt} lang={project.lang} title={project.name} description={project.shortDesc} />
+                            </Grid>
+                        ))}
+                    </Grid>
                 </div>
             </section>
         </>
