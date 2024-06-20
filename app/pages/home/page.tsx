@@ -1,8 +1,13 @@
-import { Button } from "@mui/material";
+import { Button, Grid } from "@mui/material";
 import React from "react";
+import RecentProjectCard from '../../components/RecentProjectCard';
+import { Project } from '../../utils/project';
 
+interface CustomCardProps {
+    project: Project;
+}
 
-const HomePage = () => {
+const HomePage: React.FC<CustomCardProps> = () => {
     return (
         <>
         <section className="h-2/6">
@@ -17,19 +22,21 @@ const HomePage = () => {
                         <p className="max-w-3xl">
                             Learn a bit more about me and my projects here!
                         </p>
-                        
                     <Button href={"pages/about"} variant="contained" className="mt-4 bg-blue text-white hover:bg-light-blue border">About Me</Button>
                     </div>
                 </div>
-                </section>
-                <section className=" h-3/6">
-                <div className="container mx-auto mb-80 px-4 h-full grid grid-cols-2 grid-rows-2 flex items-center justify-center">
+                <div className="container mx-auto mb-5 px-4 h-full flex items-center justify-center">
                     <h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">Recent Project</h1>
-                    <p className="text-white">
-The Capstone Project to the Information Computer Systems (ICS) program at Camosun had us work on this project here
-                    </p>
                 </div>
-            </section>
+                <div className="container mx-auto mb-10 px-4 h-full flex items-center justify-center">
+
+                    <Grid container spacing={2} justifyContent="center" alignItems="center">
+                            <Grid item>
+                                <RecentProjectCard proj="1" />
+                            </Grid>
+                    </Grid>
+                    </div>
+                </section>
         </>
     );
 };

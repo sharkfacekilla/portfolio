@@ -9,19 +9,16 @@ import { CardActionArea } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import Link from 'next/link';
 import { Project } from '../utils/project';
-// interface CustomCardProps {
-//     id: string;
-//     image: string;
-//     altText: string;
-//     title: string;
-//     description: string;
-//     lang: string;
-// }
+import data from '../../public/projects.json';
+
 interface CustomCardProps {
-    project: Project;
+    proj: string;
 }
 
-const CustomCard: React.FC<CustomCardProps> = ({project}) => {
+const CustomCard: React.FC<CustomCardProps> = ( {proj}) => {
+    const project = data.projects.find((p) => p.id === proj )!;
+
+    project.id = proj;
     const dynamicRoute = `/pages/projects/${project.id}`;
 
     return (
@@ -29,9 +26,9 @@ const CustomCard: React.FC<CustomCardProps> = ({project}) => {
                 <CardMedia component="img" height="340" image={project.img} alt={project.altTxt}/>
                 <CardContent className="bg-black text-white">
                     <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
-                    <Typography variant="body1" >{project.shortDesc} </Typography>
+                    <Typography variant="body1" className="mb-5">{project.shortDesc} </Typography>
                     <Link href={dynamicRoute} passHref >
-                    <Button variant="contained" className="mb-5 mt-5 bg-blue hover:bg-light-blue">Learn More</Button>
+                    <Button variant="contained" className="mb-5 bg-blue hover:bg-light-blue">Learn More</Button>
                 </Link>
                     <Divider className="bg-white" />
                     <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>

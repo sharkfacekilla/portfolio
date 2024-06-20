@@ -30,7 +30,7 @@ export default function page() {
                     <Grid container spacing={2} justifyContent="center" alignItems="center">
                         {projects.map((project) => (
                             <Grid item key={project.id}>
-                                <CustomCard id={project.id} image={project.img} altText={project.altTxt} lang={project.lang} title={project.name} description={project.shortDesc} />
+                                <CustomCard project={project} />
                             </Grid>
                         ))}
                     </Grid>
