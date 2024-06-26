@@ -85,3 +85,7 @@ body {
 .nav.hide {
   transform: translateY(-100%);
 }
+
+.text-shadow {
+  text-shadow: 5px 5px 5px black;
+}
