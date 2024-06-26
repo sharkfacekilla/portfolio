@@ -11,7 +11,7 @@ export default function Bio() {
           </h1>
           <p className="text-white">
             Since the age of three, computers have been an integral part of my
-            life (ask me about kidesk). As an aspiring computer scientist, I
+            life (ask me about kidesk). As an aspiring software engineer, I
             thrive on embracing new challenges—whether it's mastering unfamiliar
             concepts or unraveling complex issues that have confounded others
             before me. Armed with a strong technical skill set and a solid
