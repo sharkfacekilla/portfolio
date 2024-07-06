@@ -25,11 +25,14 @@ export default function page() {
 
     return (
         <>
-            <section>
-                <div className="container mx-auto px-4 h-screen flex items-center justify-center">
-                    <Grid container spacing={2} justifyContent="center" alignItems="center">
+            <section className="relative py-12">
+                <div className="container mx-auto text-center">
+                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mb-32 mt-28">Projects.</h1>
+                </div>
+                <div className="container mx-auto">
+                    <Grid container spacing={3} justifyContent="center" alignItems="center" className="mx-auto">
                         {projects.map((project) => (
-                            <Grid item key={project.id}>
+                            <Grid item xs={12} sm={6} md={5} lg={4} key={project.id} className="mb-32">
                                 <CustomCard project={project} />
                             </Grid>
                         ))}
