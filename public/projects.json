@@ -29,6 +29,91 @@
             "link": "",
             "lang": "Laravel/React",
             "altTxt": "gigplanr web app"
+        },
+        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },
+        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },
+        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },
+        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
+        },        {
+            "id": "1",
+            "name": "Shadowed Depths",
+            "shortDesc": "Roguelike inspired game",
+            "img": "/img/shadowedDepths.jpg",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "lang": "C#, Unity",
+            "altTxt": "shadowed depths gameplay"
         }
     ]
 }
