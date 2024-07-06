@@ -1,9 +1,12 @@
 import { Button, Grid } from "@mui/material";
 import React from "react";
 import RecentProjectCard from '../../components/RecentProjectCard';
-import { Project } from '../../utils/project';
+import data from '../../../public/projects.json';
 
 const HomePage = () => {
+    let highestId = data.projects.reduce((max, project) =>
+        parseInt(project.id) > parseInt(max.id) ? project : max, data.projects[0]);
+
     return (
         <>
             <section className="h-2/6">
@@ -27,7 +30,7 @@ const HomePage = () => {
                 <div className="container mx-auto mb-10 px-4 h-full flex items-center justify-center">
                     <Grid container spacing={2} justifyContent="center" alignItems="center">
                         <Grid item>
-                            <RecentProjectCard proj="1" />
+                            <RecentProjectCard proj={highestId.id} />
                         </Grid>
                     </Grid>
                 </div>
