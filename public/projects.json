@@ -14,7 +14,7 @@
             "id": "2",
             "name": "Capstone Project",
             "shortDesc": "Capstone Project for Graduation",
-            "img": "",
+            "img": "/img/capstoneProject.png",
             "description": "",
             "link": "",
             "lang": "Laravel/React",
@@ -29,6 +29,16 @@
             "link": "",
             "lang": "Laravel/React",
             "altTxt": "gigplanr web app"
+        },
+        {
+            "id": "4",
+            "name": "Portfolio Website",
+            "shortDesc": "This website!",
+            "img" : "/img/portfolioSite.png",
+            "description": "Re-wrote my protfolio website using Next.js to solidify what was learned in the second year of College. Skills used are importing data from a JSON file, dynamically routing pages, sending emails through a forum with nodemailer, styling.",
+            "link": "",
+            "lang": "Next.js (React, TypeScript, Tailwind CSS)",
+            "altTxt": "portfolio web site"
         }
     ]
 }

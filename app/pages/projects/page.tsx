@@ -5,6 +5,9 @@ import { Grid } from '@mui/material';
 import { promises as fs } from 'fs';
 import { Project } from '@/app/utils/project';
 
+// interface Project {
+//     id: number;
+// }
 
 export default function page() {
     const [projects, setProjects] = useState<Project[]>([]); // Assuming Project is the correct type
@@ -14,6 +17,8 @@ export default function page() {
             try {
                 const response = await fetch('/projects.json'); // Adjust the path as per your project structure
                 const data = await response.json();
+                const sortedProjects = data.projects.sort((a: Project, b: Project) => b.id - a.id);
+
                 setProjects(data.projects); // Assuming projects is an array in your JSON
             } catch (error) {
                 console.error('Error fetching projects:', error);
