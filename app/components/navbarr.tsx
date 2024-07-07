@@ -12,26 +12,27 @@
     }
 
     const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
-        const [show, setShow] = useState(true);
+    //     const [show, setShow] = useState(true);
 
-        const controlBar = () => {
-            if (window.scrollY > 100) {
-                setShow(false);
-            } else {
-                setShow(true);
-            }
-        };
+    //     const controlBar = () => {
+    //         if (window.scrollY > 100) {
+    //             setShow(false);
+    //         } else {
+    //             setShow(true);
+    //         }
+    //     };
 
-        useEffect(() => {
-            window.addEventListener('scroll', controlBar);
-            return () => {
-                window.removeEventListener('scroll', controlBar);
-            };
-        }, []);
+    //     useEffect(() => {
+    //         window.addEventListener('scroll', controlBar);
+    //         return () => {
+    //             window.removeEventListener('scroll', controlBar);
+    //         };
+    //     }, []);
 
         return (
             <>
-               <div className={`nav ${show ? 'show' : 'hide'} w-full h-20 bg-black sticky top-0 opacity-90 z-50`}>
+               {/* <div className={`nav ${show ? 'show' : 'hide'} w-full h-20 bg-black sticky top-0 opacity-90 z-50`}> */}
+               <div className="nav w-full h-20 bg-black sticky top-0 opacity-90 z-50">
                     <div className="container mx-auto px-4 h-full">
                         <div className="flex justify-between items-center h-full">
                             <Link href="/">
@@ -59,7 +60,7 @@
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/components/contact">
+                                    <Link href="/pages/contact">
                                         <Button className="bg-light-blue text-black hover:bg-green border-transparent" variant="contained" endIcon={<SendIcon />} disableElevation>Contact</Button>
                                     </Link>
                                 </li>

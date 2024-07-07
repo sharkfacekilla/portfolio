@@ -11,12 +11,15 @@ export default function Footer() {
                   <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Gage Patenaude</span>
               </a>
           </div>
-          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
               <div>
                   <Link href="/pages/about" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About</Link>
               </div>
               <div>
                   <Link href="/pages/projects" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Projects</Link>
+              </div>
+              <div>
+                  <Link href="/pages/resume" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resume</Link>
               </div>
               <div>
                   <Link href="/pages/contact" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</Link>
