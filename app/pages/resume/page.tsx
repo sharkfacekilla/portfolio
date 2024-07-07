@@ -1,7 +1,7 @@
 import resume from "../../../public/resume.json"
 
 const ResumePage = () => {
-    let {highlights, education, work } = resume.resume;
+    let {highlights, education, work, future_projects, extracurricular } = resume.resume;
 
     interface WorkEntry {
         company: string;
@@ -55,25 +55,28 @@ const ResumePage = () => {
                             </>
                         );
                     })}
-                    {/* <ul className="list-disc list-inside space-y-4 mb-12">
-                        <span className="font-extrabold text-2xl text-shadow">{work.sbux.job_title} | {work.sbux.company} | {work.sbux.start_date} - {work.sbux.end_date}</span>
-                            {Object.values(work.sbux.responsibilities).map((responsibility, index) => (
-                                <li key={index}>
-                                    <span>{responsibility}</span>
-                                </li>
-                            ))}
-                    </ul>
+                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12">Future Projects</h2>
                     <ul className="list-disc list-inside space-y-4">
-                        <span className="font-extrabold text-2xl text-shadow">{work.shaw.job_title} | {work.shaw.company} | {work.shaw.start_date} - {work.shaw.end_date}</span>
-                        {Object.values(work.shaw.responsibilities).map((responsibility, index) => (
-                            <li key={index}>
-                                    <span>{responsibility}</span>
-                                </li>
+                    {Object.values(future_projects).map((project, index) => (
+                        <li key={index}>
+                            <span>{project}</span>
+                        </li>
                     ))}
-                    </ul> */}
+                    </ul>
+                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12">Extracurricular Activities</h2>
+                    <ul className="list-disc list-inside space-y-4">
+                        {Object.values(extracurricular).map((activity, index) => (
+                            <li key={index}>
+                                <span>{activity}</span>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </section>
         </>
     );
-}
+};
+
 export default ResumePage;
