@@ -40,9 +40,42 @@
                     "1": "Curated genuine connections with customers with high satisfaction rating.",
                     "2": "Consulted customer questions and concerns quickly and efficiently.",
                     "3": "Recommended changes to services to best suit needs, and informed on services that might be unknown, and benefits over competitors.",
-                    "4": "Reporting to supervisor weekly in both written and oral communication."
+                    "4": "Reported to supervisor weekly in both written and oral communication."
+                }
+            },
+            "target": {
+                "company": "Target Canada",
+                "job_title": "Signage Team Member",
+                "start_date": "April 2013",
+                "end_date": "February 2015",
+                "responsibilities" : {
+                    "1": "Implemented planograms around the store down to the smallest details.",
+                    "2": "Oversaw deliveries of store signage and fixtures and implemented them on time.",
+                    "3": "Advised customers on products and services offered to meet their needs to great satisfaction."
+                }
+            },
+            "mcdonalds": {
+                "company": "McDonalds Canada",
+                "job_title": "Team Leader",
+                "start_date": "November 2009",
+                "end_date": "April 2013",
+                "responsibilities": {
+                    "1": "Supervised a small team daily.",
+                    "2": "Oversaw and implemented a strict cleaning routine to great results.",
+                    "3": "Hired and mentored new candidates.",
+                    "4": "Assisted manager with scheduling, ordering, inventory, and waste control needs."
                 }
             }
+        },
+        "future_projects": {
+            "1": "Plans to develop an organized, modern environment to showcase photography.",
+            "2": "Plans to overhaul band website, complete with shop section, photo gallery, more in-depth bio section and a place to showcase released music.",
+            "3": "GigPlanr: A Setlist Builder for Musicians, by Musicians."
+        },
+        "extracurricular": {
+            "1": "Writing, recording, and performing original music in a band.",
+            "2": "Photography",
+            "3": "Programming"
         }
     }
 }
