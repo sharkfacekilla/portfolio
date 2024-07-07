@@ -7,6 +7,7 @@ const HomePage = () => {
     let highestId = data.projects.reduce((max, project) =>
         parseInt(project.id) > parseInt(max.id) ? project : max, data.projects[0]);
 
+
     return (
         <>
             <section className="h-2/6">
