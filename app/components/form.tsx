@@ -49,8 +49,9 @@ export const ContactForm = () => {
 
     return (
         <>
-            <section className="h-full flex flex-col items-center justify-cente">
-                <h1>Contact Me</h1>
+            <section className="h-screen flex flex-col items-center justify-cente">
+                <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mb-32 mt-28">Contact Me.</h1>
+                <p>Send me an email, and lets chat!</p>
                     <form onSubmit={onSubmit} className="w-full max-w-2xl">
                     <div className="grid gap-6 mb-6 md:grid-cols-1">
                         <div>
