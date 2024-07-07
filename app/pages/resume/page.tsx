@@ -19,17 +19,17 @@ const ResumePage = () => {
                 </div>
                 <div className="container mx-auto">
                 <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl text-shadow lg:text-left text-center">Highlights</h2>
-                <ul className="list-disc list-inside space-y-4">
+                <ul className="list-disc list-inside space-y-4 px-4">
                         {Object.values(highlights).map((highlight, index) => (
-                            <li key={index}>
-                                <span>{highlight}</span>
+                            <li key={index} >
+                                <span className="mx-auto">{highlight}</span>
                             </li>
                         ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
-                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl mt-12 text-shadow">Education</h2>
-                    <ul className="list-disc list-inside space-y-4">
-                        <span className="font-extrabold text-2xl text-shadow">{education.title} | {education.school} | {education.start_date} - {education.end_date}</span>
+                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl mt-12 text-shadow text-center lg:text-left">Education</h2>
+                    <ul className="list-disc list-inside space-y-4 px-4">
+                        <span className="font-extrabold text-2xl text-shadow text-light-blue">{education.title} | {education.school} | {education.start_date} - {education.end_date}</span>
                         {Object.values(education.skills).map((skill, index) => (
                             <li key={index}>
                                 <span>{skill}</span>
@@ -37,14 +37,14 @@ const ResumePage = () => {
                         ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
-                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow">Work Experience</h2>
+                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow text-center lg:text-left px-4">Work Experience</h2>
                     {Object.keys(work).map((key) => {
                         const job = work[key as keyof typeof work] as WorkEntry;
                         return (
                             <>
-                            <ul className="list-disc list-inside space-y-2 mt-12">
+                            <ul className="list-disc list-inside space-y-2 mt-12 px-4">
                                 <div className="container mb-5">
-                                <span className="font-extrabold text-2xl text-shadow mt-5">{job.job_title} | {job.company} | {job.start_date} - {job.end_date}</span>
+                                <span className="font-extrabold text-2xl text-shadow mt-5 text-light-blue">{job.job_title} | {job.company} | {job.start_date} - {job.end_date}</span>
                                 </div>
                                     {Object.values(job.responsibilities).map((responsibility, index) => (
                                         <li key={index}>
@@ -56,8 +56,8 @@ const ResumePage = () => {
                         );
                     })}
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
-                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12">Future Projects</h2>
-                    <ul className="list-disc list-inside space-y-4">
+                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12 text-center lg:text-left">Future Projects</h2>
+                    <ul className="list-disc list-inside space-y-4 px-4">
                     {Object.values(future_projects).map((project, index) => (
                         <li key={index}>
                             <span>{project}</span>
@@ -65,8 +65,8 @@ const ResumePage = () => {
                     ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
-                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12">Extracurricular Activities</h2>
-                    <ul className="list-disc list-inside space-y-4">
+                    <h2 className="mx-autp mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12 text-center lg:text-left">Extracurricular Activities</h2>
+                    <ul className="list-disc list-inside space-y-4 px-4">
                         {Object.values(extracurricular).map((activity, index) => (
                             <li key={index}>
                                 <span>{activity}</span>
