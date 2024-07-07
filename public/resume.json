@@ -1,0 +1,48 @@
+{
+    "resume": {
+        "highlights": {
+            "1": "Demonstrated experience building software and websites building using Java, HTML, and CSS.",
+            "2": "Presented efficient and clear communication in both written and oral methods.",
+            "3": "Excelled in a team environment, as well as independently.",
+            "4": "Experience using critical thinking and analysis to make informed decisions quickly."
+        },
+        "education": {
+            "title": "Information & Computer Systems Diploma",
+            "school": "Camosun College",
+            "start_date": "September 2022",
+            "end_date": "Present",
+            "skills": {
+                "1": "Currently enrolled in the Information and Computer Systems Diploma program.",
+                "2": "Writing, editing, and debugging programs in various languages, such as Java, Python, C, C++, C#, and iOS Development with Swift",
+                "3": "Demonstrating a mobile-first approach by creating fully responsive websites using HTML, CSS and JavaScript",
+                "4": "Creating full-stack applications using React/Next.js, or React/Laravel, with TailwindCSS syling, and deployment with Amazon Web Services."
+            }
+        },
+        "work": {
+            "sbux": {
+                "company": "Starbucks Canada",
+                "job_title": "Shift Supervisor",
+                "start_date": "November 2017",
+                "end_date": "Present",
+                "responsibilities": {
+                    "1": "Directing a small team daily, leading to achieving record high sales.",
+                    "2": "Facilitating the onboarding and training of new hires, with the lowerst turnover rate ensuring proper training and understanding requirements are met.",
+                    "3": "Applying quick problem solving of both customer and business issues as they arise.",
+                    "4": "Overseeing deliveries and ensuring accuracy to the highest degree."
+                }
+            },
+            "shaw": {
+                "company": "Shaw Communications",
+                "job_title": "Loyalty Care Representative",
+                "start_date": "February 2015",
+                "end_date": "November 2017",
+                "responsibilities": {
+                    "1": "Curated genuine connections with customers with high satisfaction rating.",
+                    "2": "Consulted customer questions and concerns quickly and efficiently.",
+                    "3": "Recommended changes to services to best suit needs, and informed on services that might be unknown, and benefits over competitors.",
+                    "4": "Reporting to supervisor weekly in both written and oral communication."
+                }
+            }
+        }
+    }
+}
