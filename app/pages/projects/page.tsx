@@ -7,7 +7,7 @@ import { Project } from '@/app/utils/project';
 /**
  *  Displaying the project landing page. Gets the projects from the JSON and displays accordingly.
  */
-export default function page() {
+export default function Page() {
     const [projects, setProjects] = useState<Project[]>([]); 
 
     //Getting and Displaying projects with useEffect.

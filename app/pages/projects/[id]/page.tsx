@@ -3,7 +3,7 @@ import data from '../../../../public/projects.json'
 import { Project } from '../../../utils/project';
 import { Metadata } from "next";
 import Head from 'next/head';
-
+import Image from 'next/image';
 
 /**
  * A dynamically generated page based on the project that's passed in.
@@ -25,7 +25,7 @@ export default function ProjectPage({params} : {
             <section className="h-screen relative">
                 <div className="absolute inset-0 w-full h-screen">
                     {/* Image */}
-                    <img src={projectData?.img} className="w-full h-full object-cover" alt="Background" />
+                    <Image layout="fill" src={projectData?.img || ''} className="w-full h-full object-cover" alt="Background" />
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
                 <div className="relative container text-center mx-auto h-1/2 flex items-center justify-center">

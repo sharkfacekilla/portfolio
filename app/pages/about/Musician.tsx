@@ -25,7 +25,7 @@ const Musician = () => {
                         up an electric guitar, and discovered my passion for creating
                         melodies and rhythms. Initially drawn to the guitar, I quickly
                         immersed myself in learning chords and strumming patterns, laying
-                        the foundation for what would become a lifelong devotion to music.{" "}
+                        the foundation for what would become a lifelong devotion to music.
                         <br /> <br />
                         During high school, I expanded my musical repertoire by learning
                         drums, a decision that would later prove pivotal in my musical
@@ -37,18 +37,18 @@ const Musician = () => {
                         of high school friends where I contributed as a drummer and acting
                         bassist, until finding our pemanent member. Together, we crafted
                         various original compositions and performed at local venues, sharing
-                        our music with audiences and refining our craft with each show.{" "}
+                        our music with audiences and refining our craft with each show.
                         <br /> <br />
                         As my passion for music grew, so did my skills in production. I
                         ventured into music production, releasing records on platforms like
-                        Spotify as well as physical media (CD's anyone?! I have some). This
+                        Spotify as well as physical media (CD&apos;s anyone?! I have some). This
                         experience not only enhanced my technical abilities, but also
                         deepened my appreciation for the art of music, along with sound
                         engineering and production.
                         <br /> <br />
                         Music continues to be the driving force in my life, fueling my
                         creativity and serving as a constant source of inspiration. Whether
-                        I'm writing songs, refining melodies, or performing live on stage, I
+                        I&apos;m writing songs, refining melodies, or performing live on stage, I
                         am dedicated to pushing the boundaries of my musical journey and
                         exploring new avenues of expression. <br /> <br />
                     </p>
