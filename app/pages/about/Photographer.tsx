@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "@mui/material";
 
+/**
+ * Displays a heading, some background, a link to flickr, and an image I took myself.
+ * @returns Photography component.
+ */
 export default function Photography() {
   return (
     <>
@@ -25,4 +29,4 @@ export default function Photography() {
         </section>
     </>
   );
-}
+};

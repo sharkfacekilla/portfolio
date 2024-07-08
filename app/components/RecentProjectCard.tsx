@@ -1,20 +1,23 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import Link from 'next/link';
-import { Project } from '../utils/project';
 import data from '../../public/projects.json';
 
 interface CustomCardProps {
     proj: string;
 }
 
+/**
+ * Renders the most recent object in the JSON. Includes image, name, short description, languages used, and a link to check out more information.
+ * Uses custom props.
+ * @param proj The project object, housing the information to render.
+ * @returns Recent Project Card Component.
+ */
 const CustomCard: React.FC<CustomCardProps> = ( {proj}) => {
     const project = data.projects.find((p) => p.id === proj )!;
 
@@ -34,7 +37,7 @@ const CustomCard: React.FC<CustomCardProps> = ( {proj}) => {
                     <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>
                 </CardContent>
         </Card>
-    )
-}
+    );
+};
 
 export default CustomCard;

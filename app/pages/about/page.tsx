@@ -10,6 +10,10 @@ export const metadata: Metadata = {
     title: "Gage Patenaude | About Me",
 };
 
+/**
+ * Displays different components related to me.
+ * @returns an about page with components.
+ */
 const About = () => {
     return (
         <>

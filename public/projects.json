@@ -22,7 +22,17 @@
         },
         {
             "id": "3",
-            "name": "Capstone Project",
+            "name": "Mock Band Website",
+            "shortDesc": "Fake Website for Band",
+            "img": "/img/midtermProject.png",
+            "description": "A Midterm project for my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website, not so bad!",
+            "link": "https://www.youtube.com/watch?v=F1EFdyBbOm0",
+            "lang": "HTML, CSS",
+            "altTxt": "supreme remedy fake site"
+        },
+        {
+            "id": "4",
+            "name": "Capstone Project (IN PROGRESS)",
             "shortDesc": "Capstone Project for Graduation",
             "img": "/img/capstoneProject.png",
             "description": "",
@@ -31,8 +41,8 @@
             "altTxt": "capstone project"
         },
         {
-            "id": "4",
-            "name": "GigPlanr",
+            "id": "5",
+            "name": "GigPlanr (NOT STARTED)",
             "shortDesc": "Setlist Planning Web Application",
             "img" : "",
             "description": "",

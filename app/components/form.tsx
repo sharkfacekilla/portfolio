@@ -5,6 +5,10 @@ import { TextField } from "@mui/material";
 import Box from '@mui/material/Box';
 
 
+/**
+ * Contact form that will send an email to my inbox. uses state to keep track of the forum, if its submitting (not implemented a status yet), and async/await for fetching/sending of the data.
+ * @returns A Contact Form.
+ */
 export const ContactForm = () => {
     const [formData, setFormData] = useState({
         name: '',
