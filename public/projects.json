@@ -22,7 +22,7 @@
             "shortDesc": "This website!",
             "img" : "/img/portfolioSite.png",
             "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
-            "link": "",
+            "link": "https://www.youtube.com/embed/r2rMwISi0j4?si=9BuXeDsCfSNRZtxr",
             "lang": "Next.js (React, TypeScript, Tailwind CSS)",
             "altTxt": "portfolio web site",
             "skills": {
