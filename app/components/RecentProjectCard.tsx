@@ -26,7 +26,7 @@ const CustomCard: React.FC<CustomCardProps> = ( {proj}) => {
 
     return (
         <Card sx={{ maxWidth: 350 }}>
-                <CardMedia component="img" height="340" image={project.img} alt={project.altTxt}/>
+                <CardMedia component="img" sx={{ height: 240, objectFit: 'cover' }} image={project.img} alt={project.altTxt}/>
                 <CardContent className="bg-black text-white">
                     <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
                     <Typography variant="body1" className="mb-5">{project.shortDesc} </Typography>
