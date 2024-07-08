@@ -1,27 +1,25 @@
 import * as React from 'react';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import Link from 'next/link';
 import { Project } from '../utils/project';
-// interface CustomCardProps {
-//     id: string;
-//     image: string;
-//     altText: string;
-//     title: string;
-//     description: string;
-//     lang: string;
-// }
+
+//To give the project a type
 interface CustomCardProps {
     project: Project;
 }
 
+/**
+ * 
+ * @param param0 project: The Project passed in.
+ * @returns A card with the project details, and a link to the project page for more information.
+ */
 const CustomCard: React.FC<CustomCardProps> = ({project}) => {
+    //Get the dynamic route for the Link component
     const dynamicRoute = `/pages/projects/${project.id}`;
 
     return (

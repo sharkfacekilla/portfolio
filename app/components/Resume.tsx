@@ -1,5 +1,3 @@
-// pages/resume.tsx
-
 import React from 'react';
 import ResumeCard from '../components/ResumeCard';
 import resume from '../../public/resume.json';
@@ -21,14 +19,17 @@ interface WorkEntry {
  */
 const ResumePage: React.FC = () => {
     return (
+        // Resume Section
         <section className="relative py-12">
             <div className="container mx-auto text-center">
                 <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm:text-5xl dark:text-light-blue mb-32 mt-28">Resume.</h1>
             </div>
             <div className="container mx-auto flex flex-wrap">
+                {/* Highlights */}
                 <div className="w-full lg:w-3/4 px-4">
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl text-shadow lg:text-left text-center px-4">Highlights</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
+                        {/* Since I did not use an array within the object, need to use Object.values */}
                         {Object.values(highlights).map((highlight, index) => (
                             <li key={index}>
                                 <span className="mx-auto">{highlight}</span>
@@ -36,6 +37,7 @@ const ResumePage: React.FC = () => {
                         ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    {/* Technical Skills */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl text-shadow lg:text-left text-center px-4 mt-12">Technical Skills</h2>
                     <ul className="flex flex-wrap gap-4 justify-center lg:justify-start list-none p-0">
                     {Object.values(technical_skills).map((tech_skill, index) => (
@@ -45,6 +47,7 @@ const ResumePage: React.FC = () => {
                     ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    {/* Education */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl mt-12 text-shadow text-center lg:text-left px-4">Education</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
                         <span className="font-extrabold text-2xl text-shadow text-light-blue">{education.title} | {education.school} | {education.start_date} - {education.end_date}</span>
@@ -55,6 +58,7 @@ const ResumePage: React.FC = () => {
                         ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    {/* Work Experience  */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl text-shadow text-center lg:text-left px-4">Work Experience</h2>
                     {Object.keys(work).map((key) => {
                         const job = work[key as keyof typeof work] as WorkEntry;
@@ -72,6 +76,7 @@ const ResumePage: React.FC = () => {
                         );
                     })}
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    {/* Future Projects */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12 text-center lg:text-left px-4">Future Projects</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
                         {Object.values(future_projects).map((project, index) => (
@@ -81,6 +86,7 @@ const ResumePage: React.FC = () => {
                         ))}
                     </ul>
                     <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    {/* Extracurricular Activities */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-5xl text-shadow mt-12 text-center lg:text-left px-4">Extracurricular Activities</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
                         {Object.values(extracurricular).map((activity, index) => (
@@ -90,6 +96,7 @@ const ResumePage: React.FC = () => {
                         ))}
                     </ul>
                 </div>
+                {/* Sticky Download Card Component  */}
                 <div className="hidden lg:block lg:w-1/4 px-4">
                     <div className="sticky top-24">
                         <ResumeCard />

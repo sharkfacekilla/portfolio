@@ -2,7 +2,7 @@ import Link from 'next/link';
 import React from 'react';
 
 /**
- * Footer for site.
+ * Footer for site. Adapted from Flowbite https://flowbite.com/docs/components/footer/
  */
 export default function Footer() {
   return (

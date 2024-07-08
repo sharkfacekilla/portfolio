@@ -9,6 +9,7 @@ import RecentProjectCard from '../components/RecentProjectCard';
  * @returns Home Info Component.
  */
 export default function HomeInfo() {
+    //Get the highest id within the project data, to automatically display most recent project.
     let highestId = data.projects.reduce((max, project) =>
         parseInt(project.id) > parseInt(max.id) ? project : max, data.projects[0]);
 

@@ -1,5 +1,9 @@
 import React from 'react';
 
+/**
+ * Sticky card to download resume. Adapted from https://flowbite.com/docs/components/card/
+ * @returns Resume Download Card
+ */
 const ResumeCard: React.FC = () => {
     return (
         <div className="max-w-sm p-6 bg-black rounded-lg shadow sticky top-12">
