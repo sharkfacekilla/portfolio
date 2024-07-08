@@ -1,10 +1,9 @@
-    import React, {useEffect, useState} from "react";
+    import React from "react";
     import Link from "next/link";
     import Logo from "./nav/logo";
     import { Button } from "@mui/material";
     import SendIcon from '@mui/icons-material/Send';
-    import MenuIcon from '@mui/icons-material/Menu'; // Import MenuIcon from Material-UI
-    import { Project } from '../utils/project';
+
 
     // Define the props interface
     interface NavbarProps {
@@ -14,7 +13,6 @@
     const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
         return (
             <>
-               {/* <div className={`nav ${show ? 'show' : 'hide'} w-full h-20 bg-black sticky top-0 opacity-90 z-50`}> */}
                <div className="nav w-full h-20 bg-black sticky top-0 opacity-90 z-50">
                     <div className="container mx-auto px-4 h-full">
                         <div className="flex justify-between items-center h-full">

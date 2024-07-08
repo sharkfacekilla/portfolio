@@ -19,23 +19,27 @@ interface CustomCardProps {
  * @returns Recent Project Card Component.
  */
 const CustomCard: React.FC<CustomCardProps> = ( {proj}) => {
+    //Find the project
     const project = data.projects.find((p) => p.id === proj )!;
 
+    //grab the id
     project.id = proj;
+
+    //create the dynamic route for the Link component.
     const dynamicRoute = `/pages/projects/${project.id}`;
 
     return (
         <Card sx={{ maxWidth: 350 }}>
-                <CardMedia component="img" sx={{ height: 240, objectFit: 'cover' }} image={project.img} alt={project.altTxt}/>
-                <CardContent className="bg-black text-white">
-                    <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
-                    <Typography variant="body1" className="mb-5">{project.shortDesc} </Typography>
-                    <Link href={dynamicRoute} passHref >
+            <CardMedia component="img" sx={{ height: 240, objectFit: 'cover' }} image={project.img} alt={project.altTxt}/>
+            <CardContent className="bg-black text-white">
+                <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
+                <Typography variant="body1" className="mb-5">{project.shortDesc} </Typography>
+                <Link href={dynamicRoute} passHref >
                     <Button variant="contained" className="mb-5 bg-blue hover:bg-light-blue">Learn More</Button>
                 </Link>
-                    <Divider className="bg-white" />
-                    <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>
-                </CardContent>
+                <Divider className="bg-white" />
+                <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>
+            </CardContent>
         </Card>
     );
 };

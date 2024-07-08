@@ -4,8 +4,6 @@ import CustomCard from '@/app/components/CustomCard';
 import { Grid } from '@mui/material';
 import { Project } from '@/app/utils/project';
 
-
-
 /**
  *  Displaying the project landing page. Gets the projects from the JSON and displays accordingly.
  */
@@ -48,4 +46,4 @@ export default function page() {
             </section>
         </>
     );
-}
+};
