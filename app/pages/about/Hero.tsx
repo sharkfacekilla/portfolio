@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ * A hero image of me with a heading.
+ * @returns Hero Section with background image.
+ */
 const AboutMe = () => {
     return (
         <>

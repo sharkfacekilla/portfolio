@@ -16,7 +16,7 @@ export default function ProjectPage({params} : {
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
                 <div className="relative container text-center mx-auto h-1/2 flex items-center justify-center">
-                    <h1 className="text-white text-5xl text-center text-shadow font-bold z-10 py-4 mx-auto mb-5">{projectData?.name}</h1>
+                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mb-32 mt-80 text-shadow">{projectData?.name}</h1>
                 </div>
             </section>
             <section className="h-screen relative">

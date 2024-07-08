@@ -1,6 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
+/**
+ * Renders a bio component. Includes heading, background, and image.
+ * @returns Biography Component.
+ */
 export default function Bio() {
   return (
     <>

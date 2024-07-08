@@ -2,21 +2,22 @@
 import React, { useState, useEffect } from 'react';
 import CustomCard from '@/app/components/CustomCard';
 import { Grid } from '@mui/material';
-import { promises as fs } from 'fs';
 import { Project } from '@/app/utils/project';
 
-// interface Project {
-//     id: number;
-// }
-
+/**
+ *  Displaying the project landing page. Gets the projects from the JSON and displays accordingly.
+ */
 export default function page() {
     const [projects, setProjects] = useState<Project[]>([]); 
 
+    //Getting and Displaying projects with useEffect.
     useEffect(() => {
         const fetchProjects = async () => {
             try {
                 const response = await fetch('/projects.json');
                 const data = await response.json();
+                
+                //display in descending order, most rescent first.
                 const sortedProjects = data.projects.sort((a: Project, b: Project) => b.id - a.id);
 
                 setProjects(data.projects);
@@ -24,10 +25,9 @@ export default function page() {
                 console.error('Error fetching projects:', error);
             }
         };
-
         fetchProjects();
     }, []);
-
+    
     return (
         <>
             <section className="relative py-12">

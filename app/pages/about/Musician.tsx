@@ -2,6 +2,10 @@ import React from "react";
 import Image from "next/image";
 import { Spotify } from "react-spotify-embed";
 
+/**
+ * Musician Component which includes a heading, a spotify embedded player, and some background information.
+ * @returns Musiciaon Component.
+ */
 const Musician = () => {
   return (
     <>

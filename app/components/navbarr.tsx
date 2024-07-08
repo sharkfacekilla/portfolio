@@ -12,23 +12,6 @@
     }
 
     const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
-    //     const [show, setShow] = useState(true);
-
-    //     const controlBar = () => {
-    //         if (window.scrollY > 100) {
-    //             setShow(false);
-    //         } else {
-    //             setShow(true);
-    //         }
-    //     };
-
-    //     useEffect(() => {
-    //         window.addEventListener('scroll', controlBar);
-    //         return () => {
-    //             window.removeEventListener('scroll', controlBar);
-    //         };
-    //     }, []);
-
         return (
             <>
                {/* <div className={`nav ${show ? 'show' : 'hide'} w-full h-20 bg-black sticky top-0 opacity-90 z-50`}> */}

@@ -1,3 +1,6 @@
+/**
+ * Describes what a Project object is.
+ */
 export interface Project {
     id: number;
     name: string;
