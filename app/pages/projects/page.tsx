@@ -10,16 +10,16 @@ import { Project } from '@/app/utils/project';
 // }
 
 export default function page() {
-    const [projects, setProjects] = useState<Project[]>([]); // Assuming Project is the correct type
+    const [projects, setProjects] = useState<Project[]>([]); 
 
     useEffect(() => {
         const fetchProjects = async () => {
             try {
-                const response = await fetch('/projects.json'); // Adjust the path as per your project structure
+                const response = await fetch('/projects.json');
                 const data = await response.json();
                 const sortedProjects = data.projects.sort((a: Project, b: Project) => b.id - a.id);
 
-                setProjects(data.projects); // Assuming projects is an array in your JSON
+                setProjects(data.projects);
             } catch (error) {
                 console.error('Error fetching projects:', error);
             }

@@ -12,6 +12,16 @@
         },
         {
             "id": "2",
+            "name": "Portfolio Website",
+            "shortDesc": "This website!",
+            "img" : "/img/portfolioSite.png",
+            "description": "Re-wrote my protfolio website using Next.js to solidify what was learned in the second year of College. Skills used are importing data from a JSON file, dynamically routing pages, sending emails through a forum with nodemailer, styling.",
+            "link": "",
+            "lang": "Next.js (React, TypeScript, Tailwind CSS)",
+            "altTxt": "portfolio web site"
+        },
+        {
+            "id": "3",
             "name": "Capstone Project",
             "shortDesc": "Capstone Project for Graduation",
             "img": "/img/capstoneProject.png",
@@ -21,7 +31,7 @@
             "altTxt": "capstone project"
         },
         {
-            "id": "3",
+            "id": "4",
             "name": "GigPlanr",
             "shortDesc": "Setlist Planning Web Application",
             "img" : "",
@@ -29,16 +39,6 @@
             "link": "",
             "lang": "Laravel/React",
             "altTxt": "gigplanr web app"
-        },
-        {
-            "id": "4",
-            "name": "Portfolio Website",
-            "shortDesc": "This website!",
-            "img" : "/img/portfolioSite.png",
-            "description": "Re-wrote my protfolio website using Next.js to solidify what was learned in the second year of College. Skills used are importing data from a JSON file, dynamically routing pages, sending emails through a forum with nodemailer, styling.",
-            "link": "",
-            "lang": "Next.js (React, TypeScript, Tailwind CSS)",
-            "altTxt": "portfolio web site"
         }
     ]
 }

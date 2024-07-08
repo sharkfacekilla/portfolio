@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mui/icons-material": "^5.15.20",
+    "@mui/material": "^5.16.0",
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "next": "14.2.4",
     "nodemailer": "^6.9.14",
