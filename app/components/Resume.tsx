@@ -1,3 +1,4 @@
+"use client"
 import resume from "../../public/resume.json"
 
 //Destructuring the JSON object for ease of use.
@@ -15,7 +16,7 @@ interface WorkEntry {
 /**
  * Resume Component. Displays the contents of resume.json
  */
-export default function Resume() {
+export default function Page() {
     return (
         <section className="relative py-12">
         <div className="container mx-auto text-center">

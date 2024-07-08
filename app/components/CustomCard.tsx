@@ -26,16 +26,18 @@ const CustomCard: React.FC<CustomCardProps> = ({project}) => {
 
     return (
         <Card sx={{ maxWidth: 350 }}>
-                <CardMedia component="img" sx={{ height: 240, objectFit: 'cover' }}  image={project.img} alt={project.altTxt}/>
-                <CardContent className="bg-black text-white">
+            <CardMedia component="img" sx={{ objectFit: 'cover', height: 200}}  image={project.img} alt={project.altTxt}/>
+            <CardContent className="bg-black text-white" sx={{flexGrow: 1}}>
+                <div style={{ display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'space-between' }}>
                     <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
                     <Typography variant="body1" >{project.shortDesc} </Typography>
                     <Link href={dynamicRoute} passHref >
-                    <Button variant="contained" className="mb-5 mt-5 bg-blue hover:bg-light-blue">Learn More</Button>
-                </Link>
+                        <Button variant="contained" className="mb-5 mt-5 bg-blue hover:bg-light-blue">Learn More</Button>
+                    </Link>
                     <Divider className="bg-white" />
                     <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>
-                </CardContent>
+                </div>
+            </CardContent>
         </Card>
     )
 }

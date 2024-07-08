@@ -1,6 +1,10 @@
 import * as React from 'react';
 import data from '../../../../public/projects.json'
 import { Project } from '../../../utils/project';
+import { Metadata } from "next";
+import Head from 'next/head';
+
+
 
 export default function ProjectPage({params} : { 
     params: { id: string };
@@ -10,6 +14,9 @@ export default function ProjectPage({params} : {
 
     return (
         <>
+        <Head>
+            <title>Gage Patenaude | Project - {projectData?.name}</title>
+        </Head>
             <section className="h-screen relative">
                 <div className="absolute inset-0 w-full h-screen">
                     <img src={projectData?.img} className="w-full h-full object-cover" alt="Background" />
@@ -24,7 +31,13 @@ export default function ProjectPage({params} : {
                     <div className="mt-10 relative container text-center mx-auto h-1/2 items-center justify-center">
                         <h2 className="text-white text-3xl text-center text-shadow font-bold z-10 py-4 mx-auto mb-5">Project Description</h2>
                         <p className="mb-10">{projectData?.description}</p>
-                        <p className="mb-10 -mt-5">Languages and Tools used: {projectData?.lang}</p>
+                        <h2 className="mx-auto mb-4 font-extrabold tracking-light text-3xl text-shadow lg:text-center text-center">Skills Learned & Used:</h2>
+                        <ul className="list-disc list-inside mx-auto space-y-4 px-4 text-left max-w-lg mb-5">
+                        {projectData?.skills && Object.values(projectData.skills).map((skill, index) => (
+                            <li key={index}>{skill}</li>
+                        ))}
+                        </ul>
+                        <p className="mb-10 mt-5">Languages: {projectData?.lang}</p>
                         <div>
                             <h3 className="text-white text-2xl text-center text-shadow font-bold z-10 py-4 mx-auto">Demo Video</h3>
                             <div className="justify-center items-center mt-10">

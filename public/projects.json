@@ -5,47 +5,72 @@
             "name": "Shadowed Depths",
             "shortDesc": "Roguelike inspired game",
             "img": "/img/shadowedDepths.jpg",
-            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, inspired by my love of Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out. ",
+            "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, which is inspired by my love of classic games, such as Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
             "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
             "lang": "C#, Unity",
-            "altTxt": "shadowed depths gameplay"
+            "altTxt": "shadowed depths gameplay",
+            "skills": {
+                "1": "Object Oriented Programming",
+                "2": "Debugging",
+                "3": "Asset maniuplation",
+                "4": "World Building"
+            }
         },
         {
             "id": "2",
             "name": "Portfolio Website",
             "shortDesc": "This website!",
             "img" : "/img/portfolioSite.png",
-            "description": "Re-wrote my protfolio website using Next.js to solidify what was learned in the second year of College. Skills used are importing data from a JSON file, dynamically routing pages, sending emails through a forum with nodemailer, styling.",
+            "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
             "link": "",
             "lang": "Next.js (React, TypeScript, Tailwind CSS)",
-            "altTxt": "portfolio web site"
+            "altTxt": "portfolio web site",
+            "skills": {
+                "1": "Dynamic Page Routing within Next.js",
+                "2": "Creating custom components",
+                "3": "Using nodemail to send emails through forum",
+                "4": "Using a JSON file to store data",
+                "5": "Reading from JSON to display said data over hard-coding"
+            }
         },
         {
             "id": "3",
             "name": "Mock Band Website",
             "shortDesc": "Fake Website for Band",
             "img": "/img/midtermProject.png",
-            "description": "A Midterm project for my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website, not so bad!",
-            "link": "https://www.youtube.com/watch?v=F1EFdyBbOm0",
+            "description": "A Midterm project from my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website from scratch, not so bad!",
+            "link": "https://www.youtube.com/embed/F1EFdyBbOm0?si=QxBfx0lBq2O_26Be",
             "lang": "HTML, CSS",
-            "altTxt": "supreme remedy fake site"
+            "altTxt": "supreme remedy fake site",
+            "skills": {
+                "1": "HTML + CSS",
+                "2": "Best practices for nesting code",
+                "3": "CSS Debugging",
+                "4": "Working with multi-media (videos and pictures)"
+            }
         },
         {
             "id": "4",
-            "name": "Capstone Project (IN PROGRESS)",
+            "name": "Camosun College Capstone Project (IN PROGRESS)",
             "shortDesc": "Capstone Project for Graduation",
             "img": "/img/capstoneProject.png",
-            "description": "",
+            "description": "Currently on-going project, where we're making a real-time web app that displays stats of a basketball tournament. More to come once finished...",
             "link": "",
             "lang": "Laravel/React",
-            "altTxt": "capstone project"
+            "altTxt": "camosun capstone project",
+            "skills": {
+                "1": "Full-Stack web building",
+                "2": "CRUD Operations with database",
+                "3": "Collaborating in a team setting on a project",
+                "4": "PHP"
+            }
         },
         {
             "id": "5",
             "name": "GigPlanr (NOT STARTED)",
             "shortDesc": "Setlist Planning Web Application",
-            "img" : "",
-            "description": "",
+            "img" : "/img/gigPlanr.png",
+            "description": "A soon-to-be web app for musicians, by musicians.",
             "link": "",
             "lang": "Laravel/React",
             "altTxt": "gigplanr web app"
