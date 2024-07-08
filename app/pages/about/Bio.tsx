@@ -9,9 +9,9 @@ export default function Bio() {
 	return (
     	<>
       		<section className=" h-3/6">
-        		<div className="container mx-auto mb-80 px-4 h-full grid grid-cols-2 grid-rows-2 flex items-center justify-center">
-          			<h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">A bit about me...</h1>
-          			<p className="text-white">
+			  <div className="container mx-auto mt-3 md:mt-28 mb-80 px-4 h-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 flex items-center justify-center">
+			  <h1 className="text-white text-4xl font-bold z-10 py-1 col-span-full mx-auto mb-2 md:mb-5 border-b">A bit about me...</h1>
+			  <p className="text-white mb-28">
 					  	Since the age of three, computers have been an integral part of my
            				life (ask me about kidesk). As an aspiring software engineer, I
             			thrive on embracing new challenges&mdash;whether it&apos;s mastering unfamiliar

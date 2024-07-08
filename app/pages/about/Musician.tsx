@@ -10,8 +10,8 @@ const Musician = () => {
     return (
         <>
             <section className=" h-3/6 -mt-24">
-                <div className="container mx-auto mb-12 px-4 h-full grid grid-cols-2 grid-rows-1 items-center justify-center">
-                    <h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">Musician</h1>
+            <div className="container mx-auto md:mt-28 mb-80 px-4 h-full grid grid-cols-1 md:grid-cols-2 grid-rows-2 md:grid-rows-1 flex items-center justify-center">
+            <h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">Musician</h1>
                     <div className="flex flex-col items-center">
                         <div className="flex items-center mb-2 grid grid-rows-1">
                             <Spotify link="https://open.spotify.com/album/63EBH2gtv9hVK0iu5t6snZ?si=dCetXGmjTfeFCYNxYoth8Q" className="mt-24"/>
