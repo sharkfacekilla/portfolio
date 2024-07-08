@@ -56,7 +56,7 @@ export const ContactForm = () => {
                     <div className="grid gap-6 mb-6 md:grid-cols-1">
                         <div>
                             <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray dark:text-white">Name</label>
-                            <input onChange={handleInputChange} type="text" id="name" className="bg-black border border-white text-white text-sm rounded-lg block w-full p-2.5 dark:bg-black dark:border-white dark:placeholder-gray dark:text-white" placeholder="Name" required />
+                            <input onChange={handleInputChange} type="text" id="name" name="name" className="bg-black border border-white text-white text-sm rounded-lg block w-full p-2.5 dark:bg-black dark:border-white dark:placeholder-gray dark:text-white" placeholder="Name" required />
                         </div>
                         <div>
                             <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray dark:text-white">Email</label>
