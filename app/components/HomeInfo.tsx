@@ -17,12 +17,12 @@ export default function HomeInfo() {
         <>
             <section className="h-2/6">
                 <div className="container mx-auto px-4 mb-20">
-                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mt-32">Gage Patenaude.</h1>
-                    <h2 className="mx-auto mb-5 font-extrabold tracking-tight md:text-6xl sm: text-3xl dark:text-white/50">Building cool things.</h2>
+                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm:text-5xl text-light-blue mt-32">Gage Patenaude.</h1>
+                    <h2 className="mx-auto mb-5 font-extrabold tracking-tight md:text-6xl sm:text-3xl text-white/50">Building cool things.</h2>
                     <div>
-                        <p className="max-w-3xl">Hello, and welcome to my portfolio!</p>
+                        <p className="max-w-3xl text-white">Hello, and welcome to my portfolio!</p>
                             <br />
-                        <p className="max-w-3xl">Learn a bit more about me and my projects here!</p>
+                        <p className="max-w-3xl text-white">Learn a bit more about me and my projects here!</p>
                         <Button href={"pages/about"} variant="contained" className="mt-4 bg-blue text-white hover:bg-light-blue border">About Me</Button>
                     </div>
                 </div>

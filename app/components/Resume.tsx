@@ -22,7 +22,7 @@ const ResumePage: React.FC = () => {
         // Resume Section
         <section className="relative py-12">
             <div className="container mx-auto text-center">
-            <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mb-32 mt-28">Resume.</h1>
+            <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-28">Resume.</h1>
             </div>
             <div className="container mx-auto flex flex-wrap">
                 {/* Highlights */}
@@ -36,7 +36,7 @@ const ResumePage: React.FC = () => {
                             </li>
                         ))}
                     </ul>
-                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <hr className="my-12 h-0.5 border-t-0 bg-blue/50" />
                     {/* Technical Skills */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-4xl text-shadow lg:text-left text-center px-4 mt-12">Technical Skills</h2>
                     <ul className="flex flex-wrap gap-4 justify-center lg:justify-start list-none p-0">
@@ -46,7 +46,7 @@ const ResumePage: React.FC = () => {
                         </li>
                     ))}
                     </ul>
-                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <hr className="my-12 h-0.5 border-t-0 bg-blue/50" />
                     {/* Education */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-4xl mt-12 text-shadow text-center lg:text-left px-4">Education</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
@@ -57,7 +57,7 @@ const ResumePage: React.FC = () => {
                             </li>
                         ))}
                     </ul>
-                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <hr className="my-12 h-0.5 border-t-0 bg-blue/50" />
                     {/* Work Experience  */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-4xl text-shadow text-center lg:text-left px-4">Work Experience</h2>
                     {Object.keys(work).map((key) => {
@@ -75,7 +75,7 @@ const ResumePage: React.FC = () => {
                             </ul>
                         );
                     })}
-                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <hr className="my-12 h-0.5 border-t-0 bg-blue/50" />
                     {/* Future Projects */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-4xl text-shadow mt-12 text-center lg:text-left px-4">Future Projects</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
@@ -85,7 +85,7 @@ const ResumePage: React.FC = () => {
                             </li>
                         ))}
                     </ul>
-                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <hr className="my-12 h-0.5 border-t-0 bg-blue/50" />
                     {/* Extracurricular Activities */}
                     <h2 className="mx-auto mb-14 font-extrabold tracking-light text-4xl text-shadow mt-12 text-center lg:text-left px-4">Extracurricular Activities</h2>
                     <ul className="list-disc list-inside space-y-4 px-4">
@@ -95,7 +95,7 @@ const ResumePage: React.FC = () => {
                             </li>
                         ))}
                     </ul>
-                    <hr className="my-12 h-0.5 border-t-0 bg-black dark:bg-blue/50" />
+                    <hr className="my-12 h-0.5 border-t-0 bg-blue/50" />
                 </div>
                 {/* Sticky Download Card Component  */}
                 <div className="hidden lg:block lg:w-1/4 px-4">

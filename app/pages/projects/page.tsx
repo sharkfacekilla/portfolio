@@ -32,7 +32,7 @@ export default function Page() {
         <>
             <section className="relative py-12">
                 <div className="container mx-auto text-center">
-                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mb-32 mt-28">Projects.</h1>
+                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-28">Projects.</h1>
                 </div>
                 <div className="container mx-auto">
                     <Grid container spacing={3} justifyContent="center" alignItems="stretch" className="mx-auto">

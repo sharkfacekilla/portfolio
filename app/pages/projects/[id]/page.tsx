@@ -30,7 +30,7 @@ export default function ProjectPage({params} : {
                 </div>
                 <div className="relative container text-center mx-auto h-1/2 flex items-center justify-center">
                     {/* Project Title */}
-                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl dark:text-light-blue mb-32 mt-80 text-shadow">{projectData?.name}</h1>
+                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-80 text-shadow">{projectData?.name}</h1>
                 </div>
             </section>
             <section className="h-screen relative">
