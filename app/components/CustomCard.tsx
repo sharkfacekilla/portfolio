@@ -33,7 +33,7 @@ const CustomCard: React.FC<CustomCardProps> = ({project}) => {
                         <Button variant="contained" className="mb-5 mt-5 bg-blue hover:bg-light-blue">Learn More</Button>
                     </Link>
                     <Divider className="bg-white" />
-                    <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>
+                    <Typography variant="caption" display="block" className="mt-2" gutterBottom>Languages/Technology Used: {project.lang}</Typography>
                 </div>
             </CardContent>
         </Card>

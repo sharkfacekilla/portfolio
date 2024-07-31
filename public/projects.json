@@ -43,7 +43,7 @@
             "lang": "HTML, CSS",
             "altTxt": "supreme remedy fake site",
             "skills": {
-                "1": "HTML + CSS",
+                "1": "HTML, CSS",
                 "2": "Best practices for nesting code",
                 "3": "CSS Debugging",
                 "4": "Working with multi-media (videos and pictures)"
@@ -56,7 +56,7 @@
             "img": "/img/capstoneProject.png",
             "description": "Currently on-going project, where we're making a real-time web app that displays stats of a basketball tournament. More to come once finished...",
             "link": "",
-            "lang": "Laravel/React",
+            "lang": "Laravel, React, TypeScript, TailwindCSS, sqlite3",
             "altTxt": "camosun capstone project",
             "skills": {
                 "1": "Full-Stack web building",
@@ -72,7 +72,7 @@
             "img" : "/img/gigPlanr.png",
             "description": "A web platform for musicians, by musicians. GigPlanr is a setlist planning web application that allows musicians to create, edit, and share setlists with their bandmates. More to come once finished...",
             "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
-            "lang": "Laravel/React",
+            "lang": "Laravel, React, TypeScript, TailwindCSS, PostreSQL",
             "altTxt": "gigplanr web app",
             "skills": {
                 "1": "Full-Stack web building",
