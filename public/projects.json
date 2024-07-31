@@ -51,7 +51,7 @@
         },
         {
             "id": "4",
-            "name": "Camosun College Capstone Project (IN PROGRESS)",
+            "name": "Camosun College Capstone Project (In Progress)",
             "shortDesc": "Capstone Project for Graduation",
             "img": "/img/capstoneProject.png",
             "description": "Currently on-going project, where we're making a real-time web app that displays stats of a basketball tournament. More to come once finished...",
@@ -67,13 +67,19 @@
         },
         {
             "id": "5",
-            "name": "GigPlanr (NOT STARTED)",
+            "name": "GigPlanr (In Progress)",
             "shortDesc": "Setlist Planning Web Application",
             "img" : "/img/gigPlanr.png",
-            "description": "A soon-to-be web app for musicians, by musicians.",
-            "link": "",
+            "description": "A web platform for musicians, by musicians. GigPlanr is a setlist planning web application that allows musicians to create, edit, and share setlists with their bandmates. More to come once finished...",
+            "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
             "lang": "Laravel/React",
-            "altTxt": "gigplanr web app"
+            "altTxt": "gigplanr web app",
+            "skills": {
+                "1": "Full-Stack web building",
+                "2": "Connecting with various API's for data",
+                "3": "CRUD Operations with database",
+                "4": "Social Login Integration"
+            }
         }
     ]
 }
