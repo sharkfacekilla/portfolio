@@ -53,7 +53,7 @@
             "id": "4",
             "name": "Shark Sync",
             "shortDesc": "Camosun Capstone Project for Graduation",
-            "img": "/img/capstoneProject.png",
+            "img": "/img/shark.jpg",
             "description": "Shark Sync is a basketball tournament management web application. This was my team's capstone project for graduation for Camosun College. Shark Sync was created and sponsored by the UVIC Vikes Mens Alumni Basketball Association. Currently this is not live, however it should be useable by the time their tournament rolls around this year (2024).",
             "link": "https://www.youtube.com/embed/9GeyoUWBwgk?si=JCLJfTcloLun5_0i",
             "lang": "Laravel, React, TypeScript, TailwindCSS, sqlite3",
