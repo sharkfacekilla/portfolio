@@ -33,10 +33,10 @@
             "start_date": "September 2022",
             "end_date": "September 2024",
             "skills": {
-                "1": "Enrolled in the Information and Computer Systems Diploma program.",
-                "2": "Writing, editing, and debugging programs in various languages, such as Java, Python, C, C++, C#, and iOS Development with Swift",
-                "3": "Demonstrating a mobile-first approach by creating fully responsive websites using HTML, CSS and JavaScript",
-                "4": "Creating full-stack applications using React/Next.js, or React/Laravel, with TailwindCSS syling, and deployment with Amazon Web Services."
+                "1": "Graduated from the Information and Computer Systems Diploma program.",
+                "2": "Wrote, edited, and debugged programs in various languages, such as Java, Python, C, C++, C#, and iOS Development with Swift",
+                "3": "Demonstrated a mobile-first approach by creating fully responsive websites using HTML, CSS and JavaScript",
+                "4": "Created full-stack applications using React/Next.js, or React/Laravel, with TailwindCSS syling, and deployment with Amazon Web Services."
             }
         },
         "work": {
