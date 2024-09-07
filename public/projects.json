@@ -6,7 +6,7 @@
             "shortDesc": "Roguelike inspired game",
             "img": "/img/shadowedDepths.jpg",
             "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, which is inspired by my love of classic games, such as Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
-            "link": "https://www.youtube.com/embed/KvT9lH3R2pc?si=XyVc-VQDBvYB46OY",
+            "link": "https://www.youtube.com/embed/qwP3hqO2JLY?si=e0vBuxbcR0NZSbkY",
             "lang": "C#, Unity",
             "altTxt": "shadowed depths gameplay",
             "skills": {
@@ -22,7 +22,7 @@
             "shortDesc": "This website!",
             "img" : "/img/portfolioSite.png",
             "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
-            "link": "https://www.youtube.com/embed/r2rMwISi0j4?si=9BuXeDsCfSNRZtxr",
+            "link": "https://www.youtube.com/embed/MMg9ScX8gqU?si=Wf4HMcwVKDD_GLrq",
             "lang": "Next.js (React, TypeScript, Tailwind CSS)",
             "altTxt": "portfolio web site",
             "skills": {
@@ -39,7 +39,7 @@
             "shortDesc": "Fake Website for Band",
             "img": "/img/midtermProject.png",
             "description": "A Midterm project from my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website from scratch, not so bad!",
-            "link": "https://www.youtube.com/embed/F1EFdyBbOm0?si=QxBfx0lBq2O_26Be",
+            "link": "https://www.youtube.com/embed/AmLYskjRW4k?si=NdEiiX6sgn3VtD6g",
             "lang": "HTML, CSS",
             "altTxt": "supreme remedy fake site",
             "skills": {
@@ -55,7 +55,7 @@
             "shortDesc": "Camosun Capstone Project for Graduation",
             "img": "/img/shark.jpg",
             "description": "Shark Sync is a basketball tournament management web application. This was my team's capstone project for graduation for Camosun College. Shark Sync was created and sponsored by the UVIC Vikes Mens Alumni Basketball Association. Currently this is not live, however it should be useable by the time their tournament rolls around this year (2024).",
-            "link": "https://www.youtube.com/embed/9GeyoUWBwgk?si=JCLJfTcloLun5_0i",
+            "link": "https://www.youtube.com/embed/TuhZs07C-6I?si=kLno_8yI-Qpy6cBM",
             "lang": "Laravel, React, TypeScript, TailwindCSS, sqlite3",
             "altTxt": "shark sync camosun capstone project",
             "skills": {
@@ -71,7 +71,7 @@
             "name": "GigPlanr (In Progress)",
             "shortDesc": "Setlist Planning Web Application",
             "img" : "/img/gigPlanr.png",
-            "description": "A web platform for musicians, by musicians. GigPlanr is a setlist planning web application that allows musicians to create, edit, and share setlists with their bandmates. More to come once finished...",
+            "description": "A web platform for musicians, by musicians. The idea of GigPlanr is a setlist planning web application that allows musicians to create, edit, print, and share setlists with their bandmates. More to come once finished...",
             "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
             "lang": "Laravel, React, TypeScript, TailwindCSS, PostreSQL",
             "altTxt": "gigplanr web app",
