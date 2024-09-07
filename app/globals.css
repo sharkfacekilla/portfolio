@@ -3,95 +3,101 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-  --blue: #087E7B;
-  --red: #FF5A5F;
-  --white: #F5F5F5;
-  --green: #CCE8CC;
-  --light-blue: #3EE2F4;
+	--foreground-rgb: 0, 0, 0;
+	--background-start-rgb: 214, 219, 220;
+	--background-end-rgb: 255, 255, 255;
+	--blue: #087E7B;
+	--red: #FF5A5F;
+	--white: #F5F5F5;
+	--green: #CCE8CC;
+	--light-blue: #3EE2F4;
 }
 
 .no-scroll {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 24, 24, 27;
-    --background-end-rgb: 24, 24, 27;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 24, 24, 27;
+		--background-end-rgb: 24, 24, 27;
+	}
 }
+
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 24, 24, 27;
-    --background-end-rgb: 24, 24, 27;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 24, 24, 27;
+		--background-end-rgb: 24, 24, 27;
+	}
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }  
-  @variants responsive {
-    .no-scrollbar::-webkit-scrollbar {
-      display: none;
-    }
-    .no-scrollbar {
-      -ms-overflow-style: none; 
-      scrollbar-width: none; 
-    }
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+
+	@variants responsive {
+		.no-scrollbar::-webkit-scrollbar {
+			display: none;
+		}
+
+		.no-scrollbar {
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+	}
 }
 
 .bg-aboutMe {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-top: -80px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0), rgba(0, 0, 0, 0)), url('/img/me2Edited.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -80px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0), rgba(0, 0, 0, 0)), url('/img/me2Edited.jpg');
 
 }
 
 .bg-tech {
-  background-size: cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  background-image: url('/img/tech.png');
-  background-attachment: fixed; 
-  
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-image: url('/img/tech.png');
+	background-attachment: fixed;
 }
 
 .nav {
-  transition: 0.5s ease-in;
+	transition: 0.5s ease-in;
 }
 
 
 .nav.show {
-  transform: translateY(0);
+	transform: translateY(0);
 }
 
 .nav.hide {
-  transform: translateY(-100%);
+	transform: translateY(-100%);
 }
 
 .text-shadow {
-  text-shadow: 5px 5px 5px black;
+	text-shadow: 5px 5px 5px black;
 }
+@media only screen and (max-width: 768px) {
+	iframe {
+	  width: 100%;
+	  height: auto;
+	  max-width: 300px; /* Adjust this value to set the desired width on mobile */
+	}
+  }

@@ -30,25 +30,25 @@ export default function ProjectPage({params} : {
                 </div>
                 <div className="relative container text-center mx-auto h-1/2 flex items-center justify-center">
                     {/* Project Title */}
-                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-80 text-shadow">{projectData?.name}</h1>
+                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-80 text-shadow underline decoration-white/40">{projectData?.name}</h1>
                 </div>
             </section>
             <section className="h-screen relative">
                 <div className="absolute inset-0 w-full">
                     <div className="mt-10 relative container text-center mx-auto h-1/2 items-center justify-center">
                         {/* Project Description, Skills, Languages */}
-                        <h2 className="text-white text-3xl text-center text-shadow font-bold z-10 py-4 mx-auto mb-5">Project Description</h2>
+                        <h2 className="text-white text-3xl text-center text-shadow font-bold z-10 py-4 mx-auto mb-5 underline decoration-light-blue">Project Description</h2>
                         <p className="mb-10">{projectData?.description}</p>
-                        <h2 className="mx-auto mb-4 font-extrabold tracking-light text-3xl text-shadow lg:text-center text-center">Skills Learned & Used:</h2>
+                        <h2 className="mx-auto mb-4 font-extrabold tracking-light text-3xl text-shadow lg:text-center text-center underline decoration-light-blue">Skills Learned & Used:</h2>
                         <ul className="list-disc list-inside mx-auto space-y-4 px-4 text-left max-w-lg mb-5">
                         {projectData?.skills && Object.values(projectData.skills).map((skill, index) => (
                             <li key={index}>{skill}</li>
                         ))}
                         </ul>
                         <p className="mb-10 mt-5">Languages: {projectData?.lang}</p>
-                        <div>
+                        <div className='mb-24'>
                         {/* Video */}
-                            <h3 className="text-white text-2xl text-center text-shadow font-bold z-10 py-4 mx-auto">Demo Video</h3>
+                            <h3 className="text-white text-2xl text-center text-shadow font-bold z-10 py-4 mx-auto underline decoration-light-blue">Demo Video</h3>
                             <div className="justify-center items-center mt-10">
                                 <iframe width="560" height="315" src={projectData?.link} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="justify-center items-center mx-auto"></iframe>
                             </div>

@@ -7,25 +7,25 @@ import React from 'react';
 export default function Footer() {
   return (
     <footer className="bottom-0 relative">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 mt-12">
             <div className="md:flex md:justify-between">
                 <div className="mb-6 md:mb-0">
                     <a href="/" className="flex items-center">
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Gage Patenaude</span>
+                        <span className=" mx-auto lg:mx-none text-2xl font-semibold whitespace-nowrap dark:text-white underline decoration-blue hover:text-light-blue hover:decoration-white">Gage Patenaude</span>
                     </a>
                 </div>
                 <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-4">
                     <div>
-                        <Link href="/pages/about" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">About</Link>
+                        <Link href="/pages/about" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white underline decoration-blue hover:text-light-blue hover:decoration-white">About</Link>
                     </div>
                     <div>
-                        <Link href="/pages/projects" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Projects</Link>
+                        <Link href="/pages/projects" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white underline decoration-blue hover:text-light-blue hover:decoration-white">Projects</Link>
                     </div>
                     <div>
-                        <Link href="/pages/resume" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resume</Link>
+                        <Link href="/pages/resume" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white underline decoration-blue hover:text-light-blue hover:decoration-white">Resume</Link>
                     </div>
                     <div>
-                        <Link href="/pages/contact" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contact</Link>
+                        <Link href="/pages/contact" className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white underline decoration-blue hover:text-light-blue hover:decoration-white">Contact</Link>
                     </div>
                 </div>
             </div>

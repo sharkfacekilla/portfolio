@@ -27,22 +27,22 @@
                             <ul className="hidden md:flex gap-x-6 text-white">
                                 <li>
                                     <Link href="/pages/about">
-                                        <p className="mt-1">About</p>
+                                        <p className="mt-1 hover:text-light-blue hover:decoration-white underline decoration-light-blue">About</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/pages/projects">
-                                        <p className="mt-1">Projects</p>
+                                        <p className="mt-1 hover:text-light-blue hover:decoration-white underline decoration-light-blue">Projects</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/pages/resume">
-                                        <p className="mt-1">Resume</p>
+                                        <p className="mt-1 hover:text-light-blue hover:decoration-white underline decoration-light-blue">Resume</p>
                                     </Link>
                                 </li>
                                 <li>
                                     <Link href="/pages/contact">
-                                        <Button className="bg-light-blue text-black hover:bg-green border-transparent" variant="contained" endIcon={<SendIcon />} disableElevation>Contact</Button>
+                                        <Button className="bg-light-blue text-black hover:bg-white border-transparent" variant="contained" endIcon={<SendIcon />} disableElevation>Contact</Button>
                                     </Link>
                                 </li>
                             </ul>
