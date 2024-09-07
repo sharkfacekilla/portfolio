@@ -30,7 +30,7 @@ export default function Page() {
     
     return (
         <>
-            <section className="relative py-12">
+            <section className="relative py-12 overflow-x-hidden">
                 <div className="container mx-auto text-center">
                     <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-28">Projects.</h1>
                 </div>
