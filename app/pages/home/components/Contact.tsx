@@ -25,7 +25,7 @@ export default function Contact({ isVisible }: NavbarProps) {
       <section className="relative z-10 px-6 lg:px-12 py-32 mb-32 lg:mb-0">
         <div className="max-w-4xl mx-auto text-center">
           <div
-            className={`transition-all duration-1000 delay-1000 ${
+            className={`transition-all duration-1000 delay-1000 mb-12 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-10 opacity-0"
