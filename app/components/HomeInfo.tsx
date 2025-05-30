@@ -15,6 +15,7 @@ import Link from "next/link";
 import React from "react";
 import RecentProjectCard from "../components/RecentProjectCard";
 import HeroSection from "../pages/home/components/Hero";
+import RecentProjects from "../pages/home/components/RecentProjects";
 
 /**
  * Displays information on the home page.
@@ -64,44 +65,8 @@ export default function HomeInfo() {
         <HeroSection isVisible={isVisible} />
 
         {/* Projects Section */}
-        <section className="relative z-10 px-6 lg:px-12 py-20">
-          <div className="max-w-6xl mx-auto">
-            <div
-              className={`transition-all duration-1000 delay-700 ${
-                isVisible
-                  ? "translate-y-0 opacity-100"
-                  : "translate-y-10 opacity-0"
-              }`}
-            >
-              <div className="flex items-center space-x-4 mb-12">
-                <Code2 className="h-8 w-8 text-cyan-400" />
-                <h2 className="text-3xl lg:text-4xl font-bold">
-                  Featured Projects
-                </h2>
-              </div>
-
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {latestThreeProjects &&
-                Array.isArray(latestThreeProjects) &&
-                latestThreeProjects.length > 0 ? ( // Add checks here
-                  latestThreeProjects.map((project, index) => (
-                    // Make sure key is on the component being mapped
-                    <RecentProjectCard
-                      key={project.id || index}
-                      project={project}
-                    /> // Use project.id for key if available, fallback to index
-                  ))
-                ) : (
-                  // Fallback if no projects to display
-                  <div className="text-gray-400 col-span-full text-center">
-                    No featured projects available.
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        </section>
-
+        <RecentProjects isVisible={isVisible} latestThreeProjects={latestThreeProjects} />
+        
         {/* Contact Section */}
         <section className="relative z-10 px-6 lg:px-12 py-20">
           <div className="max-w-4xl mx-auto text-center">
