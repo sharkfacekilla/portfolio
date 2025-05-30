@@ -33,16 +33,16 @@
 	}
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
 	display: none;
-}
+} */
 
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
 	}
 
-	@variants responsive {
+	/* @variants responsive {
 		.no-scrollbar::-webkit-scrollbar {
 			display: none;
 		}
@@ -51,7 +51,7 @@
 			-ms-overflow-style: none;
 			scrollbar-width: none;
 		}
-	}
+	} */
 }
 
 .bg-aboutMe {
