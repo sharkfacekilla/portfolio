@@ -49,7 +49,7 @@ const RecentProjectCard: React.FC<CustomCardProps> = ({ project }) => {
           {" "}
           {project.img ? (
             <img
-              src={project.img} 
+              src={project.img}
               alt={`Image for ${project.name}`}
               className="w-full h-full object-cover"
             />
