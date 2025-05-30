@@ -53,14 +53,14 @@ export default function Contact({ isVisible }: NavbarProps) {
             </div>
 
             <Link href="/pages/contact">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold"
-            >
-              Get In Touch
-              <Mail className="ml-2 h-4 w-4" />
-            </Button>
-              </Link>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold"
+              >
+                Get In Touch
+                <Mail className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
