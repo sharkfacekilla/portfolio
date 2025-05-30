@@ -7,7 +7,12 @@
             "img": "/img/shadowedDepths.jpg",
             "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, which is inspired by my love of classic games, such as Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
             "link": "https://www.youtube.com/embed/qwP3hqO2JLY?si=e0vBuxbcR0NZSbkY",
-            "tech": ["C#","Unity"],
+            "youtubeLink": "",
+            "githubLink": "",
+            "tech": [
+                "C#",
+                "Unity"
+            ],
             "altTxt": "shadowed depths gameplay",
             "skills": {
                 "1": "Object Oriented Programming",
@@ -15,7 +20,9 @@
                 "3": "Asset maniuplation",
                 "4": "World Building"
             },
-            "status": "Completed"
+            "status": "Completed",
+            "timeline": "9 Months",
+            "team": "Solo Project"
         },
         {
             "id": "2",
@@ -24,7 +31,14 @@
             "img": "/img/portfolioSite.png",
             "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
             "link": "https://www.youtube.com/embed/MMg9ScX8gqU?si=Wf4HMcwVKDD_GLrq",
-            "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS)"],
+            "youtubeLink": "",
+            "githubLink": "",
+            "tech": [
+                "Next.js",
+                "React",
+                "TypeScript",
+                "Tailwind CSS)"
+            ],
             "altTxt": "portfolio web site",
             "skills": {
                 "1": "Dynamic Page Routing within Next.js",
@@ -33,7 +47,9 @@
                 "4": "Using a JSON file to store data",
                 "5": "Reading from JSON to display said data over hard-coding"
             },
-            "status": "Live"
+            "status": "Live",
+            "timeline": "9 Months",
+            "team": "Solo Project"
         },
         {
             "id": "3",
@@ -42,7 +58,12 @@
             "img": "/img/midtermProject.png",
             "description": "A Midterm project from my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website from scratch, not so bad!",
             "link": "https://www.youtube.com/embed/AmLYskjRW4k?si=NdEiiX6sgn3VtD6g",
-            "tech": ["HTML", "CSS"],
+            "youtubeLink": "",
+            "githubLink": "",
+            "tech": [
+                "HTML",
+                "CSS"
+            ],
             "altTxt": "supreme remedy fake site",
             "skills": {
                 "1": "HTML, CSS",
@@ -50,7 +71,9 @@
                 "3": "CSS Debugging",
                 "4": "Working with multi-media (videos and pictures)"
             },
-            "status": "Completed"
+            "status": "Completed",
+            "timeline": "9 Months",
+            "team": "Solo Project"
         },
         {
             "id": "4",
@@ -59,7 +82,15 @@
             "img": "/img/shark.jpg",
             "description": "Shark Sync is a basketball tournament management web application. This was my team's capstone project for graduation for Camosun College. Shark Sync was created and sponsored by the UVIC Vikes Mens Alumni Basketball Association. Currently this is not live, however it should be in use by the time their tournament rolls around this year (2024).",
             "link": "https://www.youtube.com/embed/TuhZs07C-6I?si=kLno_8yI-Qpy6cBM",
-            "tech": ["Laravel", "React", "TypeScript", "TailwindCSS", "sqlite3"],
+            "youtubeLink": "",
+            "githubLink": "",
+            "tech": [
+                "Laravel",
+                "React",
+                "TypeScript",
+                "TailwindCSS",
+                "sqlite3"
+            ],
             "altTxt": "shark sync camosun capstone project",
             "skills": {
                 "1": "Full-Stack web building",
@@ -68,7 +99,9 @@
                 "4": "PHP/Laravel",
                 "5": "React"
             },
-            "status": "Completed"
+            "status": "Completed",
+            "timeline": "9 Months",
+            "team": "3 Person Project"
         },
         {
             "id": "5",
@@ -77,7 +110,13 @@
             "img": "/img/logowbg.png",
             "description": "Designed, and re-developed this web applications entire user interface. Went from a vomit of information, to a neatly presented design. Looks and feels a bit more like a social media website now.",
             "link": "",
-            "tech": ["Remix","TypeScript", "TailwindCSS"],
+            "youtubeLink": "",
+            "githubLink": "",
+            "tech": [
+                "Remix",
+                "TypeScript",
+                "TailwindCSS"
+            ],
             "altTxt": "web app redesign",
             "skills": {
                 "1": "Navigating an already-established project repo",
@@ -85,7 +124,9 @@
                 "3": "UI Planning & Design",
                 "4": "Back & forth conversation with owner of project and community to enhance experience for everybody"
             },
-           "status": "In Progress"
+            "status": "In Progress",
+            "timeline": "9 Months",
+            "team": "Solo Project"
         },
         {
             "id": "6",
@@ -94,7 +135,14 @@
             "img": "/img/gigPlanr.png",
             "description": "A web platform for musicians, by musicians. The idea of GigPlanr is a setlist planning web application that allows musicians to create, edit, print, and share setlists with their bandmates. More to come once finished...",
             "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
-            "tech": ["Laravel", "React", "TypeScript", "TailwindCSS", "PostreSQL"],
+            "youtubeLink": "https://www.youtube.com/watch?v=SjMBHPRvd-g",
+            "tech": [
+                "Laravel",
+                "React",
+                "TypeScript",
+                "TailwindCSS",
+                "PostreSQL"
+            ],
             "altTxt": "gigplanr web app",
             "skills": {
                 "1": "Full-Stack web building",
@@ -102,7 +150,10 @@
                 "3": "CRUD Operations with database",
                 "4": "Social Login Integration"
             },
-            "status": "Live"
+            "status": "Live",
+            "timeline": "9 Months",
+            "team": "Solo Project",
+            "githubLink": "https://github.com/sharkfacekilla/portfolio"
         }
     ]
 }
