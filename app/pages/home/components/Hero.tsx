@@ -55,6 +55,7 @@ export default function HeroSection({ isVisible }: NavbarProps) {
               </Link>
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
+            <a href="../gage-patenaude-resume.pdf" download="gage-patenaude-resume.pdf">
             <Button
               size="lg"
               variant="outline"
@@ -63,6 +64,7 @@ export default function HeroSection({ isVisible }: NavbarProps) {
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Button>
+              </a>
           </div>
 
           {/* Skills */}
