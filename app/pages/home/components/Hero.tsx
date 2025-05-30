@@ -16,7 +16,6 @@ const skills = [
   { name: "TailwindCSS", icon: "🎨" },
 ];
 
-
 export default function HeroSection({ isVisible }: NavbarProps) {
   return (
     <section className="relative z-10 px-6 lg:px-12 py-32 lg:py-32">
@@ -50,21 +49,22 @@ export default function HeroSection({ isVisible }: NavbarProps) {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold"
             >
-              <Link href="/pages/projects">
-                View My Work
-              </Link>
+              <Link href="/pages/projects">View My Work</Link>
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
-            <a href="../gage-patenaude-resume.pdf" download="gage-patenaude-resume.pdf">
-            <Button
-              size="lg"
-              variant="outline"
-              className="bg-gradient-to-r from-zinc-800 to-blue-500 hover:from-zinc-950 hover:to-blue-600 text-white hover:text-white font-semibold"
+            <a
+              href="../gage-patenaude-resume.pdf"
+              download="gage-patenaude-resume.pdf"
             >
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
-              </a>
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-gradient-to-r from-zinc-800 to-blue-500 hover:from-zinc-950 hover:to-blue-600 text-white hover:text-white font-semibold"
+              >
+                <Download className="mr-2 h-4 w-4" />
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           {/* Skills */}
@@ -86,4 +86,4 @@ export default function HeroSection({ isVisible }: NavbarProps) {
       </div>
     </section>
   );
-};
+}
