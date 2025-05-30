@@ -1,12 +1,7 @@
 import * as React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
-import Link from "next/link";
-import data from "../../public/projects.json";
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 interface ProjectData {
