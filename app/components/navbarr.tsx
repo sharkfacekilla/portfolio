@@ -1,8 +1,5 @@
-import React, { useState } from "react";
 import Link from "next/link";
-import Logo from "./nav/logo";
 import { Button } from "@mui/material";
-import SendIcon from "@mui/icons-material/Send";
 import { ArrowRight } from "lucide-react";
 
 interface NavbarProps {
