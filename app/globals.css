@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
 	--foreground-rgb: 0, 0, 0;
 	--background-start-rgb: 214, 219, 220;
 	--background-end-rgb: 255, 255, 255;
@@ -11,7 +11,7 @@
 	--white: #F5F5F5;
 	--green: #CCE8CC;
 	--light-blue: #3EE2F4;
-}
+} */
 
 .no-scroll {
 	overflow: hidden;
@@ -63,13 +63,13 @@
 
 }
 
-.bg-tech {
+/* .bg-tech {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-image: url('/img/tech.png');
 	background-attachment: fixed;
-}
+} */
 
 .nav {
 	transition: 0.5s ease-in;
