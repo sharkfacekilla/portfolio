@@ -6,6 +6,8 @@ interface NavbarProps {
   isVisible: boolean;
 }
 
+const links = ["About", "Projects", "Resume", "Contact"];
+
 const Navbar = ({ isVisible }: NavbarProps) => {
   return (
     <>
@@ -17,9 +19,11 @@ const Navbar = ({ isVisible }: NavbarProps) => {
               : "-translate-x-10 opacity-0"
           }`}
         >
-          <span className="text-cyan-400">{"<"}</span>
-          <span className="text-white">Gage</span>
-          <span className="text-cyan-400">{" />"}</span>
+          <Link href="/">
+            <span className="text-cyan-400">{"<"}</span>
+            <span className="text-white">Gage</span>
+            <span className="text-cyan-400">{" />"}</span>
+          </Link>
         </div>
 
         <div
@@ -29,10 +33,10 @@ const Navbar = ({ isVisible }: NavbarProps) => {
               : "-translate-y-10 opacity-0"
           }`}
         >
-          {["About", "Projects", "Resume", "Contact"].map((item, index) => (
+          {links.map((item, index) => (
             <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`/pages/${item.toLowerCase()}`}
               className="hover:text-cyan-400 text-white transition-colors duration-300 relative group"
             >
               {item}
