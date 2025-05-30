@@ -31,12 +31,12 @@ export default function Contact({ isVisible }: NavbarProps) {
                 : "translate-y-10 opacity-0"
             }`}
           >
-            <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              {`Let's Build Something Amazing`}
-            </h2>
-            <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              {`Ready to bring your ideas to life? Let's discuss your next project.`}
-            </p>
+<h2 className="text-3xl lg:text-4xl font-bold mb-6">
+  Let&rsquo;s Build Something Amazing
+</h2>
+<p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
+  Ready to bring your ideas to life? Let&rsquo;s discuss your next project.
+</p>
 
             <div className="flex justify-center space-x-6 mb-8">
               {socialData.map((social, index) => (
