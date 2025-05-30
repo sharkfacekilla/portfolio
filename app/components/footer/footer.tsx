@@ -4,6 +4,12 @@ import React from 'react';
 /**
  * Footer for site. Adapted from Flowbite https://flowbite.com/docs/components/footer/
  */
+
+let year = () => {
+    let year = new Date();
+    return year.getFullYear();
+}
+
 export default function Footer() {
   return (
     <footer className="bottom-0 relative">
@@ -31,7 +37,7 @@ export default function Footer() {
             </div>
             <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div className="sm:flex sm:items-center sm:justify-between">
-                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" className="hover:underline">Gage Patenaude</a>. All Rights Reserved.</span>
+                <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© {year()} <a href="/" className="hover:underline">Gage Patenaude</a>. All Rights Reserved.</span>
                 <a href='https://pngtree.com/freepng/hand-painted-blue-technology-texture_5640849.html' className="text-sm text-white hover:underline">Background Image Source: pngtree</a>
                 <div className="flex mt-4 sm:justify-center sm:mt-0">
                     <Link className="text-muted" href="https://www.linkedin.com/in/gpatenaude94" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-linkedin" viewBox="0 0 16 16">
