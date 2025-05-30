@@ -20,7 +20,7 @@
             "id": "2",
             "name": "Portfolio Website",
             "shortDesc": "This website!",
-            "img" : "/img/portfolioSite.png",
+            "img": "/img/portfolioSite.png",
             "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
             "link": "https://www.youtube.com/embed/MMg9ScX8gqU?si=Wf4HMcwVKDD_GLrq",
             "lang": "Next.js (React, TypeScript, Tailwind CSS)",
@@ -68,9 +68,25 @@
         },
         {
             "id": "5",
+            "name": "Web App Redesign",
+            "shortDesc": "Modernize web app display.",
+            "img": "/img/gigPlanr.png",
+            "description": "Designed, and re-developed this web applications entire user interface. Went from a vomit of information, to a neatly presented design. Looks and feels a bit more like a social media website now.",
+            "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
+            "lang": "Remix, TypeScript, TailwindCSS",
+            "altTxt": "web app redesign",
+            "skills": {
+                "1": "Navigating an already-established project repo",
+                "2": "Connecting with various API's for data",
+                "3": "UI Planning & Design",
+                "4": ""
+            }
+        },
+        {
+            "id": "6",
             "name": "GigPlanr (In Progress)",
             "shortDesc": "Setlist Planning Web Application",
-            "img" : "/img/gigPlanr.png",
+            "img": "/img/gigPlanr.png",
             "description": "A web platform for musicians, by musicians. The idea of GigPlanr is a setlist planning web application that allows musicians to create, edit, print, and share setlists with their bandmates. More to come once finished...",
             "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
             "lang": "Laravel, React, TypeScript, TailwindCSS, PostreSQL",
