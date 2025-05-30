@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Download, ExternalLink } from "lucide-react";
+import Link from "next/link";
 
 interface NavbarProps {
   isVisible: boolean;
@@ -49,7 +50,9 @@ export default function HeroSection({ isVisible }: NavbarProps) {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-semibold"
             >
-              View My Work
+              <Link href="/pages/projects">
+                View My Work
+              </Link>
               <ExternalLink className="ml-2 h-4 w-4" />
             </Button>
             <Button
