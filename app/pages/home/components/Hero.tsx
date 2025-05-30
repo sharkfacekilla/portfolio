@@ -18,7 +18,7 @@ const skills = [
 
 export default function HeroSection({ isVisible }: NavbarProps) {
   return (
-    <section className="relative z-10 px-6 lg:px-12 py-20 lg:py-32">
+    <section className="relative z-10 px-6 lg:px-12 py-32 lg:py-32">
       <div className="max-w-6xl mx-auto">
         <div
           className={`transition-all duration-1000 delay-500 ${
@@ -41,8 +41,7 @@ export default function HeroSection({ isVisible }: NavbarProps) {
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl leading-relaxed">
-            Building cool things with modern web technologies. Passionate about
-            creating seamless user experiences and robust backend systems.
+            Building cool things with modern web technologies.
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
@@ -56,7 +55,7 @@ export default function HeroSection({ isVisible }: NavbarProps) {
             <Button
               size="lg"
               variant="outline"
-              className="border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black"
+              className="bg-gradient-to-r from-zinc-800 to-blue-500 hover:from-zinc-950 hover:to-blue-600 text-white hover:text-white font-semibold"
             >
               <Download className="mr-2 h-4 w-4" />
               Download Resume

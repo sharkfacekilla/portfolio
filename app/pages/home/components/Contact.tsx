@@ -1,21 +1,28 @@
 import { Button } from "@/components/ui/button";
-import {
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
-  Code2,
-  Download,
-  Link,
-} from "lucide-react";
+import { Github, Linkedin, Mail, Link as LinkIcon } from "lucide-react";
+import Link from "next/link";
 interface NavbarProps {
   isVisible: boolean;
 }
 
+let socialData = [
+  {
+    icon: Github,
+    href: "https://github.com/sharkfacekilla",
+    label: "GitHub",
+  },
+  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  {
+    icon: Mail,
+    href: "mailto:gage@example.com",
+    label: "Email",
+  },
+];
+
 export default function Contact({ isVisible }: NavbarProps) {
   return (
     <>
-      <section className="relative z-10 px-6 lg:px-12 py-20">
+      <section className="relative z-10 px-6 lg:px-12 py-32">
         <div className="max-w-4xl mx-auto text-center">
           <div
             className={`transition-all duration-1000 delay-1000 ${
@@ -33,19 +40,12 @@ export default function Contact({ isVisible }: NavbarProps) {
             </p>
 
             <div className="flex justify-center space-x-6 mb-8">
-              {[
-                { icon: Github, href: "#", label: "GitHub" },
-                { icon: Linkedin, href: "#", label: "LinkedIn" },
-                {
-                  icon: Mail,
-                  href: "mailto:gage@example.com",
-                  label: "Email",
-                },
-              ].map((social, index) => (
+              {socialData.map((social, index) => (
                 <Link
                   key={social.label}
                   href={social.href}
                   className="p-4 bg-white/5 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+                  target="_blank"
                 >
                   <social.icon className="h-6 w-6 text-gray-400 group-hover:text-cyan-400 transition-colors duration-300" />
                 </Link>
