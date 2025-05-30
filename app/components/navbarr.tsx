@@ -15,7 +15,7 @@ interface NavbarProps {
 const Navbar = ({ isVisible }: NavbarProps) => {
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-10 flex justify-between items-center p-6 lg:px-12 bg-black/30">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 lg:px-12 bg-black/30">
         <div
           className={`text-2xl font-bold transition-all duration-1000 ${
             isVisible

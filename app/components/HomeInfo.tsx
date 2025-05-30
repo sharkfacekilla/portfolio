@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import data from "../../public/projects.json";
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -24,11 +24,8 @@ import Navigation from "./nav";
  * @returns Home Info Component.
  */
 export default function HomeInfo() {
-  //Get the highest id within the project data, to automatically display most recent project.
-  let highestId = data.projects.reduce(
-    (max, project) => (parseInt(project.id) > parseInt(max.id) ? project : max),
-    data.projects[0]
-  );
+  const latestThreeProjects = data.projects.slice(-3).reverse();
+
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
 
@@ -42,40 +39,14 @@ export default function HomeInfo() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
-    const skills = [
+  const skills = [
     { name: "React", icon: "⚛️" },
     { name: "TypeScript", icon: "📘" },
     { name: "Next.js", icon: "▲" },
     { name: "Node.js", icon: "🟢" },
     { name: "PostgreSQL", icon: "🐘" },
     { name: "TailwindCSS", icon: "🎨" },
-  ]
-    const projects = [
-    {
-      title: "GigPlanr",
-      description: "Setlist Planning Web Application",
-      status: "In Progress",
-      tech: ["Laravel", "React", "TypeScript", "TailwindCSS", "PostgreSQL"],
-      image: "/placeholder.svg?height=200&width=300",
-      link: "#",
-    },
-    {
-      title: "Portfolio Website",
-      description: "Personal portfolio showcasing projects and skills",
-      status: "Live",
-      tech: ["Next.js", "TypeScript", "TailwindCSS"],
-      image: "/placeholder.svg?height=200&width=300",
-      link: "#",
-    },
-    {
-      title: "Task Manager Pro",
-      description: "Advanced task management with team collaboration",
-      status: "Completed",
-      tech: ["React", "Node.js", "MongoDB", "Socket.io"],
-      image: "/placeholder.svg?height=200&width=300",
-      link: "#",
-    },
-  ]
+  ];
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white overflow-hidden">
@@ -98,7 +69,7 @@ export default function HomeInfo() {
             }}
           />
         </div>
-  
+
         {/* Hero Section */}
         <section className="relative z-10 px-6 lg:px-12 py-20 lg:py-32">
           <div className="max-w-6xl mx-auto">
@@ -185,70 +156,22 @@ export default function HomeInfo() {
               </div>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                {projects.map((project, index) => (
-                  <Card
-                    key={project.title}
-                    className={`bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-500 group hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 delay-${
-                      index * 200
-                    }`}
-                  >
-                    <CardContent className="p-6">
-                      <div className="aspect-video bg-gradient-to-br from-cyan-500/10 to-blue-500/10 rounded-lg mb-4 flex items-center justify-center">
-                        <div className="text-4xl">
-                          {index === 0 ? "🎵" : index === 1 ? "💼" : "✅"}
-                        </div>
-                      </div>
-
-                      <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-xl font-semibold text-white">
-                          {project.title}
-                        </h3>
-                        <Badge
-                          variant={
-                            project.status === "Live"
-                              ? "default"
-                              : project.status === "In Progress"
-                              ? "secondary"
-                              : "outline"
-                          }
-                          className={
-                            project.status === "Live"
-                              ? "bg-green-500 text-white"
-                              : project.status === "In Progress"
-                              ? "bg-yellow-500 text-black"
-                              : "border-gray-400 text-gray-400"
-                          }
-                        >
-                          {project.status}
-                        </Badge>
-                      </div>
-
-                      <p className="text-gray-400 mb-4">
-                        {project.description}
-                      </p>
-
-                      <div className="flex flex-wrap gap-2 mb-4">
-                        {project.tech.map((tech) => (
-                          <Badge
-                            key={tech}
-                            variant="outline"
-                            className="text-xs border-cyan-400/50 text-cyan-400"
-                          >
-                            {tech}
-                          </Badge>
-                        ))}
-                      </div>
-
-                      <Button
-                        variant="ghost"
-                        className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300"
-                      >
-                        Learn More
-                        <ExternalLink className="ml-2 h-4 w-4" />
-                      </Button>
-                    </CardContent>
-                  </Card>
-                ))}
+                {latestThreeProjects &&
+                Array.isArray(latestThreeProjects) &&
+                latestThreeProjects.length > 0 ? ( // Add checks here
+                  latestThreeProjects.map((project, index) => (
+                    // Make sure key is on the component being mapped
+                    <RecentProjectCard
+                      key={project.id || index}
+                      project={project}
+                    /> // Use project.id for key if available, fallback to index
+                  ))
+                ) : (
+                  // Fallback if no projects to display
+                  <div className="text-gray-400 col-span-full text-center">
+                    No featured projects available.
+                  </div>
+                )}
               </div>
             </div>
           </div>
