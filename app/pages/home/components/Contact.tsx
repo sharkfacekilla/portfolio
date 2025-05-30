@@ -32,10 +32,10 @@ export default function Contact({ isVisible }: NavbarProps) {
             }`}
           >
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Let's Build Something Amazing
+              Let&apos;s Build Something Amazing
             </h2>
             <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-              Ready to bring your ideas to life? Let's discuss your next
+              Ready to bring your ideas to life? Let&apos;s discuss your next
               project.
             </p>
 
