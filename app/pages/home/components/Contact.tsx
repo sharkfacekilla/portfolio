@@ -22,7 +22,7 @@ let socialData = [
 export default function Contact({ isVisible }: NavbarProps) {
   return (
     <>
-      <section className="relative z-10 px-6 lg:px-12 py-32">
+      <section className="relative z-10 px-6 lg:px-12 py-32 mb-32 lg:mb-0">
         <div className="max-w-4xl mx-auto text-center">
           <div
             className={`transition-all duration-1000 delay-1000 ${
