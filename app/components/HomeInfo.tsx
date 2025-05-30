@@ -10,6 +10,7 @@ import RecentProjectCard from "../components/RecentProjectCard";
 import HeroSection from "../pages/home/components/Hero";
 import RecentProjects from "../pages/home/components/RecentProjects";
 import Contact from "../pages/home/components/Contact";
+import Footer from "./footer/footer";
 
 /**
  * Displays information on the home page.
@@ -65,24 +66,6 @@ export default function HomeInfo() {
         <Contact isVisible={isVisible} />
 
         {/* Footer */}
-        <footer className="relative z-10 border-t border-white/10 px-6 lg:px-12 py-8">
-          <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 mb-4 md:mb-0">
-              © 2024 Gage Patenaude. All rights reserved.
-            </div>
-            <div className="flex space-x-6">
-              {["About", "Projects", "Resume", "Contact"].map((item) => (
-                <Link
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="text-gray-400 hover:text-cyan-400 transition-colors duration-300"
-                >
-                  {item}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </footer>
       </div>
     </>
   );
