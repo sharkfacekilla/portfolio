@@ -5,13 +5,10 @@ import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import { ArrowRight } from "lucide-react";
 
-// Define the props interface
-// interface NavbarProps {
-//   toggle: () => void;
-// }
 interface NavbarProps {
   isVisible: boolean;
 }
+
 const Navbar = ({ isVisible }: NavbarProps) => {
   return (
     <>
