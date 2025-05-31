@@ -51,7 +51,7 @@ export default function YouTubeVideo({ youtubeLink }: { youtubeLink: string }) {
             )}
             {!videoId && (
               <div className="flex items-center justify-center h-full bg-gray-800 text-white">
-                <p>Invalid YouTube Link</p>
+                <p>No YouTube Video...yet</p>
               </div>
             )}
           </div>

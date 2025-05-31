@@ -141,22 +141,6 @@ export default function ProjectDetails({ project }: ProjectProps) {
                   </Card>
                 </div>
                 <YouTubeVideo youtubeLink={project.youtubeLink} />
-
-                {/* <Card className="bg-white/5 border-white/10">
-                  <CardContent className="p-6">
-                    <h3 className="text-xl font-semibold mb-4">Demo Video</h3>
-                    <div className="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center">
-                      <div className="text-center">
-                        <Play className="h-16 w-16 mx-auto mb-4 text-cyan-400" />
-                        <p className="text-gray-400">GigPlanr Demo Video</p>
-                        <Button className="mt-4 bg-cyan-500 hover:bg-cyan-600 text-black">
-                          <Play className="h-4 w-4 mr-2" />
-                          Play Demo
-                        </Button>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card> */}
               </TabsContent>
 
               <TabsContent value="features" className="space-y-6">
