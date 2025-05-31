@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 interface ProjectData {
   id: string;
   name: string;
@@ -95,13 +96,15 @@ const RecentProjectCard: React.FC<CustomCardProps> = ({ project }) => {
             </Badge>
           ))}
         </div>
+        <Link href={`/pages/projects/${project.id}`}>
         <Button
           variant="ghost"
           className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto" /* Added mt-auto */
-        >
+          >
           Learn More
           <ExternalLink className="ml-2 h-4 w-4" />
         </Button>
+          </Link>
       </CardContent>
     </Card>
   );
