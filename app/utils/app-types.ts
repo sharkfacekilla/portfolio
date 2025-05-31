@@ -46,4 +46,5 @@ export type ProjectParams = {
 
 export type NavbarProps = {
   isVisible: boolean;
+  projects?: Project[];
 };
