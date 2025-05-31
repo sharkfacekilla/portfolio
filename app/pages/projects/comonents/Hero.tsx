@@ -5,11 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
+import { ProjectParams } from "@/app/utils/app-types";
 
-interface ProjectParams {
-  params: { id: string };
-  isVisible: boolean;
-}
+
 
 export default function ProjectHero({ params, isVisible }: ProjectParams) {
   const project = data.projects.find((p) => p.id === params.id);
@@ -20,9 +18,9 @@ export default function ProjectHero({ params, isVisible }: ProjectParams) {
 
   return (
     <>
-<section className="relative px-4 sm:px-6 lg:px-12 py-12 pt-40 max-w-screen overflow-x-hidden">
-  <div className="max-w-7xl mx-auto">
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
+      <section className="relative px-4 sm:px-6 lg:px-12 py-12 pt-40 max-w-screen overflow-x-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div
               className={`transition-all duration-1000 ${
                 isVisible
@@ -61,18 +59,19 @@ export default function ProjectHero({ params, isVisible }: ProjectParams) {
               </p>
 
               <div className="flex flex-wrap gap-3 mb-8">
-                {project.tech.map((tech) => (
-                  <Badge
-                    key={tech}
-                    variant="secondary"
-                    className="bg-white/10 text-white border-white/20"
-                  >
-                    {tech}
-                  </Badge>
-                ))}
+                {project.tech.map((category) =>
+                  category.technology.map((tech) => (
+                    <Badge
+                      key={`${category.name}-${tech}`}
+                      variant="secondary"
+                      className="bg-white/10 text-white border-white/20"
+                    >
+                      {tech}
+                    </Badge>
+                  ))
+                )}
               </div>
               <div className="flex flex-col space-y-4 lg:flex-row lg:space-x-4 lg:space-y-0 items-center">
-
                 {project.youtubeLink && (
                   <Link href={project.youtubeLink} target="_blank">
                     <Button
@@ -136,4 +135,4 @@ export default function ProjectHero({ params, isVisible }: ProjectParams) {
       </section>
     </>
   );
-};
+}
