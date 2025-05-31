@@ -7,8 +7,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ProjectParams } from "@/app/utils/app-types";
 
-
-
 export default function ProjectHero({ params, isVisible }: ProjectParams) {
   const project = data.projects.find((p) => p.id === params.id);
 
@@ -29,7 +27,22 @@ export default function ProjectHero({ params, isVisible }: ProjectParams) {
               }`}
             >
               <div className="flex items-center space-x-4 mb-6">
-                <Badge className="bg-yellow-500 text-black">
+                <Badge
+                  variant={
+                    project.status === "Live"
+                      ? "default"
+                      : project.status === "In Progress"
+                      ? "secondary"
+                      : "outline"
+                  }
+                  className={
+                    project.status === "Live"
+                      ? "bg-green-500 text-white"
+                      : project.status === "In Progress"
+                      ? "bg-yellow-500 text-black"
+                      : "border-gray-400 text-gray-400"
+                  }
+                >
                   <Clock className="h-3 w-3 mr-1" />
                   {project.status}
                 </Badge>
