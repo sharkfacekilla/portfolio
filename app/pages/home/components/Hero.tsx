@@ -37,7 +37,7 @@ export default function HeroSection({ isVisible }: NavbarProps) {
           </h1>
 
           <p className="text-xl lg:text-2xl text-gray-300 mb-4 max-w-2xl">
-            Full-Stack Developer
+            Software Developer
           </p>
 
           <p className="text-lg text-gray-400 mb-8 max-w-2xl leading-relaxed">
