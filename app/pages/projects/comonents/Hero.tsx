@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { ProjectParams } from "@/app/utils/app-types";
+import ProjectPageHero from "./ProjectPageHero";
 
 export default function ProjectHero({ params, isVisible }: ProjectParams) {
   const project = data.projects.find((p) => p.id === params.id);
@@ -136,7 +137,7 @@ export default function ProjectHero({ params, isVisible }: ProjectParams) {
                           height={400}
                           className="w-full h-full object-cover rounded-2xl"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-white/10 blur-xl rounded-2xl z-10 pointer-events-none" />
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-black/20 blur-xl rounded-2xl z-10 pointer-events-none" />
                       </div>
                     </CardContent>
                   </Card>
