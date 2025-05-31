@@ -8,6 +8,7 @@ import { Grid } from "@mui/material";
 
 import Image from "next/image";
 import { NavbarProps, Project } from "@/app/utils/app-types";
+import Link from "next/link";
 
 export default function ProjectPageGrid({ isVisible, projects }: NavbarProps) {
   return (
@@ -111,13 +112,15 @@ export default function ProjectPageGrid({ isVisible, projects }: NavbarProps) {
 
                       {/* Action Buttons */}
                       <div className="flex space-x-2">
-                        <Button
-                          size="sm"
-                          className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-black font-medium group-hover:bg-cyan-400 transition-all duration-300"
-                        >
-                          LEARN MORE
-                          <ArrowRight className="ml-2 h-3 w-3" />
-                        </Button>
+                        <Link href={`/pages/projects/${project.id}`} className="block w-full">
+                            <Button
+                            size="sm"
+                            className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-black w-full font-medium group-hover:bg-cyan-400 transition-all duration-300"
+                            >
+                            LEARN MORE
+                            <ArrowRight className="ml-2 h-3 w-3" />
+                            </Button>
+                        </Link>
                         <Button
                           size="sm"
                           variant="outline"
