@@ -32,7 +32,15 @@
 		--background-end-rgb: 24, 24, 27;
 	}
 }
+body {
 
+	color: rgb(var(--foreground-rgb));
+	background: linear-gradient(to bottom,
+			transparent,
+			rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+Add comment
 ::-webkit-scrollbar {
 	display: none;
 }

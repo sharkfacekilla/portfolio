@@ -67,22 +67,6 @@
             }
         },
         {
-            "id": "5",
-            "name": "Web App Redesign",
-            "shortDesc": "Modernize web app display.",
-            "img": "/img/logowbg.png",
-            "description": "Designed, and re-developed this web applications entire user interface. Went from a vomit of information, to a neatly presented design. Looks and feels a bit more like a social media website now.",
-            "link": "",
-            "lang": "Remix, TypeScript, TailwindCSS",
-            "altTxt": "web app redesign",
-            "skills": {
-                "1": "Navigating an already-established project repo",
-                "2": "Connecting with various API's for data",
-                "3": "UI Planning & Design",
-                "4": "Back & forth conversation with owner of project and community to enhance experience for everybody"
-            }
-        },
-        {
             "id": "6",
             "name": "GigPlanr (In Progress)",
             "shortDesc": "Setlist Planning Web Application",
