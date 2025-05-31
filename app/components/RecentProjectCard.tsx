@@ -95,7 +95,7 @@ const RecentProjectCard: React.FC<CustomCardProps> = ({ project }) => {
         </div>
         <Link href={`/pages/projects/${project.id}`}>
           <Button
-            className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto" /* Added mt-auto */
+            className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto"
           >
             Learn More
             <ExternalLink className="ml-2 h-4 w-4" />

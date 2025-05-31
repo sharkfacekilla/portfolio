@@ -1,8 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
+import { Button as Button2 } from "@/components/ui/button";
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
-
+import Button from "@mui/material/Button";
 import CustomCard from "@/app/components/CustomCard";
 import { Grid } from "@mui/material";
 
@@ -112,29 +112,29 @@ export default function ProjectPageGrid({ isVisible, projects }: NavbarProps) {
 
                       {/* Action Buttons */}
                       <div className="flex space-x-2">
-                        <Link href={`/pages/projects/${project.id}`} className="block w-full">
-                            <Button
-                            size="sm"
-                            className="flex-1 bg-cyan-500 hover:bg-cyan-600 text-black w-full font-medium group-hover:bg-cyan-400 transition-all duration-300"
-                            >
+                        <Link
+                          href={`/pages/projects/${project.id}`}
+                          className="block w-full"
+                        >
+                          <Button className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto bg-black/20">
                             LEARN MORE
                             <ArrowRight className="ml-2 h-3 w-3" />
-                            </Button>
+                          </Button>
                         </Link>
-                        <Button
+                        <Button2
                           size="sm"
                           variant="outline"
                           className="border-white/20 text-gray-400 hover:text-white hover:border-cyan-400"
                         >
                           <Github className="h-3 w-3" />
-                        </Button>
-                        <Button
+                        </Button2>
+                        <Button2
                           size="sm"
                           variant="outline"
                           className="border-white/20 text-gray-400 hover:text-white hover:border-cyan-400"
                         >
                           <ExternalLink className="h-3 w-3" />
-                        </Button>
+                        </Button2>
                       </div>
                     </div>
                   </CardContent>
