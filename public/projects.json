@@ -17,7 +17,7 @@
                 "4": "World Building"
             },
             "status": "Completed",
-            "timeline": "9 Months",
+            "timeline": "2 Months",
             "team": "Solo Project",
             "tech": [
                 {
@@ -46,7 +46,7 @@
                 "5": "Reading from JSON to display said data over hard-coding"
             },
             "status": "Live",
-            "timeline": "9 Months",
+            "timeline": "2 Months",
             "team": "Solo Project",
             "tech": [
                 {
@@ -77,8 +77,9 @@
                 "4": "Working with multi-media (videos and pictures)"
             },
             "status": "Completed",
-            "timeline": "9 Months",
+            "timeline": "2 Weeks",
             "team": "Solo Project",
+            "demoLink": "https://deepblue.camosun.bc.ca/~C0517025/MIDTERM",
             "tech": [
                 {
                     "name": "Frontend",
@@ -86,6 +87,53 @@
                         "HTML",
                         "CSS"
                     ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Single Page Website",
+                    "description": "Simple design that has a video background."
+                },
+                {
+                    "name": "Spotify link embeds",
+                    "description": "Clickable album artworks that take you directly to the Spotify page."
+                },
+                {
+                    "name": "Band Biography",
+                    "description": "Short blurb about the band that gives you an idea of who they are.."
+                },
+                {
+                    "name": "Newsletter signup",
+                    "description": "A simple sign up for a newsletter, with a video background playing at a different time than the original. Only for display purposes at the moment."
+                }
+            ],
+            "challenges": [
+                "Working with video files, and using CSS to properly position and behave as intended.",
+                "Best practices with nesting HTML and commenting code",
+                "Creating effects with CSS, such as a blurred, glassy overlay over a video.",
+                "Visually appealing on both desktop, and mobile devices."
+            ],
+            "learnings": [
+                "How to use z-indexting to create the effect of different sections either going over or under another while scrolling.",
+                "Best practices with nesting code, and proper use of white space in both HTML and CSS.",
+                "Effectively writing comments, where it's clear what is happening without needing to read code.",
+                "Use of media queries to change elements on the page once a certain breakpoint has been hit."
+            ],
+            "goals": [
+                "Create a visually appealing web application to display the bands information.",
+                "Use a video background to create an interesting effect.",
+                "Write and maintain clean, readable code, with comments to describe what is being used where..",
+                "Display a newsletter form on the page that also has the same video background, but the time is offset, creating the illusion of two different videos being played.",
+                "Design the webpage for mobile, and desktop devices, so content can be viewed on multiple devices."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "Supreme Remedy fans, band members."
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Band managers, talent agents, music fans, casual browsers."
                 }
             ]
         },
@@ -107,7 +155,7 @@
                 "5": "React"
             },
             "status": "Completed",
-            "timeline": "9 Months",
+            "timeline": "4 Months",
             "team": "3 Person Project",
             "tech": [
                 {
@@ -124,6 +172,50 @@
                         "Laravel",
                         "sqlite3"
                     ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Visitor/Admin views",
+                    "description": "Sleek modern design for a basketball tournament website, for both administrators, and visitors to the web application."
+                },
+                {
+                    "name": "Real-time updates",
+                    "description": "Game scores update in real time when an administrator inputs statistics."
+                },
+                {
+                    "name": "Live score Ticker",
+                    "description": "Most recent games in the basketball tournet display on a ticker across the top of the visitor pages. Also updates in real time when changes are made."
+                },
+                {
+                    "name": "Tournament Bracket Display",
+                    "description": "A properly seeded bracket is generated for the administrators when teams are entered into the tournament."
+                }
+            ],
+            "challenges": [
+                "Creating a simple, user friendly interface for a complicated system.",
+                "Updating stats in real-time for visitors.",
+                "Correct tournament bracket creation."
+            ],
+            "learnings": [
+                "Starting a brand new full-stack application for the first time",
+                "WebSocket implementation for real-time features, along with other methods outside WebSockets.",
+                "Working and learning a new tech stack that was strongly suggested from team sponsor."
+            ],
+            "goals": [
+                "Create a visually appealing web application to display basketball tournament statistics.",
+                "Allow administratiors to create accounts for volunteers/other staff to help run tournaments.",
+                "Provide a way for tournaments to be seeded and be displayed properly in bracket formats.",
+                "Display live updates to statistics across the web application without having to refresh the page."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "UVIC Vikes Alumni Association, Basketball fans."
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Volunteers, UVIC Staff."
                 }
             ]
         },
@@ -144,7 +236,7 @@
                 "4": "Back & forth conversation with owner of project and community to enhance experience for everybody"
             },
             "status": "In Progress",
-            "timeline": "9 Months",
+            "timeline": "5 Days",
             "team": "Solo Project",
             "tech": [
                 {
@@ -159,6 +251,43 @@
                     "technology": [
                         "Remix,js"
                     ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Randomized character class builder",
+                    "description": "Has a wheel function that will spin and pick a designated class and specialization for you to play. Admin has ability to define the main class/spec the player plays, and the wheel will not roll the given information."
+                },
+                {
+                    "name": "Real-time statistics",
+                    "description": "Displays individual and team statistics, updated in real time."
+                },
+                {
+                    "name": "User friendly layout",
+                    "description": "A modern UI that aims to display information clearly in a nice style."
+                }
+            ],
+            "challenges": [
+                "Navigating a pre-established repository with hundreds of lines of code already written.",
+                "Taking great care to make sure no data that was originally displayed was left out.",
+                "Designing and displaying data in a clear and concise way.",
+                "Working with a very short turn-around to plan and create something beautiful."
+            ],
+            "learnings": [
+                "How to clone, set up, and work with a pre-existing repository versus creating a brand new project.",
+                "Collaboration with repository owner, and community to gather ideas on how to display the right information clearly.",
+                "More practice with Typescript, by using types and passing data correctly typed to custom components",
+                "Working with large JSON objects returned from a third party API."
+            ],
+            "goals": [
+                "Plan and concept a new user interface from scratch.",
+                "Update web application navigation and interface, to provide an easier experience both for admins and users.",
+                "Gather feedback from the creator of the web application, and users of the site on how to improve, or add new features to the website."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "World of Warcraft gamers."
                 }
             ]
         },
@@ -178,7 +307,7 @@
                 "4": "Social Login Integration"
             },
             "status": "Live",
-            "timeline": "9 Months",
+            "timeline": "3 Months",
             "team": "Solo Project",
             "githubLink": "https://github.com/sharkfacekilla/portfolio",
             "tech": [
