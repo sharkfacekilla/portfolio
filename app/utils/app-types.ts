@@ -9,7 +9,7 @@ export type User = {
 };
 
 export type Project = {
-  id: string;
+  id: number;
   name: string;
   shortDesc: string;
   img: string;
@@ -31,8 +31,8 @@ export type Project = {
 };
 
 export type TechCategory = {
-    name: string;
-    technology: string[];
+  name: string;
+  technology: string[];
 };
 
 export type ProjectProps = {
@@ -42,4 +42,8 @@ export type ProjectProps = {
 export type ProjectParams = {
   params: { id: string };
   isVisible: boolean;
-}
+};
+
+export type NavbarProps = {
+  isVisible: boolean;
+};
