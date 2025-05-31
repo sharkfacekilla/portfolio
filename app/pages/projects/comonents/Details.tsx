@@ -1,7 +1,267 @@
-export default function ProjectDetails() {
-    return (
-        <>
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Tabs, TabsTrigger, TabsContent, TabsList } from "@/components/ui/tabs";
+import {
+  CheckCircle,
+  Code2,
+  Lightbulb,
+  Play,
+  Target,
+  Users,
+  Zap,
+} from "lucide-react";
+import { useState } from "react";
+import YouTubeVideo from "./YouTubeVideo";
 
-        </>
-    )
-};
+interface Project {
+  id: string;
+  name: string;
+  shortDesc: string;
+  img: string;
+  description: string;
+  link: string;
+  youtubeLink: string;
+  githubLink: string;
+  tech: string[];
+  altTxt: string;
+  skills: { [key: string]: string | undefined };
+
+  status: string;
+  timeline: string;
+  team: string;
+  features?: string[];
+  challenges?: string[];
+  learnings?: string[];
+}
+
+interface ProjectProps {
+  project: Project;
+}
+
+export default function ProjectDetails({ project }: ProjectProps) {
+  const [activeTab, setActiveTab] = useState("overview");
+  return (
+    <>
+      <section className="px-6 lg:px-12 py-12 pb-60">
+        <div className="max-w-7xl mx-auto">
+          <Tabs
+            value={activeTab}
+            onValueChange={setActiveTab}
+            className="w-full"
+          >
+            <TabsList className="grid w-full grid-cols-4 bg-white/5 border border-white/10">
+              <TabsTrigger
+                value="overview"
+                className="data-[state=active]:bg-cyan-500 data-[state=active]:text-black"
+              >
+                <Target className="h-4 w-4 mr-2" />
+                Overview
+              </TabsTrigger>
+              <TabsTrigger
+                value="features"
+                className="data-[state=active]:bg-cyan-500 data-[state=active]:text-black"
+              >
+                <Zap className="h-4 w-4 mr-2" />
+                Features
+              </TabsTrigger>
+              <TabsTrigger
+                value="technical"
+                className="data-[state=active]:bg-cyan-500 data-[state=active]:text-black"
+              >
+                <Code2 className="h-4 w-4 mr-2" />
+                Technical
+              </TabsTrigger>
+              <TabsTrigger
+                value="learnings"
+                className="data-[state=active]:bg-cyan-500 data-[state=active]:text-black"
+              >
+                <Lightbulb className="h-4 w-4 mr-2" />
+                Learnings
+              </TabsTrigger>
+            </TabsList>
+
+            <div className="mt-8">
+              <TabsContent value="overview" className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <Card className="bg-white/5 border-white/10">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold mb-4 flex items-center">
+                        <Target className="h-5 w-5 mr-2 text-cyan-400" />
+                        Project Goals
+                      </h3>
+                      <ul className="space-y-3 text-gray-300">
+                        <li className="flex items-start">
+                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
+                          Streamline setlist creation for musicians
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
+                          Enable real-time collaboration between band members
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
+                          Provide print-friendly layouts for live performances
+                        </li>
+                        <li className="flex items-start">
+                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
+                          Build comprehensive song database management
+                        </li>
+                      </ul>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/5 border-white/10">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold mb-4 flex items-center">
+                        <Users className="h-5 w-5 mr-2 text-cyan-400" />
+                        Target Audience
+                      </h3>
+                      <div className="space-y-4 text-gray-300">
+                        <div>
+                          <h4 className="font-medium text-white mb-2">
+                            Primary Users
+                          </h4>
+                          <p>
+                            Professional and amateur musicians who perform live
+                            shows and need organized setlist management.
+                          </p>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-white mb-2">
+                            Secondary Users
+                          </h4>
+                          <p>
+                            Band managers, sound engineers, and venue
+                            coordinators who need access to performance
+                            information.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+                <YouTubeVideo youtubeLink={project.youtubeLink} />
+
+                {/* <Card className="bg-white/5 border-white/10">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-semibold mb-4">Demo Video</h3>
+                    <div className="aspect-video bg-gradient-to-br from-slate-800 to-slate-900 rounded-lg flex items-center justify-center">
+                      <div className="text-center">
+                        <Play className="h-16 w-16 mx-auto mb-4 text-cyan-400" />
+                        <p className="text-gray-400">GigPlanr Demo Video</p>
+                        <Button className="mt-4 bg-cyan-500 hover:bg-cyan-600 text-black">
+                          <Play className="h-4 w-4 mr-2" />
+                          Play Demo
+                        </Button>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card> */}
+              </TabsContent>
+
+              <TabsContent value="features" className="space-y-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {project.features &&
+                    project.features.map((feature, index) => (
+                      <Card
+                        key={feature}
+                        className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors"
+                      >
+                        <CardContent className="p-6">
+                          <div className="flex items-center space-x-3 mb-3">
+                            <div className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center">
+                              <CheckCircle className="h-4 w-4 text-cyan-400" />
+                            </div>
+                            <h3 className="font-semibold">{feature}</h3>
+                          </div>
+                          <p className="text-gray-400 text-sm">
+                            Detailed description of how this feature works and
+                            benefits users.
+                          </p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="technical" className="space-y-8">
+                <div className="grid md:grid-cols-2 gap-8">
+                  <Card className="bg-white/5 border-white/10">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold mb-4 flex items-center">
+                        <Code2 className="h-5 w-5 mr-2 text-cyan-400" />
+                        Architecture
+                      </h3>
+                      <div className="space-y-4 text-gray-300">
+                        <div>
+                          <h4 className="font-medium text-white mb-2">
+                            Frontend
+                          </h4>
+                          <p>
+                            React with TypeScript for type safety, TailwindCSS
+                            for styling, and custom hooks for state management.
+                          </p>
+                        </div>
+                        <div>
+                          <h4 className="font-medium text-white mb-2">
+                            Backend
+                          </h4>
+                          <p>
+                            Laravel API with PostgreSQL database, Redis for
+                            caching, and WebSocket connections for real-time
+                            features.
+                          </p>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+
+                  <Card className="bg-white/5 border-white/10">
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold mb-4">
+                        Key Challenges
+                      </h3>
+                      <ul className="space-y-3 text-gray-300">
+                        {project.challenges &&
+                          project.challenges.map((challenge, index) => (
+                            <li key={index} className="flex items-start">
+                              <div className="w-2 h-2 bg-cyan-400 rounded-full mt-2 mr-3 flex-shrink-0" />
+                              {challenge}
+                            </li>
+                          ))}
+                      </ul>
+                    </CardContent>
+                  </Card>
+                </div>
+              </TabsContent>
+
+              <TabsContent value="learnings" className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  {project.learnings &&
+                    project.learnings.map((learning, index) => (
+                      <Card key={index} className="bg-white/5 border-white/10">
+                        <CardContent className="p-6">
+                          <div className="flex items-start space-x-3">
+                            <div className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                              <Lightbulb className="h-4 w-4 text-cyan-400" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold mb-2">{learning}</h3>
+                              <p className="text-gray-400 text-sm">
+                                How this learning experience contributed to my
+                                growth as a developer.
+                              </p>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))}
+                </div>
+              </TabsContent>
+            </div>
+          </Tabs>
+        </div>
+      </section>
+    </>
+  );
+}

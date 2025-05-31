@@ -153,7 +153,27 @@
             "status": "Live",
             "timeline": "9 Months",
             "team": "Solo Project",
-            "githubLink": "https://github.com/sharkfacekilla/portfolio"
+            "githubLink": "https://github.com/sharkfacekilla/portfolio",
+            "features": [
+                "Drag & drop setlist builder",
+                "Real-time collaboration",
+                "Print-friendly layouts",
+                "Song database management",
+                "Band member invitations",
+                "Performance analytics"
+            ],
+            "challenges": [
+                "Real-time synchronization across multiple users",
+                "Complex drag-and-drop interactions",
+                "Print layout optimization",
+                "Database performance with large song libraries"
+            ],
+            "learnings": [
+                "Advanced React patterns for complex state management",
+                "WebSocket implementation for real-time features",
+                "Print CSS optimization techniques",
+                "Database indexing and query optimization"
+            ]
         }
     ]
 }

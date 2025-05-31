@@ -6,6 +6,7 @@ import { Metadata } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import ProjectHero from "../comonents/Hero";
+import ProjectDetails from "../comonents/Details";
 
 /**
  * A dynamically generated page based on the project that's passed in.
@@ -30,6 +31,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
         <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white">
 
       <ProjectHero isVisible={isVisible} params={{id: projectData.id}} />
+      <ProjectDetails project={projectData} />
       </div>
     </>
   );
