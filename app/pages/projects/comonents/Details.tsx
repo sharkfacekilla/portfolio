@@ -12,31 +12,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import YouTubeVideo from "./YouTubeVideo";
-
-interface Project {
-  id: string;
-  name: string;
-  shortDesc: string;
-  img: string;
-  description: string;
-  link: string;
-  youtubeLink: string;
-  githubLink: string;
-  tech: string[];
-  altTxt: string;
-  skills: { [key: string]: string | undefined };
-
-  status: string;
-  timeline: string;
-  team: string;
-  features?: string[];
-  challenges?: string[];
-  learnings?: string[];
-}
-
-interface ProjectProps {
-  project: Project;
-}
+import { Project, ProjectProps } from "@/app/utils/app-types";
 
 export default function ProjectDetails({ project }: ProjectProps) {
   const [activeTab, setActiveTab] = useState("overview");
@@ -89,24 +65,22 @@ export default function ProjectDetails({ project }: ProjectProps) {
                         <Target className="h-5 w-5 mr-2 text-cyan-400" />
                         Project Goals
                       </h3>
-                      <ul className="space-y-3 text-gray-300">
-                        <li className="flex items-start">
-                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
-                          Streamline setlist creation for musicians
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
-                          Enable real-time collaboration between band members
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
-                          Provide print-friendly layouts for live performances
-                        </li>
-                        <li className="flex items-start">
-                          <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
-                          Build comprehensive song database management
-                        </li>
-                      </ul>
+                      {project.goals &&
+                      Array.isArray(project.goals) &&
+                      project.goals.length > 0 ? (
+                        <ul className="space-y-3 text-gray-300">
+                          {project.goals.map((goal, index) => (
+                            <li className="flex items-start" key={index}>
+                              <CheckCircle className="h-4 w-4 mr-2 text-green-400 mt-0.5 flex-shrink-0" />
+                              {goal}
+                            </li>
+                          ))}
+                        </ul>
+                      ) : (
+                        <p className="text-gray-400 italic">
+                          No specific goals were defined for this project.
+                        </p>
+                      )}
                     </CardContent>
                   </Card>
 
@@ -117,25 +91,22 @@ export default function ProjectDetails({ project }: ProjectProps) {
                         Target Audience
                       </h3>
                       <div className="space-y-4 text-gray-300">
-                        <div>
-                          <h4 className="font-medium text-white mb-2">
-                            Primary Users
-                          </h4>
-                          <p>
-                            Professional and amateur musicians who perform live
-                            shows and need organized setlist management.
+                        {project.users &&
+                        Array.isArray(project.users) &&
+                        project.users.length > 0 ? (
+                          project.users.map((item, index) => (
+                            <div>
+                              <h4 className="font-medium text-white mb-2">
+                                {item.name}
+                              </h4>
+                              <p>{item.description}</p>
+                            </div>
+                          ))
+                        ) : (
+                          <p className="text-gray-400 italic">
+                            No specific audience was defined for this project.
                           </p>
-                        </div>
-                        <div>
-                          <h4 className="font-medium text-white mb-2">
-                            Secondary Users
-                          </h4>
-                          <p>
-                            Band managers, sound engineers, and venue
-                            coordinators who need access to performance
-                            information.
-                          </p>
-                        </div>
+                        )}
                       </div>
                     </CardContent>
                   </Card>
@@ -146,9 +117,11 @@ export default function ProjectDetails({ project }: ProjectProps) {
               <TabsContent value="features" className="space-y-6">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {project.features &&
+                  Array.isArray(project.features) &&
+                  project.features.length > 0 ? (
                     project.features.map((feature, index) => (
                       <Card
-                        key={feature}
+                        key={feature.name}
                         className="bg-white/5 border-white/10 hover:bg-white/10 transition-colors"
                       >
                         <CardContent className="p-6">
@@ -156,15 +129,19 @@ export default function ProjectDetails({ project }: ProjectProps) {
                             <div className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center">
                               <CheckCircle className="h-4 w-4 text-cyan-400" />
                             </div>
-                            <h3 className="font-semibold">{feature}</h3>
+                            <h3 className="font-semibold">{feature.name}</h3>
                           </div>
                           <p className="text-gray-400 text-sm">
-                            Detailed description of how this feature works and
-                            benefits users.
+                            {feature.description}
                           </p>
                         </CardContent>
                       </Card>
-                    ))}
+                    ))
+                  ) : (
+                    <p className="text-gray-400 italic">
+                      No specific features were defined for this project.
+                    </p>
+                  )}
                 </div>
               </TabsContent>
 
@@ -190,11 +167,7 @@ export default function ProjectDetails({ project }: ProjectProps) {
                           <h4 className="font-medium text-white mb-2">
                             Backend
                           </h4>
-                          <p>
-                            Laravel API with PostgreSQL database, Redis for
-                            caching, and WebSocket connections for real-time
-                            features.
-                          </p>
+                          <p>Laravel API with PostgreSQL database.</p>
                         </div>
                       </div>
                     </CardContent>
