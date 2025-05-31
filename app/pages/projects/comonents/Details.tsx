@@ -223,37 +223,30 @@ export default function ProjectDetails({ project }: ProjectProps) {
               </TabsContent>
 
               <TabsContent value="learnings" className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {project.learnings &&
                   Array.isArray(project.learnings) &&
                   project.learnings.length > 0 ? (
-                    <ul className="space-y-3 text-gray-300">
-                      {project.learnings.map((learning, index) => (
-                        <Card
-                          key={index}
-                          className="bg-white/5 border-white/10"
-                        >
-                          <CardContent className="p-6">
-                            <div className="flex items-start space-x-3">
-                              <div className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                                <Lightbulb className="h-4 w-4 text-cyan-400" />
-                              </div>
-                              <div>
-                                <h3 className="font-semibold mb-2">
-                                  {learning}
-                                </h3>
-                                <p className="text-gray-400 text-sm">
-                                  How this learning experience contributed to my
-                                  growth as a developer.
-                                </p>
-                              </div>
+                    project.learnings.map((learning, index) => (
+                      <Card key={index} className="bg-white/5 border-white/10">
+                        <CardContent className="p-6">
+                          <div className="flex items-start space-x-3">
+                            <div className="w-8 h-8 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                              <Lightbulb className="h-4 w-4 text-cyan-400" />
                             </div>
-                          </CardContent>
-                        </Card>
-                      ))}
-                    </ul>
+                            <div>
+                              <h3 className="font-semibold mb-2">{learning}</h3>
+                              <p className="text-gray-400 text-sm">
+                                How this learning experience contributed to my
+                                growth as a developer.
+                              </p>
+                            </div>
+                          </div>
+                        </CardContent>
+                      </Card>
+                    ))
                   ) : (
-                    <p className="text-gray-400 italic">
+                    <p className="text-gray-400 italic col-span-full">
                       No specific learnings were defined for this project.
                     </p>
                   )}
