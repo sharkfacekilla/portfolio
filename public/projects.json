@@ -9,10 +9,6 @@
             "link": "https://www.youtube.com/embed/qwP3hqO2JLY?si=e0vBuxbcR0NZSbkY",
             "youtubeLink": "",
             "githubLink": "",
-            "tech": [
-                "C#",
-                "Unity"
-            ],
             "altTxt": "shadowed depths gameplay",
             "skills": {
                 "1": "Object Oriented Programming",
@@ -22,7 +18,15 @@
             },
             "status": "Completed",
             "timeline": "9 Months",
-            "team": "Solo Project"
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Engine",
+                    "technology": [
+                        "C#"
+                    ]
+                }
+            ]
         },
         {
             "id": "2",
@@ -33,12 +37,6 @@
             "link": "https://www.youtube.com/embed/MMg9ScX8gqU?si=Wf4HMcwVKDD_GLrq",
             "youtubeLink": "",
             "githubLink": "",
-            "tech": [
-                "Next.js",
-                "React",
-                "TypeScript",
-                "Tailwind CSS)"
-            ],
             "altTxt": "portfolio web site",
             "skills": {
                 "1": "Dynamic Page Routing within Next.js",
@@ -49,7 +47,18 @@
             },
             "status": "Live",
             "timeline": "9 Months",
-            "team": "Solo Project"
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "Next.js",
+                        "React",
+                        "Typescript",
+                        "Tailwind CSS"
+                    ]
+                }
+            ]
         },
         {
             "id": "3",
@@ -60,10 +69,6 @@
             "link": "https://www.youtube.com/embed/AmLYskjRW4k?si=NdEiiX6sgn3VtD6g",
             "youtubeLink": "",
             "githubLink": "",
-            "tech": [
-                "HTML",
-                "CSS"
-            ],
             "altTxt": "supreme remedy fake site",
             "skills": {
                 "1": "HTML, CSS",
@@ -73,7 +78,16 @@
             },
             "status": "Completed",
             "timeline": "9 Months",
-            "team": "Solo Project"
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "HTML",
+                        "CSS"
+                    ]
+                }
+            ]
         },
         {
             "id": "4",
@@ -84,13 +98,6 @@
             "link": "https://www.youtube.com/embed/TuhZs07C-6I?si=kLno_8yI-Qpy6cBM",
             "youtubeLink": "https://www.youtube.com/watch?v=9GeyoUWBwgk",
             "githubLink": "",
-            "tech": [
-                "Laravel",
-                "React",
-                "TypeScript",
-                "TailwindCSS",
-                "sqlite3"
-            ],
             "altTxt": "shark sync camosun capstone project",
             "skills": {
                 "1": "Full-Stack web building",
@@ -101,7 +108,24 @@
             },
             "status": "Completed",
             "timeline": "9 Months",
-            "team": "3 Person Project"
+            "team": "3 Person Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "React",
+                        "Typescript",
+                        "TailwindCSS"
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "technology": [
+                        "Laravel",
+                        "sqlite3"
+                    ]
+                }
+            ]
         },
         {
             "id": "5",
@@ -112,11 +136,6 @@
             "link": "",
             "youtubeLink": "",
             "githubLink": "",
-            "tech": [
-                "Remix",
-                "TypeScript",
-                "TailwindCSS"
-            ],
             "altTxt": "web app redesign",
             "skills": {
                 "1": "Navigating an already-established project repo",
@@ -126,7 +145,22 @@
             },
             "status": "In Progress",
             "timeline": "9 Months",
-            "team": "Solo Project"
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "React",
+                        "TailwindCSS"
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "technology": [
+                        "Remix,js"
+                    ]
+                }
+            ]
         },
         {
             "id": "6",
@@ -136,13 +170,6 @@
             "description": "A web platform for musicians, by musicians. The idea of GigPlanr is a setlist planning web application that allows musicians to create, edit, print, and share setlists with their bandmates. More to come once finished...",
             "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
             "youtubeLink": "https://www.youtube.com/watch?v=SjMBHPRvd-g",
-            "tech": [
-                "Laravel",
-                "React",
-                "TypeScript",
-                "TailwindCSS",
-                "PostreSQL"
-            ],
             "altTxt": "gigplanr web app",
             "skills": {
                 "1": "Full-Stack web building",
@@ -154,16 +181,43 @@
             "timeline": "9 Months",
             "team": "Solo Project",
             "githubLink": "https://github.com/sharkfacekilla/portfolio",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "React",
+                        "Typescript",
+                        "TailwindCSS"
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "technology": [
+                        "Laravel",
+                        "PostgreSQL"
+                    ]
+                }
+            ],
             "features": [
-                "Drag & drop setlist builder",
-                "Real-time collaboration",
-                "Print-friendly layouts",
-                "Song database management",
-                "Band member invitations",
-                "Performance analytics"
+                {
+                    "name": "Drag & drop setlist builder",
+                    "description": "Easily arrange and reorder songs within your setlist using a simple drag and drop interface. Intuitive for quick planning and adjustments."
+                },
+                {
+                    "name": "Real-time collaboration",
+                    "description": "Collaborate with band members on setlists, ensuring everyone is on the same page."
+                },
+                {
+                    "name": "Print-friendly layouts",
+                    "description": "Generate clean and easily readable setlists for printing. Customize formatting options to suit your band's needs for on-stage use."
+                },
+                {
+                    "name": "Song database management",
+                    "description": "Build and manage a comprehensive database of your band's songs. Store details like title, artist, key, tempo, notes, and more."
+                }
             ],
             "challenges": [
-                "Real-time synchronization across multiple users",
+                "Creating a simple, user friendly interface for a complicated system.",
                 "Complex drag-and-drop interactions",
                 "Print layout optimization",
                 "Database performance with large song libraries"
@@ -173,6 +227,22 @@
                 "WebSocket implementation for real-time features",
                 "Print CSS optimization techniques",
                 "Database indexing and query optimization"
+            ],
+            "goals": [
+                "Streamline setlist creation for musicians",
+                "Enable easy collaboration between band members",
+                "Provide print-friendly layouts for live performances",
+                "Build comprehensive song database management"
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "Professional and amateur musicians who perform live shows and need organized setlist management."
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Band managers, sound engineers, and venue coordinators who need access to performance information."
+                }
             ]
         }
     ]
