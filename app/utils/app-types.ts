@@ -40,7 +40,7 @@ export type ProjectProps = {
 };
 
 export type ProjectParams = {
-  params: { id: string };
+  params: { id: number };
   isVisible: boolean;
 };
 
