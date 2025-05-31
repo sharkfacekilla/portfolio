@@ -7,7 +7,7 @@
             "img": "/img/shadowedDepths.jpg",
             "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, which is inspired by my love of classic games, such as Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
             "link": "https://www.youtube.com/embed/qwP3hqO2JLY?si=e0vBuxbcR0NZSbkY",
-            "youtubeLink": "",
+            "youtubeLink": "https://www.youtube.com/watch?v=KvT9lH3R2pc",
             "githubLink": "",
             "altTxt": "shadowed depths gameplay",
             "skills": {
@@ -35,7 +35,7 @@
             "img": "/img/portfolioSite.png",
             "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
             "link": "https://www.youtube.com/embed/MMg9ScX8gqU?si=Wf4HMcwVKDD_GLrq",
-            "youtubeLink": "",
+            "youtubeLink": "https://www.youtube.com/watch?v=r2rMwISi0j4",
             "githubLink": "",
             "altTxt": "portfolio web site",
             "skills": {
@@ -67,7 +67,7 @@
             "img": "/img/midtermProject.png",
             "description": "A Midterm project from my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website from scratch, not so bad!",
             "link": "https://www.youtube.com/embed/AmLYskjRW4k?si=NdEiiX6sgn3VtD6g",
-            "youtubeLink": "",
+            "youtubeLink": "https://www.youtube.com/watch?v=AmLYskjRW4k&t=6s",
             "githubLink": "",
             "altTxt": "supreme remedy fake site",
             "skills": {
