@@ -1,28 +1,11 @@
 import RecentProjectCard from "@/app/components/RecentProjectCard";
 import { Code2 } from "lucide-react";
+import { Project }from "@/app/utils/app-types" ;
 
-interface ProjectData {
-  id: string;
-  name: string;
-  shortDesc: string;
-  img: string;
-  description: string;
-  link: string;
-  tech: string[];
-  altTxt: string;
-  skills: {
-    "1": string;
-    "2": string;
-    "3": string;
-    "4": string;
-    "5"?: string;
-  };
-  status: string;
-};
 
 interface RecentProjectsProps {
   isVisible: boolean;
-  latestThreeProjects: ProjectData[];
+  latestThreeProjects: Project[];
 };
 
 export default function RecentProjects({
