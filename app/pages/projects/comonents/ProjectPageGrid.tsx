@@ -25,9 +25,7 @@ export default function ProjectPageGrid({ isVisible, projects }: NavbarProps) {
               projects.map((project, index) => (
                 <Card
                   key={project.name}
-                  className={`bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-500 group hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 delay-${
-                    index * 100
-                  }`}
+                  className={`bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-500 group hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20 delay-${100}`}
                 >
                   <CardContent className="p-0">
                     {/* Project Image */}
