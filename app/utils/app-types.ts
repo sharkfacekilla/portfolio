@@ -9,7 +9,7 @@ export type User = {
 };
 
 export type Project = {
-  id: number;
+  id: string;
   name: string;
   shortDesc: string;
   img: string;
@@ -40,7 +40,7 @@ export type ProjectProps = {
 };
 
 export type ProjectParams = {
-  params: { id: number };
+  params: { id: string };
   isVisible: boolean;
 };
 

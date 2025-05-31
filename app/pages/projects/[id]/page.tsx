@@ -13,7 +13,7 @@ import ProjectDetails from "../comonents/Details";
  * @param param0 the project thats passed in.
  * @returns A dynamically generated page with the project information. Including video, image, text.
  */
-export default function ProjectPage({ params }: { params: { id: number } }) {
+export default function ProjectPage({ params }: { params: { id: string } }) {
   //Get the project data to use on this page
   const projectData = data.projects.find((p) => p.id === params.id);
   const [isVisible, setIsVisible] = React.useState(false);

@@ -34,7 +34,7 @@ export default function Page() {
 
         //display in descending order, most rescent first.
         setProjects(
-          [...data.projects].sort((a: Project, b: Project) => b.id - a.id)
+          [...data.projects].sort((a: Project, b: Project) => parseInt(b.id) - parseInt(a.id))
         );
       } catch (error) {
         console.error("Error fetching projects:", error);
