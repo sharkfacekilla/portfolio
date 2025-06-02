@@ -14,10 +14,6 @@ export default function ResumeEducation({
           isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
         }`}
       >
-        <h2 className="text-3xl font-bold mb-8 flex items-center">
-          <GraduationCap className="h-6 w-6 mr-3 text-cyan-400" />
-          Education
-        </h2>
         <Card className="bg-white/5 border-white/10">
           <CardContent className="p-8">
             <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-6">
