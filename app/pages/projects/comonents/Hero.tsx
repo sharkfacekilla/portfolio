@@ -114,7 +114,7 @@ export default function ProjectHero({ params, isVisible }: ProjectParams) {
               className={`transition-all duration-1000 delay-300 ${
                 isVisible
                   ? "translate-x-0 opacity-100"
-                  : "translate-x-10 opacity-0"
+                  : "translate-x-10 -translate-y-10 opacity-0"
               }`}
             >
               <div
