@@ -30,7 +30,7 @@ export default function ResumeHero({ isVisible }: NavbarProps) {
               </p>
             </div>
             <Card
-              className={`bg-white/5 border-white/10 transition-all duration-1000 delay-300 p-2 ${
+              className={`mx-auto md:mx-0 lg:mx-0 xl:mx-0 2xl:mx-0 bg-white/5 border-white/10 transition-all duration-1000 delay-300 p-2 ${
                 isVisible
                   ? "translate-x-0 opacity-100"
                   : "translate-x-10 opacity-0"

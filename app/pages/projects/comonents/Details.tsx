@@ -14,6 +14,8 @@ import { useState } from "react";
 import YouTubeVideo from "./YouTubeVideo";
 import { Project, ProjectProps } from "@/app/utils/app-types";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+import ImagesTab from "./ImagesTab";
 
 export default function ProjectDetails({ isVisible, project }: ProjectProps) {
   const [activeTab, setActiveTab] = useState("overview");
@@ -31,7 +33,13 @@ export default function ProjectDetails({ isVisible, project }: ProjectProps) {
               onValueChange={setActiveTab}
               className="w-full"
             >
-              <TabsList className="grid w-full grid-cols-4 bg-white/5 border border-white/10">
+              <TabsList
+                className={`grid w-full ${
+                  project.images && project.images.length > 0
+                    ? "grid-cols-5"
+                    : "grid-cols-4"
+                } bg-white/5 border border-white/10`}
+              >
                 <TabsTrigger
                   value="overview"
                   className="data-[state=active]:bg-cyan-500 data-[state=active]:text-black"
@@ -60,6 +68,15 @@ export default function ProjectDetails({ isVisible, project }: ProjectProps) {
                   <Lightbulb className="h-4 w-4 mr-2" />
                   Learnings
                 </TabsTrigger>
+                {project.images && (
+                  <TabsTrigger
+                    value="images"
+                    className="data-[state=active]:bg-cyan-500 data-[state=active]:text-black"
+                  >
+                    <Lightbulb className="h-4 w-4 mr-2" />
+                    Images
+                  </TabsTrigger>
+                )}
               </TabsList>
 
               <div className="mt-8">
@@ -247,10 +264,6 @@ export default function ProjectDetails({ isVisible, project }: ProjectProps) {
                                 <h3 className="font-semibold mb-2">
                                   {learning}
                                 </h3>
-                                <p className="text-gray-400 text-sm">
-                                  How this learning experience contributed to my
-                                  growth as a developer.
-                                </p>
                               </div>
                             </div>
                           </CardContent>
@@ -263,6 +276,9 @@ export default function ProjectDetails({ isVisible, project }: ProjectProps) {
                     )}
                   </div>
                 </TabsContent>
+                {project.images && (
+                  <ImagesTab images={project.images} />
+                )}
               </div>
             </Tabs>
           </div>
