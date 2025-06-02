@@ -1,42 +1,64 @@
-import data from '../../public/projects.json';
-import { Button, Grid } from "@mui/material";
-import React from "react";
-import RecentProjectCard from '../components/RecentProjectCard';
+"use client";
+import data from "../../public/projects.json";
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
+import Link from "next/link";
+import React from "react";
+import RecentProjectCard from "../components/RecentProjectCard";
+import HeroSection from "../pages/home/components/Hero";
+import RecentProjects from "../pages/home/components/RecentProjects";
+import Contact from "../pages/home/components/Contact";
+import Footer from "./footer/footer";
 
 /**
  * Displays information on the home page.
  * @returns Home Info Component.
  */
 export default function HomeInfo() {
-    //Get the highest id within the project data, to automatically display most recent project.
-    let highestId = data.projects.reduce((max, project) =>
-        parseInt(project.id) > parseInt(max.id) ? project : max, data.projects[0]);
+  const latestThreeProjects = data.projects.slice(-3).reverse();
 
-    return (
-        <>
-            <section className="h-2/6">
-                <div className="container mx-auto px-4 mb-20">
-                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mt-32">Gage Patenaude.</h1>
-                    <h2 className="mx-auto mb-5 font-extrabold tracking-tight md:text-6xl sm: text-3xl text-white/50">Building cool things.</h2>
-                    <div>
-                        <p className="max-w-3xl text-white">Hello, and welcome to my portfolio!</p>
-                            <br />
-                        <p className="max-w-3xl text-white">Learn a bit more about me and my projects here!</p>
-                        <Button href={"pages/about"} variant="contained" className="mt-4 bg-blue text-white hover:bg-light-blue border">About Me</Button>
-                    </div>
-                </div>
-                <div className="container mx-auto mb-5 px-4 h-full flex items-center justify-center">
-                    <h1 className="text-white text-4xl font-bold z-10 py-4 col-span-full mx-auto mb-5 border-b">Recent Project</h1>
-                </div>
-                <div className="container mx-auto mb-10 px-4 h-full flex items-center justify-center">
-                    <Grid container spacing={2} justifyContent="center" alignItems="center">
-                        <Grid item>
-                            <RecentProjectCard proj={highestId.id} />
-                        </Grid>
-                    </Grid>
-                </div>
-            </section>
-        </>
-    );
-};
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  return (
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white overflow-hidden">
+        {/* Animated background elements */}
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div
+            className="absolute w-96 h-96 bg-blue-500/5 rounded-full blur-3xl transition-transform duration-1000 ease-out"
+            style={{
+              transform: `translate(${mousePosition.x * 0.02}px, ${
+                mousePosition.y * 0.02
+              }px)`,
+            }}
+          />
+          <div
+            className="absolute top-1/2 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl transition-transform duration-1000 ease-out"
+            style={{
+              transform: `translate(${mousePosition.x * -0.01}px, ${
+                mousePosition.y * -0.01
+              }px)`,
+            }}
+          />
+        </div>
+        <HeroSection isVisible={isVisible} />
+        <RecentProjects isVisible={isVisible} latestThreeProjects={latestThreeProjects} />
+        <Contact isVisible={isVisible} />
+      </div>
+    </>
+  );
+}
