@@ -44,15 +44,16 @@ const Navbar = ({ isVisible }: NavbarProps) => {
             </Link>
           ))}
         </div>
-
-        <Button
-          className={`bg-cyan-500 hover:bg-cyan-600 text-black font-semibold transition-all duration-1000 delay-300 ${
-            isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
-          }`}
-        >
-          CONTACT
-          <ArrowRight className="ml-2 h-4 w-4" />
-        </Button>
+          <Link href={'/pages/contact'}>
+            <Button
+              className={`bg-cyan-500 hover:bg-cyan-600 text-black font-semibold transition-all duration-1000 delay-300 ${
+                isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+              }`}
+            >
+              CONTACT
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
       </nav>
     </>
   );
