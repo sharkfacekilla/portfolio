@@ -52,7 +52,7 @@ export type NavbarProps = {
 
 export type Resume = {
   highlights: StringList;
-  technical_skills: TechSkills[];
+  technical_skills: TechSkills;
   education: ResumeEducation[];
   work: WorkHistory;
   future_projects: StringList;
@@ -60,8 +60,9 @@ export type Resume = {
 };
 
 export type TechSkills = {
-  name: string;
-  skills: StringList;
+  frontend: StringList;
+  backend: StringList;
+  other: StringList;
 };
 
 export type ResumeEducation = {
@@ -94,4 +95,9 @@ export type ResumeJsonData = {
 export type ResumeHighlightsProps= {
   isVisible: boolean;
   highlights: StringList
+};
+
+export type ResumeTechProps = {
+  isVisible: boolean;
+  skills: TechSkills;
 };

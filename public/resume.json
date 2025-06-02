@@ -5,53 +5,34 @@
             "Presenting efficient and clear communication in both written and oral methods.",
             "Exceling in a team environment, as well as independently."
         ],
-        "technical_skills": [
-            {
-                "name": "Frontend",
-                "skills": [
-                    "HTML",
-                    "CSS",
-                    "Tailwind CSS",
-                    "JavaScript",
-                    "TypeScript",
-                    "React",
-                    "Next.js"
-                ]
-            },
-            {
-                "name": "Backend",
-                "skills": [
-                    "Node.js",
-                    "Python",
-                    "Java",
-                    "Laravel",
-                    "AWS"
-                ]
-            },
-            {
-                "name": "Databases",
-                "skills": [
-                    "MongoDB",
-                    "SQL",
-                    "PostgreSQL"
-                ]
-            },
-            {
-                "name": "Languages (General)",
-                "skills": [
-                    "C",
-                    "C++",
-                    "C#",
-                    "Swift"
-                ]
-            },
-            {
-                "name": "Game Development",
-                "skills": [
-                    "Unity"
-                ]
-            }
-        ],
+        "technical_skills": {
+            "frontend": [
+                "HTML",
+                "CSS",
+                "Tailwind CSS",
+                "JavaScript",
+                "TypeScript",
+                "React",
+                "Next.js"
+            ],
+            "backend": [
+                "Node.js",
+                "Python",
+                "Java",
+                "Laravel",
+                "AWS"
+            ],
+            "other": [
+                "MongoDB",
+                "SQL",
+                "PostgreSQL",
+                "C",
+                "C++",
+                "C#",
+                "Swift",
+                "Unity"
+            ]
+        },
         "education": [
             {
                 "title": "Information & Computer Systems Diploma Program",

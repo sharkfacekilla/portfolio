@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ResumeHero from "./components/ResumeHero";
 import { Resume, ResumeJsonData } from "@/app/utils/app-types";
 import ResumeHighlights from "./components/ResumeHighlights";
+import ResumeTechSkills from "./components/ResumeTechSkills";
 
 /**
  * Resume Page.
@@ -63,7 +64,10 @@ export default function ResumePage() {
         <div className="max-w-7xl mx-auto space-y-12">
           <ResumeHero isVisible={isVisible} />
           {resumeData ? (
-              <ResumeHighlights isVisible={isVisible} highlights={resumeData.resume.highlights} />
+                <>
+                    <ResumeHighlights isVisible={isVisible} highlights={resumeData.resume.highlights} />
+                    <ResumeTechSkills isVisible={isVisible} skills={resumeData.resume.technical_skills} />
+                </>
           ) : (
             <div className="text-gray-400 text-center py-10">Loading resume...</div>
           )}
