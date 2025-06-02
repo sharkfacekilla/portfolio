@@ -66,10 +66,10 @@ export type TechSkills = {
 };
 
 export type ResumeEducation = {
-  title: string;
+  degree: string;
   school: string;
-  start_date: string;
-  end_date: string;
+  period: string;
+  status: string;
   skills: StringList;
 };
 
@@ -100,4 +100,9 @@ export type ResumeHighlightsProps= {
 export type ResumeTechProps = {
   isVisible: boolean;
   skills: TechSkills;
+};
+
+export type ResumeEducationProps = {
+  isVisible: boolean;
+  education: ResumeEducation;
 };

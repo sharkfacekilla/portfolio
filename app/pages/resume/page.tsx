@@ -5,6 +5,7 @@ import ResumeHero from "./components/ResumeHero";
 import { Resume, ResumeJsonData } from "@/app/utils/app-types";
 import ResumeHighlights from "./components/ResumeHighlights";
 import ResumeTechSkills from "./components/ResumeTechSkills";
+import ResumeEducation from "./components/ResumeEducation";
 
 /**
  * Resume Page.
@@ -29,7 +30,7 @@ export default function ResumePage() {
     const fetchResume = async () => {
       try {
         const response = await fetch("/resume.json");
-        const data : ResumeJsonData = await response.json();
+        const data: ResumeJsonData = await response.json();
         setResumeData(data);
         console.log(data);
       } catch (err) {
@@ -64,12 +65,27 @@ export default function ResumePage() {
         <div className="max-w-7xl mx-auto space-y-12">
           <ResumeHero isVisible={isVisible} />
           {resumeData ? (
-                <>
-                    <ResumeHighlights isVisible={isVisible} highlights={resumeData.resume.highlights} />
-                    <ResumeTechSkills isVisible={isVisible} skills={resumeData.resume.technical_skills} />
-                </>
+            <>
+              <ResumeHighlights
+                isVisible={isVisible}
+                highlights={resumeData.resume.highlights}
+              />
+              <ResumeTechSkills
+                isVisible={isVisible}
+                skills={resumeData.resume.technical_skills}
+              />
+              {resumeData.resume.education.map((entry, index) => (
+                <ResumeEducation
+                  key={entry.school + index}
+                  isVisible={isVisible}
+                  education={entry}
+                />
+              ))}
+            </>
           ) : (
-            <div className="text-gray-400 text-center py-10">Loading resume...</div>
+            <div className="text-gray-400 text-center py-10">
+              Loading resume...
+            </div>
           )}
         </div>
       </section>

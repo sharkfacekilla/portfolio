@@ -35,10 +35,10 @@
         },
         "education": [
             {
-                "title": "Information & Computer Systems Diploma Program",
+                "degree": "Information & Computer Systems Diploma Program",
                 "school": "Camosun College, Victoria, B.C.",
-                "start_date": "September 2022",
-                "end_date": "September 2024",
+                "status": "Graduated",
+                "period": "September 2022 - September 2024",
                 "skills": [
                     "Graduated from the Information and Computer Systems Diploma program.",
                     "Wrote, edited, and debugged programs in various languages, such as Java, Python, C, C++, C#, and iOS Development with Swift",
