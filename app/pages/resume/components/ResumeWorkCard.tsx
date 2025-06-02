@@ -1,6 +1,5 @@
 import { ResumeWorkProps } from "@/app/utils/app-types";
-import { CardContent } from "@/components/ui/card";
-import { Card } from "@mui/material";
+import { Card, CardContent } from "@/components/ui/card";
 import { Briefcase, Calendar, CheckCircle, MapPin } from "lucide-react";
 
 export default function ResumeWorkCard({ isVisible, work }: ResumeWorkProps) {
