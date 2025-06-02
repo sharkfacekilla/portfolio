@@ -7,7 +7,7 @@ interface NavbarProps {
   isVisible: boolean;
 }
 
-const links = ["About", "Projects", "Resume", "Contact"];
+const links = ["Home", "About", "Projects", "Resume", "Contact"];
 
 const Navbar = ({ isVisible }: NavbarProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
