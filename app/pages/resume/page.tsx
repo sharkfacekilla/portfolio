@@ -2,10 +2,12 @@
 import { Metadata } from "next";
 import { useEffect, useState } from "react";
 import ResumeHero from "./components/ResumeHero";
-import { Resume, ResumeJsonData } from "@/app/utils/app-types";
+import { Resume, ResumeJsonData, ResumeWork } from "@/app/utils/app-types";
 import ResumeHighlights from "./components/ResumeHighlights";
 import ResumeTechSkills from "./components/ResumeTechSkills";
 import ResumeEducation from "./components/ResumeEducation";
+import ResumeWorkCard from "./components/ResumeWorkCard";
+import { Briefcase } from "lucide-react";
 
 /**
  * Resume Page.
@@ -80,6 +82,16 @@ export default function ResumePage() {
                   isVisible={isVisible}
                   education={entry}
                 />
+              ))}
+                          <h2 className="text-3xl font-bold mb-8 flex items-center">
+              <Briefcase className="h-6 w-6 mr-3 text-cyan-400" />
+              Work Experience
+            </h2>
+              {Object.values(resumeData.resume.work).map((job: ResumeWork, index: number) => (
+                <ResumeWorkCard
+                    key={job.company + index}
+                    isVisible={isVisible}
+                    work={job} />
               ))}
             </>
           ) : (

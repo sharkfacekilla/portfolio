@@ -78,7 +78,9 @@ export type ResumeWork = {
   job_title: string;
   start_date: string;
   end_date: string;
-  responsibilites: JobResponsibilities;
+  location: string;
+  description: string;
+  responsibilities: JobResponsibilities;
 };
 
 export type StringList = string[];
@@ -105,4 +107,9 @@ export type ResumeTechProps = {
 export type ResumeEducationProps = {
   isVisible: boolean;
   education: ResumeEducation;
+};
+
+export type ResumeWorkProps = {
+  isVisible: boolean;
+  work: ResumeWork;
 };

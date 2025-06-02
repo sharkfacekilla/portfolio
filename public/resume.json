@@ -49,10 +49,12 @@
         ],
         "work": {
             "sbux": {
-                "company": "Starbucks Canada, Victoria, B.C.",
+                "company": "Starbucks Canada",
                 "job_title": "Shift Supervisor",
                 "start_date": "November 2017",
                 "end_date": "Present",
+                "location": "Victoria, B.C.",
+                "description": "Managing store operations by leading a team and ensuring excellent customer service and product quality.",
                 "responsibilities": [
                     "Guiding a team daily, navigating though challenges together, resulting in some record breaking sales for the store.",
                     "Facilitating the onboarding and training of new hires, and ensuring proper training requirements and understanding are both met though verifying learning and confidence skills.",
@@ -64,6 +66,8 @@
                 "job_title": "Loyalty Care Representative",
                 "start_date": "February 2015",
                 "end_date": "November 2017",
+                "location": "Victoria, B.C.",
+                "description": "Focused on enhancing customer loyalty and retention through managing and retaining relationships.",
                 "responsibilities": [
                     "Curated genuine connections with customers with high satisfaction rating.",
                     "Consulted customer questions and concerns quickly and efficiently.",
@@ -76,6 +80,8 @@
                 "job_title": "Signage Team Member",
                 "start_date": "April 2013",
                 "end_date": "February 2015",
+                "location": "Victoria, B.C.",
+                "description": "Maintain store aesthetics through assembling store displays, ensuring accurate pricing and signing of merchandise.",
                 "responsibilities": [
                     "Implemented planograms around the store down to the smallest details.",
                     "Oversaw deliveries of store signage and fixtures and implemented them on time.",
@@ -87,6 +93,8 @@
                 "job_title": "Team Leader",
                 "start_date": "November 2009",
                 "end_date": "April 2013",
+                "location": "Victoria, B.C.",
+                "description": "Oversaw and manages daily operations of the restaurant, including staff, inventory, and ensuring food safety and quality",
                 "responsibilities": [
                     "Supervised a small team daily.",
                     "Oversaw and implemented a strict cleaning routine to great results.",
