@@ -7,15 +7,17 @@ import Head from "next/head";
 import Image from "next/image";
 import ProjectHero from "../comonents/Hero";
 import ProjectDetails from "../comonents/Details";
+import { useParams } from "next/navigation";
 
 /**
  * A dynamically generated page based on the project that's passed in.
  * @param param0 the project thats passed in.
  * @returns A dynamically generated page with the project information. Including video, image, text.
  */
-export default function ProjectPage({ params }: { params: { id: string } }) {
+export default function ProjectPage() {
   //Get the project data to use on this page
-  const projectData = data.projects.find((p) => p.id === params.id);
+  const { id } = useParams();
+  const projectData = data.projects.find((p) => p.id === id);
   const [isVisible, setIsVisible] = React.useState(false);
 
   React.useEffect(() => {
