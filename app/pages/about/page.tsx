@@ -1,8 +1,8 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Hero from "./components/Hero";
-import Bio from "./Bio";
+import Bio from "./components/Bio";
 import Musician from "./Musician";
 import { Metadata } from "next";
 import Photography from "./Photographer";
@@ -52,9 +52,11 @@ const About = () => {
           />
         </div>
         <Hero isVisible={isVisible} />
-        <Bio />
-        <Musician />
-        <Photography />
+        <section className="relative z-10 px-6 lg:px-12 pb-20">
+          <Bio />
+          <Musician />
+          <Photography />
+        </section>
       </div>
     </>
   );
