@@ -36,7 +36,7 @@ const Navbar = ({ isVisible }: NavbarProps) => {
           {links.map((item, index) => (
             <Link
               key={item}
-              href={`/pages/${item.toLowerCase()}`}
+              href={item === "Home" ? "/" : `/pages/${item.toLowerCase()}`}
               className="hover:text-cyan-400 text-white transition-colors duration-300 relative group"
             >
               {item}
