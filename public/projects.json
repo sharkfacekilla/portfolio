@@ -23,7 +23,8 @@
                 {
                     "name": "Engine",
                     "technology": [
-                        "C#"
+                        "C#",
+                        "Unity"
                     ]
                 }
             ]
@@ -309,7 +310,7 @@
             "status": "Live",
             "timeline": "3 Months",
             "team": "Solo Project",
-            "githubLink": "https://github.com/sharkfacekilla/portfolio",
+            "githubLink": "https://github.com/sharkfacekilla/gigplanr",
             "tech": [
                 {
                     "name": "Frontend",
@@ -372,7 +373,8 @@
                     "name": "Secondary Users",
                     "description": "Band managers, sound engineers, and venue coordinators who need access to performance information."
                 }
-            ]
+            ],
+            "demoLink": "https://gigplanr.com/"
         }
     ]
 }

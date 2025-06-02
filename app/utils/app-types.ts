@@ -28,6 +28,7 @@ export type Project = {
   learnings?: string[];
   goals?: string[];
   users?: User[];
+  demoLink: string;
 };
 
 export type TechCategory = {
