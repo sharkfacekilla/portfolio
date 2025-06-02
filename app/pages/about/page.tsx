@@ -53,9 +53,11 @@ const About = () => {
         </div>
         <Hero isVisible={isVisible} />
         <section className="relative z-10 px-6 lg:px-12 pb-20">
-          <Bio />
-          <Musician />
-          <Photography />
+            <div className="max-w-7xl mx-auto space-y-20">
+                <Bio isVisible={isVisible} />
+                <Musician />
+                <Photography />
+            </div>
         </section>
       </div>
     </>
