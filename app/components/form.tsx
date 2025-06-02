@@ -65,7 +65,7 @@ export const ContactForm = ({ isVisible }: NavbarProps) => {
           isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 translate-y-10 opacity-0"
         }`}
       >
-        <section className="h-full flex flex-col items-center mb-64">
+        <section className="h-full flex flex-col items-center mb-64 ">
           <form onSubmit={onSubmit} className="w-full max-w-2xl px-4">
             <div className="grid gap-6 mb-6 md:grid-cols-1">
               <div>
