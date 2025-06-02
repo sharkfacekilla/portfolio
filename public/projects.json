@@ -2,13 +2,13 @@
     "projects": [
         {
             "id": "1",
-            "name": "Shadowed Depths",
+            "name": "Shadowed Depths (Vertical Slice)",
             "shortDesc": "Roguelike inspired game",
             "img": "/img/shadowedDepths.jpg",
             "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, which is inspired by my love of classic games, such as Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
             "link": "https://www.youtube.com/embed/qwP3hqO2JLY?si=e0vBuxbcR0NZSbkY",
             "youtubeLink": "https://www.youtube.com/watch?v=KvT9lH3R2pc",
-            "githubLink": "",
+            "githubLink": "https://github.com/sharkfacekilla/shadowed_depths",
             "altTxt": "shadowed depths gameplay",
             "skills": {
                 "1": "Object Oriented Programming",
@@ -27,6 +27,43 @@
                         "Unity"
                     ]
                 }
+            ],
+            "features": [
+                {
+                    "name": "Roguelite gameplay",
+                    "description": "Keep your coins when you die, enhance your character's power, and go further than you did last run."
+                },
+                {
+                    "name": "Soundtrack",
+                    "description": "A rockin' soundtrack when you're in the depths. Plan on writing original music in the future"
+                },
+                {
+                    "name": "Multiple Levels",
+                    "description": "Overworld/underworld type levels, with more planned.."
+                }
+            ],
+            "goals": [
+                "Create a vertical slice of a PC game that could be expanded upon later on.",
+                "Learn how to write clean, reuseable code with C#.",
+                "Design engaging gameplay that enhances re-playability.",
+                "Implement a boss mechanic, that differs from regular creatures."
+            ],
+            "challenges": [
+                "Learning how to use Unity with minimal time.",
+                "Pixel art maniuplation to create unique character designs.",
+                "Balancing the damage of enemies based on the power level of the character.",
+                "Use of URP (Universal Render Pipeline) to create interesting lighting effects."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "Gamers, Roguelite fans, Hiring Managers"
+                }
+            ],
+            "learnings": [
+                "Using a new tool to create a playable game with minimal turnaround.",
+                "Object-oriented programming to enhance re-useability.",
+                "Creating levels and characters with assets."
             ]
         },
         {
@@ -59,6 +96,34 @@
                         "Tailwind CSS"
                     ]
                 }
+            ],
+            "goals": [
+                "Create a visually appealing portfolio to showcase past, and present projects.",
+                "Using a new technology stack to upgrade a pre-existing portfolio.",
+                "Minimal use of AI to solidify learnings.",
+                "Design the webpage for mobile, and desktop devices, so content can be viewed on multiple devices."
+            ],
+            "challenges": [
+                "Working with Typescript for the first time, learning how to define types and use them to define props that are passed.",
+                "Contact form submission.",
+                "Creating engaging animations on the page to add a unique effect.",
+                "Visually appealing on both desktop, and mobile devices."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "Recruiters, Hiring Managers"
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Software Developers."
+                }
+            ],
+            "learnings": [
+                "Using a new tech stack to adopt a pre-existing website to enhance visuals.",
+                "Breaking down parts of a page into smaller, reuseable components.",
+                "Defining types for parameters with Typescript.",
+                "First real use with TailwindCSS to enhance visuals."
             ]
         },
         {
@@ -69,7 +134,7 @@
             "description": "A Midterm project from my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website from scratch, not so bad!",
             "link": "https://www.youtube.com/embed/AmLYskjRW4k?si=NdEiiX6sgn3VtD6g",
             "youtubeLink": "https://www.youtube.com/watch?v=AmLYskjRW4k&t=6s",
-            "githubLink": "",
+            "githubLink": "https://github.com/sharkfacekilla/Year1/tree/main/Term1/ICS118/MIDTERM",
             "altTxt": "supreme remedy fake site",
             "skills": {
                 "1": "HTML, CSS",
@@ -289,6 +354,36 @@
                 {
                     "name": "Primary Users",
                     "description": "World of Warcraft gamers."
+                }
+            ],
+            "images": [
+                {
+                    "src": "wowapp/before/leaderboard_before.jpg",
+                    "caption": "First iteration of the leaderboard page."
+                },
+                {
+                    "src": "wowapp/after/leaderboard_after.jpg",
+                    "caption": "First overhaul of the site, making the leaderboard page a little nicer to look at."
+                },
+                {
+                    "src": "wowapp/before/character_page_before.jpg",
+                    "caption": "First iteration of the individual character page. Nothing was clickable to see more information, only thing that worked was the button to the external site."
+                },
+                {
+                    "src": "wowapp/after/character_page_after.jpg",
+                    "caption": "Modeled after a social media type site, aimed to give it a more concise theme. Broke up the important information into smaller components and worked to display neatly. Dungeon runs are now clickable and take you to that specific run on Raider.IO. Team Members and gear is also clickable for more information on appropriate sites.(I did get the icons working, however there was no way to do this without spamming a CDN 16 times, so we decided to leave it with these icons until we figure out another way:"
+                },
+                {
+                    "src": "wowapp/before/team_page_before.jpg",
+                    "caption": "First iteration of the team pages. Bit messy with the layout, buttons were a bit big, and wasn't easy to see the information at a glance."
+                },
+                {
+                    "src": "wowapp/after/team_page_1_after.jpg",
+                    "caption": "My take on the team page look. Again went with a more social media type display, with having the members at the top, then the statistics underneath. We played with the idea of having the middle section at the top, then the team members, however we felt this was more appropriate. Things are clickable here and will take you to appropriate pages. Also indroduced tabs to cycle between a team statistic view, and a dungeon run list (next slide)."
+                },
+                {
+                    "src": "wowapp/after/team_page_2_after.jpg",
+                    "caption": "Continuation from the first Team Page picture. A simple list of all the dungeons that were run, with the appropriate statistics, and clickable to see more information from Raider.IO."
                 }
             ]
         },

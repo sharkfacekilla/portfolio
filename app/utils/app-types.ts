@@ -29,6 +29,7 @@ export type Project = {
   goals?: string[];
   users?: User[];
   demoLink?: string;
+  images?: ImagesWithCaption[];
 };
 
 export type TechCategory = {
@@ -113,4 +114,9 @@ export type ResumeEducationProps = {
 export type ResumeWorkProps = {
   isVisible: boolean;
   work: ResumeWork;
+};
+
+export type ImagesWithCaption = {
+  src: string;
+  caption: string;
 };
