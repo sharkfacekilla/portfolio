@@ -15,12 +15,17 @@ import YouTubeVideo from "./YouTubeVideo";
 import { Project, ProjectProps } from "@/app/utils/app-types";
 import { Badge } from "@/components/ui/badge";
 
-export default function ProjectDetails({ project }: ProjectProps) {
+export default function ProjectDetails({ isVisible, project }: ProjectProps) {
   const [activeTab, setActiveTab] = useState("overview");
   return (
     <>
-      <section className="px-6 lg:px-12 py-12 pb-60">
-        <div className="max-w-7xl mx-auto">
+<div className={`transition-all duration-1000 ${
+          isVisible
+            ? "translate-x-0 opacity-100"
+            : "translate-y-10 opacity-0"
+        }`}>
+      <section className="px-6 lg:px-12 py-12 pb-60 ">
+        <div className="max-w-7xl mx-auto"> 
           <Tabs
             value={activeTab}
             onValueChange={setActiveTab}
@@ -256,6 +261,7 @@ export default function ProjectDetails({ project }: ProjectProps) {
           </Tabs>
         </div>
       </section>
+      </div>
     </>
   );
 }

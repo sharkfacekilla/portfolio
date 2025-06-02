@@ -28,7 +28,7 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     <>
       <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white">
         <ProjectHero isVisible={isVisible} params={{ id: projectData.id }} />
-        <ProjectDetails project={projectData} />
+        <ProjectDetails isVisible={isVisible} project={projectData} />
       </div>
     </>
   );

@@ -37,6 +37,7 @@ export type TechCategory = {
 };
 
 export type ProjectProps = {
+  isVisible: boolean;
   project: Project;
 };
 

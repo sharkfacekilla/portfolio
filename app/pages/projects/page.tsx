@@ -37,7 +37,7 @@ export default function Page() {
           )
         );
         //delay setting visible for animation to play
-        setTimeout(() => setIsVisible(true), 400);
+        setTimeout(() => setIsVisible(true), 300);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
