@@ -54,6 +54,7 @@ export default function Contact({ isVisible }: NavbarProps) {
                     <Link
                       key={social.label}
                       href={social.href}
+                      target="_blank"
                       className="p-4 bg-white/5 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
                     >
                       <social.icon className="h-6 w-6 text-gray-400 group-hover:text-cyan-400 transition-colors duration-300" />
@@ -62,7 +63,6 @@ export default function Contact({ isVisible }: NavbarProps) {
                 }
               })}
             </div>
-
             <Link href="/pages/contact">
               <Button
                 size="lg"

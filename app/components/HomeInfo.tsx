@@ -55,17 +55,9 @@ export default function HomeInfo() {
             }}
           />
         </div>
-
-        {/* Hero Section */}
         <HeroSection isVisible={isVisible} />
-
-        {/* Projects Section */}
         <RecentProjects isVisible={isVisible} latestThreeProjects={latestThreeProjects} />
-
-        {/* Contact Section */}
         <Contact isVisible={isVisible} />
-
-        {/* Footer */}
       </div>
     </>
   );

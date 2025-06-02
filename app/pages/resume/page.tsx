@@ -75,7 +75,13 @@ export default function ResumePage() {
                 isVisible={isVisible}
                 skills={resumeData.resume.technical_skills}
               />
-              <h2 className="text-3xl font-bold mb-8 flex items-center">
+              <h2
+                className={`text-3xl font-bold mb-8 flex items-center transition-all duration-700 ease-out ${
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"
+                }`}
+              >
                 <GraduationCap className="h-6 w-6 mr-3 text-cyan-400" />
                 Education
               </h2>
@@ -86,7 +92,13 @@ export default function ResumePage() {
                   education={entry}
                 />
               ))}
-              <h2 className="text-3xl font-bold mb-8 flex items-center">
+              <h2
+                className={`text-3xl font-bold mb-8 flex items-center transition-all duration-700 ease-out ${
+                  isVisible
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"
+                }`}
+              >
                 <Briefcase className="h-6 w-6 mr-3 text-cyan-400" />
                 Work Experience
               </h2>
