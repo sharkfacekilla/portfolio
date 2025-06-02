@@ -57,15 +57,17 @@ export default function Photography({ isVisible }: NavbarProps) {
                 journey and share the stories behind each captured moment.
               </p>
             </div>
-            <Link
-              href={"https://www.flickr.com/photos/152106905@N06"}
-              target="_blank"
-            >
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-black">
-                <ExternalLink className="h-4 w-4 mr-2" />
-                Visit Flickr Gallery
-              </Button>
-            </Link>
+            <div className="mt-4">
+                <Link
+                href={"https://www.flickr.com/photos/152106905@N06"}
+                target="_blank"
+                >
+                <Button className="bg-cyan-500 hover:bg-cyan-600 text-black">
+                    <ExternalLink className="h-4 w-4 mr-2" />
+                    Visit Flickr Gallery
+                </Button>
+                </Link>
+            </div>
           </div>
         </div>
       </div>
