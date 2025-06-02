@@ -1,7 +1,8 @@
-"use client"
-import Resume from "@/app/components/Resume";
+"use client";
 import { Metadata } from "next";
 import { useEffect, useState } from "react";
+import ResumeHero from "./components/ResumeHero";
+import { Resume } from "@/app/utils/app-types";
 
 /**
  * Resume Page.
@@ -9,6 +10,7 @@ import { useEffect, useState } from "react";
 export default function ResumePage() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [resume, setResume] = useState<Resume[]>([]);
 
   useEffect(() => {
     setIsVisible(true);
@@ -20,6 +22,21 @@ export default function ResumePage() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
+
+    useEffect(() => {
+    const fetchResume = async () => {
+      try {
+        const response = await fetch("/resume.json");
+        const data = await response.json();
+        setResume(data);
+        console.log(data);
+      } catch (err) {
+        console.error("Error fetching resume", err);
+      }
+    };
+    fetchResume();
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white overflow-hidden">
       {/* Animated background elements */}
@@ -41,7 +58,7 @@ export default function ResumePage() {
           }}
         />
       </div>
-      <Resume />
+      <ResumeHero isVisible={isVisible} />
     </div>
   );
 }
