@@ -63,7 +63,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="pointer-events-auto">
-            <ContactForm />
+            <ContactForm isVisible={isVisible} />
           </div>
         </div>
       </div>
