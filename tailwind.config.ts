@@ -61,15 +61,6 @@ const config: Config = {
   			}
   		}
   	},
-  	colors: {
-  		black: '#18181B',
-  		white: '#F5F5F5',
-  		red: '#FF5A5F',
-  		blue: '#087E8B',
-  		green: '#CCE8CC',
-  		'light-blue': '#3EE2F4',
-  		gray: '#808080'
-  	}
   },
   plugins: [require("tailwindcss-animate")],
 };

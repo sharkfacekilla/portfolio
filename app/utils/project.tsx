@@ -1,5 +1,5 @@
 /**
- * Describes what a Project object is.
+ * Describes what a Project object is. Deprecated
  */
 export interface Project {
     id: number;

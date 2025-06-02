@@ -1,56 +1,62 @@
-    import React from "react";
-    import Link from "next/link";
-    import Logo from "./nav/logo";
-    import { Button } from "@mui/material";
-    import SendIcon from '@mui/icons-material/Send';
+import Link from "next/link";
+import { Button } from "@mui/material";
+import { ArrowRight } from "lucide-react";
 
+interface NavbarProps {
+  isVisible: boolean;
+}
 
-    // Define the props interface
-    interface NavbarProps {
-        toggle: () => void;
-    }
+const links = ["About", "Projects", "Resume", "Contact"];
 
-    const Navbar: React.FC<NavbarProps> = ({ toggle }) => {
-        return (
-            <>
-               <div className="nav w-full h-20 bg-black sticky top-0 opacity-90 z-50">
-                    <div className="container mx-auto px-4 h-full">
-                        <div className="flex justify-between items-center h-full">
-                            <Link href="/">
-                                <Logo />
-                            </Link>
-                            <button type="button" className="inline-flex items-center md:hidden" onClick={toggle}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z" />
-                                </svg>
-                            </button>
-                            <ul className="hidden md:flex gap-x-6 text-white">
-                                <li>
-                                    <Link href="/pages/about">
-                                        <p className="mt-1 hover:text-light-blue hover:decoration-white underline decoration-light-blue">About</p>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/pages/projects">
-                                        <p className="mt-1 hover:text-light-blue hover:decoration-white underline decoration-light-blue">Projects</p>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/pages/resume">
-                                        <p className="mt-1 hover:text-light-blue hover:decoration-white underline decoration-light-blue">Resume</p>
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/pages/contact">
-                                        <Button className="bg-light-blue text-black hover:bg-white border-transparent" variant="contained" endIcon={<SendIcon />} disableElevation>Contact</Button>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </>
-        );
-    };
+const Navbar = ({ isVisible }: NavbarProps) => {
+  return (
+    <>
+      <nav className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center p-6 lg:px-12 bg-black/30">
+        <div
+          className={`text-2xl font-bold transition-all duration-1000 ${
+            isVisible
+              ? "translate-x-0 opacity-100"
+              : "-translate-x-10 opacity-0"
+          }`}
+        >
+          <Link href="/">
+            <span className="text-cyan-400">{"<"}</span>
+            <span className="text-white">Gage</span>
+            <span className="text-cyan-400">{" />"}</span>
+          </Link>
+        </div>
 
-    export default Navbar;
+        <div
+          className={`hidden md:flex space-x-8 transition-all duration-1000 delay-200 ${
+            isVisible
+              ? "translate-y-0 opacity-100"
+              : "-translate-y-10 opacity-0"
+          }`}
+        >
+          {links.map((item, index) => (
+            <Link
+              key={item}
+              href={`/pages/${item.toLowerCase()}`}
+              className="hover:text-cyan-400 text-white transition-colors duration-300 relative group"
+            >
+              {item}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-cyan-400 transition-all duration-300 group-hover:w-full" />
+            </Link>
+          ))}
+        </div>
+          <Link href={'/pages/contact'}>
+            <Button
+              className={`bg-cyan-500 hover:bg-cyan-600 text-black font-semibold transition-all duration-1000 delay-300 ${
+                isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
+              }`}
+            >
+              CONTACT
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </Link>
+      </nav>
+    </>
+  );
+};
+
+export default Navbar;

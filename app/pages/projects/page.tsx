@@ -1,49 +1,82 @@
-"use client"
-import React, { useState, useEffect } from 'react';
-import CustomCard from '@/app/components/CustomCard';
-import { Grid } from '@mui/material';
-import { Project } from '@/app/utils/project';
+"use client";
+import React, { useState, useEffect } from "react";
+
+import { Project } from "@/app/utils/app-types";
+
+import ProjectPageHero from "./comonents/ProjectPageHero";
+import ProjectPageGrid from "./comonents/ProjectPageGrid";
 
 /**
  *  Displaying the project landing page. Gets the projects from the JSON and displays accordingly.
  */
 export default function Page() {
-    const [projects, setProjects] = useState<Project[]>([]); 
+  const [isVisible, setIsVisible] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-    //Getting and Displaying projects with useEffect.
-    useEffect(() => {
-        const fetchProjects = async () => {
-            try {
-                const response = await fetch('/projects.json');
-                const data = await response.json();
-                
-                //display in descending order, most rescent first.
-                const sortedProjects = data.projects.sort((a: Project, b: Project) => b.id - a.id);
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({ x: e.clientX, y: e.clientY });
+    };
 
-                setProjects(data.projects);
-            } catch (error) {
-                console.error('Error fetching projects:', error);
-            }
-        };
-        fetchProjects();
-    }, []);
-    
-    return (
-        <>
-            <section className="relative py-12 overflow-x-hidden">
-                <div className="container mx-auto text-center">
-                    <h1 className="mx-auto mb-5 font-extrabold tracking-tight md:text-8xl sm: text-5xl text-light-blue mb-32 mt-28">Projects.</h1>
-                </div>
-                <div className="container mx-auto">
-                    <Grid container spacing={3} justifyContent="center" alignItems="stretch" className="mx-auto">
-                        {projects.map((project) => (
-                            <Grid item xs={12} sm={6} md={5} lg={4} key={project.id} className="mb-32">
-                                <CustomCard project={project} />
-                            </Grid>
-                        ))}
-                    </Grid>
-                </div>
-            </section>
-        </>
-    );
-};
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+  const [projects, setProjects] = useState<Project[]>([]);
+
+  //Getting and Displaying projects with useEffect.
+  useEffect(() => {
+    const fetchProjects = async () => {
+      try {
+        const response = await fetch("/projects.json");
+        const data = await response.json();
+
+        //display in descending order, most rescent first.
+        setProjects(
+          [...data.projects].sort(
+            (a: Project, b: Project) => parseInt(b.id) - parseInt(a.id)
+          )
+        );
+        //delay setting visible for animation to play
+        setTimeout(() => setIsVisible(true), 300);
+      } catch (error) {
+        console.error("Error fetching projects:", error);
+      }
+    };
+    fetchProjects();
+  }, []);
+
+  return (
+    <>
+      <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-black text-white overflow-hidden">
+        <div className="fixed inset-0 overflow-hidden pointer-events-none">
+          <div
+            className="absolute w-96 h-96 bg-blue-500/5 rounded-full blur-3xl transition-transform duration-1000 ease-out"
+            style={{
+              transform: `translate(${mousePosition.x * 0.02}px, ${
+                mousePosition.y * 0.02
+              }px)`,
+            }}
+          />
+          <div
+            className="absolute top-1/2 right-0 w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl transition-transform duration-1000 ease-out"
+            style={{
+              transform: `translate(${mousePosition.x * -0.01}px, ${
+                mousePosition.y * -0.01
+              }px)`,
+            }}
+          />
+        </div>
+        {projects.length > 0 ? (
+          <>
+            <ProjectPageHero isVisible={isVisible} />
+            <ProjectPageGrid isVisible={isVisible} projects={projects} />
+          </>
+        ) : (
+          <div className="flex justify-center items-center min-h-screen text-gray-400 text-center">
+            Loading projects...
+          </div>
+        )}
+      </div>
+    </>
+  );
+}

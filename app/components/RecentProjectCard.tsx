@@ -1,47 +1,109 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import Divider from '@mui/material/Divider';
-import Link from 'next/link';
-import data from '../../public/projects.json';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Button from "@mui/material/Button";
+import { ExternalLink } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
+import { Project } from "../utils/app-types";
 
 interface CustomCardProps {
-    proj: string;
+  project: Project;
 }
-
 /**
  * Renders the most recent object in the JSON. Includes image, name, short description, languages used, and a link to check out more information.
  * Uses custom props.
  * @param proj The project object, housing the information to render.
  * @returns Recent Project Card Component.
  */
-const CustomCard: React.FC<CustomCardProps> = ( {proj}) => {
-    //Find the project
-    const project = data.projects.find((p) => p.id === proj )!;
-
-    //grab the id
-    project.id = proj;
-
-    //create the dynamic route for the Link component.
-    const dynamicRoute = `/pages/projects/${project.id}`;
-
-    return (
-        <Card sx={{ maxWidth: 350 }}>
-            <CardMedia component="img" sx={{ height: 240, objectFit: 'cover' }} image={project.img} alt={project.altTxt}/>
-            <CardContent className="bg-black text-white">
-                <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
-                <Typography variant="body1" className="mb-5">{project.shortDesc} </Typography>
-                <Link href={dynamicRoute} passHref >
-                    <Button variant="contained" className="mb-5 bg-blue hover:bg-light-blue">Learn More</Button>
-                </Link>
-                <Divider className="bg-white" />
-                <Typography variant="caption" display="block" className="mt-2" gutterBottom>Language Used: {project.lang}</Typography>
-            </CardContent>
-        </Card>
-    );
+const RecentProjectCard: React.FC<CustomCardProps> = ({ project }) => {
+  return (
+    <Card
+      key={project.name}
+      className={`bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-500 group hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/20
+      }`}
+    >
+      <CardContent className="p-6 flex flex-col h-full">
+        {" "}
+        {/* Image Container */}
+        <div className="aspect-video rounded-lg mb-4 overflow-hidden flex-shrink-0">
+          {" "}
+          {project.img ? (
+            <img
+              src={project.img}
+              alt={`Image for ${project.name}`}
+              className="w-full h-full object-cover"
+            />
+          ) : (
+            // Fallback if no image URL is provided
+            <div className="w-full h-full bg-gradient-to-br from-cyan-500/10 to-blue-500/10 flex items-center justify-center text-4xl">
+              No Image Yet
+            </div>
+          )}
+        </div>
+        <div className="flex items-center justify-between mb-2 flex-grow">
+          {" "}
+          <h3 className="text-xl font-semibold text-white">{project.name}</h3>
+          <Badge
+            variant={
+              project.status === "Live"
+                ? "default"
+                : project.status === "In Progress"
+                ? "secondary"
+                : "outline"
+            }
+            className={
+              project.status === "Live"
+                ? "bg-green-500 text-white"
+                : project.status === "In Progress"
+                ? "bg-yellow-500 text-black"
+                : "border-gray-400 text-gray-400"
+            }
+          >
+            {project.status}
+          </Badge>
+        </div>
+        <p className="text-gray-400 mb-4 flex-grow">{project.shortDesc}</p>{" "}
+        <div className="flex flex-wrap gap-2 mb-4 flex-shrink-0">
+          {/* Outer conditional check: ensure project.tech exists, is an array, and has items */}
+          {project.tech &&
+          Array.isArray(project.tech) &&
+          project.tech.length > 0 ? (
+            // Outer map: loop over the technology categories
+            project.tech.map(
+              (category, categoryIndex) =>
+                // Inner conditional check: ensure technologies array exists and has items
+                category.technology &&
+                Array.isArray(category.technology) &&
+                // Inner map: loop over the technologies within the current category
+                category.technology.map((tech: string, index: any) => (
+                  // Render a Badge for each individual technology
+                  <Badge
+                    key={tech}
+                    variant="outline"
+                    className="text-xs border-cyan-400/50 text-cyan-400"
+                  >
+                    {tech}
+                  </Badge>
+                ))
+            )
+          ) : (
+            <span className="text-gray-400 text-xs italic">
+              No technologies listed.
+            </span>
+          )}
+        </div>
+        <Link href={`/pages/projects/${project.id}`}>
+          <Button
+            className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto"
+          >
+            Learn More
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </Button>
+        </Link>
+      </CardContent>
+    </Card>
+  );
 };
 
-export default CustomCard;
+export default RecentProjectCard;

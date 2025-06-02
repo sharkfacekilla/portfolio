@@ -7,14 +7,27 @@
             "img": "/img/shadowedDepths.jpg",
             "description": "My first Unity game for a college final project. Proof of concept of a 2D topdown roguelike, which is inspired by my love of classic games, such as Legend of Zelda and WoW. Still a couple bugs to work out (as shown in the video towards the end) but overall pretty happy with how this turned out.",
             "link": "https://www.youtube.com/embed/qwP3hqO2JLY?si=e0vBuxbcR0NZSbkY",
-            "lang": "C#, Unity",
+            "youtubeLink": "https://www.youtube.com/watch?v=KvT9lH3R2pc",
+            "githubLink": "",
             "altTxt": "shadowed depths gameplay",
             "skills": {
                 "1": "Object Oriented Programming",
                 "2": "Debugging",
                 "3": "Asset maniuplation",
                 "4": "World Building"
-            }
+            },
+            "status": "Completed",
+            "timeline": "2 Months",
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Engine",
+                    "technology": [
+                        "C#",
+                        "Unity"
+                    ]
+                }
+            ]
         },
         {
             "id": "2",
@@ -23,7 +36,8 @@
             "img": "/img/portfolioSite.png",
             "description": "This personal project saw me re-write my original protfolio website I made in first year with only HTML & CSS, by using Next.js to solidify what was learned in the second year of College.",
             "link": "https://www.youtube.com/embed/MMg9ScX8gqU?si=Wf4HMcwVKDD_GLrq",
-            "lang": "Next.js (React, TypeScript, Tailwind CSS)",
+            "youtubeLink": "https://www.youtube.com/watch?v=r2rMwISi0j4",
+            "githubLink": "",
             "altTxt": "portfolio web site",
             "skills": {
                 "1": "Dynamic Page Routing within Next.js",
@@ -31,7 +45,21 @@
                 "3": "Using nodemail to send emails through forum",
                 "4": "Using a JSON file to store data",
                 "5": "Reading from JSON to display said data over hard-coding"
-            }
+            },
+            "status": "Live",
+            "timeline": "2 Months",
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "Next.js",
+                        "React",
+                        "Typescript",
+                        "Tailwind CSS"
+                    ]
+                }
+            ]
         },
         {
             "id": "3",
@@ -40,23 +68,85 @@
             "img": "/img/midtermProject.png",
             "description": "A Midterm project from my first year in College, which required us to learn how to use video elements as backgrounds. Skills used here were only HTML/CSS, no JavaScript or any oustide help was used. Some small bugs that didn't unfortunately get fixed in time for submission, but for a first attempt at a website from scratch, not so bad!",
             "link": "https://www.youtube.com/embed/AmLYskjRW4k?si=NdEiiX6sgn3VtD6g",
-            "lang": "HTML, CSS",
+            "youtubeLink": "https://www.youtube.com/watch?v=AmLYskjRW4k&t=6s",
+            "githubLink": "",
             "altTxt": "supreme remedy fake site",
             "skills": {
                 "1": "HTML, CSS",
                 "2": "Best practices for nesting code",
                 "3": "CSS Debugging",
                 "4": "Working with multi-media (videos and pictures)"
-            }
+            },
+            "status": "Completed",
+            "timeline": "2 Weeks",
+            "team": "Solo Project",
+            "demoLink": "https://deepblue.camosun.bc.ca/~C0517025/MIDTERM",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "HTML",
+                        "CSS"
+                    ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Single Page Website",
+                    "description": "Simple design that has a video background."
+                },
+                {
+                    "name": "Spotify link embeds",
+                    "description": "Clickable album artworks that take you directly to the Spotify page."
+                },
+                {
+                    "name": "Band Biography",
+                    "description": "Short blurb about the band that gives you an idea of who they are.."
+                },
+                {
+                    "name": "Newsletter signup",
+                    "description": "A simple sign up for a newsletter, with a video background playing at a different time than the original. Only for display purposes at the moment."
+                }
+            ],
+            "challenges": [
+                "Working with video files, and using CSS to properly position and behave as intended.",
+                "Best practices with nesting HTML and commenting code",
+                "Creating effects with CSS, such as a blurred, glassy overlay over a video.",
+                "Visually appealing on both desktop, and mobile devices."
+            ],
+            "learnings": [
+                "How to use z-indexting to create the effect of different sections either going over or under another while scrolling.",
+                "Best practices with nesting code, and proper use of white space in both HTML and CSS.",
+                "Effectively writing comments, where it's clear what is happening without needing to read code.",
+                "Use of media queries to change elements on the page once a certain breakpoint has been hit."
+            ],
+            "goals": [
+                "Create a visually appealing web application to display the bands information.",
+                "Use a video background to create an interesting effect.",
+                "Write and maintain clean, readable code, with comments to describe what is being used where..",
+                "Display a newsletter form on the page that also has the same video background, but the time is offset, creating the illusion of two different videos being played.",
+                "Design the webpage for mobile, and desktop devices, so content can be viewed on multiple devices."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "Supreme Remedy fans, band members."
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Band managers, talent agents, music fans, casual browsers."
+                }
+            ]
         },
         {
             "id": "4",
             "name": "Shark Sync",
             "shortDesc": "Camosun Capstone Project for Graduation",
             "img": "/img/shark.jpg",
-            "description": "Shark Sync is a basketball tournament management web application. This was my team's capstone project for graduation for Camosun College. Shark Sync was created and sponsored by the UVIC Vikes Mens Alumni Basketball Association. Currently this is not live, however it should be in use by the time their tournament rolls around this year (2024).",
+            "description": "Shark Sync is a basketball tournament management web application. This was my team's capstone project for graduation for Camosun College. Shark Sync was created and sponsored by the UVIC Vikes Mens Alumni Basketball Association.",
             "link": "https://www.youtube.com/embed/TuhZs07C-6I?si=kLno_8yI-Qpy6cBM",
-            "lang": "Laravel, React, TypeScript, TailwindCSS, sqlite3",
+            "youtubeLink": "https://www.youtube.com/watch?v=9GeyoUWBwgk",
+            "githubLink": "",
             "altTxt": "shark sync camosun capstone project",
             "skills": {
                 "1": "Full-Stack web building",
@@ -64,23 +154,227 @@
                 "3": "Collaborating in a team setting on a project",
                 "4": "PHP/Laravel",
                 "5": "React"
-            }
+            },
+            "status": "Completed",
+            "timeline": "4 Months",
+            "team": "3 Person Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "React",
+                        "Typescript",
+                        "TailwindCSS"
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "technology": [
+                        "Laravel",
+                        "sqlite3"
+                    ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Visitor/Admin views",
+                    "description": "Sleek modern design for a basketball tournament website, for both administrators, and visitors to the web application."
+                },
+                {
+                    "name": "Real-time updates",
+                    "description": "Game scores update in real time when an administrator inputs statistics."
+                },
+                {
+                    "name": "Live score Ticker",
+                    "description": "Most recent games in the basketball tournet display on a ticker across the top of the visitor pages. Also updates in real time when changes are made."
+                },
+                {
+                    "name": "Tournament Bracket Display",
+                    "description": "A properly seeded bracket is generated for the administrators when teams are entered into the tournament."
+                }
+            ],
+            "challenges": [
+                "Creating a simple, user friendly interface for a complicated system.",
+                "Updating stats in real-time for visitors.",
+                "Correct tournament bracket creation."
+            ],
+            "learnings": [
+                "Starting a brand new full-stack application for the first time",
+                "WebSocket implementation for real-time features, along with other methods outside WebSockets.",
+                "Working and learning a new tech stack that was strongly suggested from team sponsor."
+            ],
+            "goals": [
+                "Create a visually appealing web application to display basketball tournament statistics.",
+                "Allow administratiors to create accounts for volunteers/other staff to help run tournaments.",
+                "Provide a way for tournaments to be seeded and be displayed properly in bracket formats.",
+                "Display live updates to statistics across the web application without having to refresh the page."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "UVIC Vikes Alumni Association, Basketball fans."
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Volunteers, UVIC Staff."
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Web App Redesign",
+            "shortDesc": "Modernize web app display.",
+            "img": "/img/logowbg.png",
+            "description": "Designed, and re-developed this web applications entire user interface. Went from a vomit of information, to a neatly presented design. Looks and feels a bit more like a social media website now.",
+            "link": "",
+            "youtubeLink": "",
+            "githubLink": "",
+            "altTxt": "web app redesign",
+            "skills": {
+                "1": "Navigating an already-established project repo",
+                "2": "Connecting with various API's for data",
+                "3": "UI Planning & Design",
+                "4": "Back & forth conversation with owner of project and community to enhance experience for everybody"
+            },
+            "status": "In Progress",
+            "timeline": "5 Days",
+            "team": "Solo Project",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "React",
+                        "TailwindCSS"
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "technology": [
+                        "Remix,js"
+                    ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Randomized character class builder",
+                    "description": "Has a wheel function that will spin and pick a designated class and specialization for you to play. Admin has ability to define the main class/spec the player plays, and the wheel will not roll the given information."
+                },
+                {
+                    "name": "Real-time statistics",
+                    "description": "Displays individual and team statistics, updated in real time."
+                },
+                {
+                    "name": "User friendly layout",
+                    "description": "A modern UI that aims to display information clearly in a nice style."
+                }
+            ],
+            "challenges": [
+                "Navigating a pre-established repository with hundreds of lines of code already written.",
+                "Taking great care to make sure no data that was originally displayed was left out.",
+                "Designing and displaying data in a clear and concise way.",
+                "Working with a very short turn-around to plan and create something beautiful."
+            ],
+            "learnings": [
+                "How to clone, set up, and work with a pre-existing repository versus creating a brand new project.",
+                "Collaboration with repository owner, and community to gather ideas on how to display the right information clearly.",
+                "More practice with Typescript, by using types and passing data correctly typed to custom components",
+                "Working with large JSON objects returned from a third party API."
+            ],
+            "goals": [
+                "Plan and concept a new user interface from scratch.",
+                "Update web application navigation and interface, to provide an easier experience both for admins and users.",
+                "Gather feedback from the creator of the web application, and users of the site on how to improve, or add new features to the website."
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "World of Warcraft gamers."
+                }
+            ]
         },
         {
             "id": "6",
-            "name": "GigPlanr (In Progress)",
+            "name": "GigPlanr",
             "shortDesc": "Setlist Planning Web Application",
             "img": "/img/gigPlanr.png",
             "description": "A web platform for musicians, by musicians. The idea of GigPlanr is a setlist planning web application that allows musicians to create, edit, print, and share setlists with their bandmates. More to come once finished...",
             "link": "https://www.youtube.com/embed/SjMBHPRvd-g?si=D8kGcvx2zc8GkCZl",
-            "lang": "Laravel, React, TypeScript, TailwindCSS, PostreSQL",
+            "youtubeLink": "https://www.youtube.com/watch?v=SjMBHPRvd-g",
             "altTxt": "gigplanr web app",
             "skills": {
                 "1": "Full-Stack web building",
                 "2": "Connecting with various API's for data",
                 "3": "CRUD Operations with database",
                 "4": "Social Login Integration"
-            }
+            },
+            "status": "Live",
+            "timeline": "3 Months",
+            "team": "Solo Project",
+            "githubLink": "https://github.com/sharkfacekilla/gigplanr",
+            "tech": [
+                {
+                    "name": "Frontend",
+                    "technology": [
+                        "React",
+                        "Typescript",
+                        "TailwindCSS"
+                    ]
+                },
+                {
+                    "name": "Backend",
+                    "technology": [
+                        "Laravel",
+                        "PostgreSQL"
+                    ]
+                }
+            ],
+            "features": [
+                {
+                    "name": "Drag & drop setlist builder",
+                    "description": "Easily arrange and reorder songs within your setlist using a simple drag and drop interface. Intuitive for quick planning and adjustments."
+                },
+                {
+                    "name": "Real-time collaboration",
+                    "description": "Collaborate with band members on setlists, ensuring everyone is on the same page."
+                },
+                {
+                    "name": "Print-friendly layouts",
+                    "description": "Generate clean and easily readable setlists for printing. Customize formatting options to suit your band's needs for on-stage use."
+                },
+                {
+                    "name": "Song database management",
+                    "description": "Build and manage a comprehensive database of your band's songs. Store details like title, artist, key, tempo, notes, and more."
+                }
+            ],
+            "challenges": [
+                "Creating a simple, user friendly interface for a complicated system.",
+                "Complex drag-and-drop interactions",
+                "Print layout optimization",
+                "Database performance with large song libraries"
+            ],
+            "learnings": [
+                "Advanced React patterns for complex state management",
+                "WebSocket implementation for real-time features",
+                "Print CSS optimization techniques",
+                "Database indexing and query optimization"
+            ],
+            "goals": [
+                "Streamline setlist creation for musicians",
+                "Enable easy collaboration between band members",
+                "Provide print-friendly layouts for live performances",
+                "Build comprehensive song database management"
+            ],
+            "users": [
+                {
+                    "name": "Primary Users",
+                    "description": "Professional and amateur musicians who perform live shows and need organized setlist management."
+                },
+                {
+                    "name": "Secondary Users",
+                    "description": "Band managers, sound engineers, and venue coordinators who need access to performance information."
+                }
+            ],
+            "demoLink": "https://gigplanr.com/"
         }
     ]
 }
