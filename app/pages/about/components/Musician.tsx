@@ -62,9 +62,10 @@ const Musician = ({ isVisible }: NavbarProps) => {
             </div>
           </div>
 
-          <Card className="relative bg-transparent border-white/10 overflow-hidden h-[32rem] rounded-xl">
-            <CardContent className="p-0">
-              <div className="absolute inset-0 z-0">
+          <Card className="relative bg-transparent border-white/10 rounded-xl overflow-hidden h-[32rem]">
+            <CardContent className="p-6 h-full flex flex-col">
+              {/* Image container with fixed height, rounded corners, border, overflow-hidden */}
+              <div className="relative flex-grow rounded-xl overflow-hidden border-2 border-white/10">
                 <Image
                   src="/img/bandCover.JPG"
                   alt="Supreme Remedy Cover"
@@ -74,7 +75,9 @@ const Musician = ({ isVisible }: NavbarProps) => {
                 />
                 <div className="absolute inset-0 bg-black/60" />
               </div>
-              <div className="absolute inset-0 z-20 flex flex-col justify-between p-6 text-white">
+
+              {/* Foreground content positioned over image */}
+              <div className="absolute inset-0 z-20 flex flex-col justify-between p-12 text-white">
                 <h3 className="text-3xl font-semibold text-center">
                   Supreme Remedy
                 </h3>
@@ -88,10 +91,9 @@ const Musician = ({ isVisible }: NavbarProps) => {
                     width="100%"
                     height={80}
                   />
+
                   <Link
-                    href={
-                      "https://open.spotify.com/album/63EBH2gtv9hVK0iu5t6snZ?si=dCetXGmjTfeFCYNxYoth8Q"
-                    }
+                    href="https://open.spotify.com/album/63EBH2gtv9hVK0iu5t6snZ?si=dCetXGmjTfeFCYNxYoth8Q"
                     target="_blank"
                   >
                     <div className="mt-4 flex justify-center">

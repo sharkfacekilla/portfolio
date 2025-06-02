@@ -5,7 +5,7 @@ import Hero from "./components/Hero";
 import Bio from "./components/Bio";
 import Musician from "./components/Musician";
 import { Metadata } from "next";
-import Photography from "./Photographer";
+import Photography from "./components/Photographer";
 
 // export const metadata: Metadata = {
 //   title: "Gage Patenaude | About Me",
@@ -56,7 +56,7 @@ const About = () => {
             <div className="max-w-7xl mx-auto space-y-20">
                 <Bio isVisible={isVisible} />
                 <Musician isVisible={isVisible} />
-                <Photography />
+                <Photography isVisible={isVisible}/>
             </div>
         </section>
       </div>
