@@ -7,7 +7,7 @@ import ResumeHighlights from "./components/ResumeHighlights";
 import ResumeTechSkills from "./components/ResumeTechSkills";
 import ResumeEducation from "./components/ResumeEducation";
 import ResumeWorkCard from "./components/ResumeWorkCard";
-import { Briefcase } from "lucide-react";
+import { Briefcase, GraduationCap } from "lucide-react";
 
 /**
  * Resume Page.
@@ -18,8 +18,7 @@ export default function ResumePage() {
   const [resumeData, setResumeData] = useState<ResumeJsonData | null>(null);
 
   useEffect(() => {
-    setIsVisible(true);
-
+    setTimeout(() => setIsVisible(true), 100);
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -34,7 +33,7 @@ export default function ResumePage() {
         const response = await fetch("/resume.json");
         const data: ResumeJsonData = await response.json();
         setResumeData(data);
-        console.log(data);
+        setTimeout(() => setIsVisible(true), 200);
       } catch (err) {
         console.error("Error fetching resume", err);
       }
@@ -64,7 +63,7 @@ export default function ResumePage() {
         />
       </div>
       <section className="relative z-10 px-6 lg:px-12 pb-20">
-        <div className="max-w-7xl mx-auto space-y-12">
+        <div className="max-w-7xl mx-auto space-y-12 pb-40">
           <ResumeHero isVisible={isVisible} />
           {resumeData ? (
             <>
@@ -76,6 +75,10 @@ export default function ResumePage() {
                 isVisible={isVisible}
                 skills={resumeData.resume.technical_skills}
               />
+              <h2 className="text-3xl font-bold mb-8 flex items-center">
+                <GraduationCap className="h-6 w-6 mr-3 text-cyan-400" />
+                Education
+              </h2>
               {resumeData.resume.education.map((entry, index) => (
                 <ResumeEducation
                   key={entry.school + index}
@@ -83,16 +86,19 @@ export default function ResumePage() {
                   education={entry}
                 />
               ))}
-                          <h2 className="text-3xl font-bold mb-8 flex items-center">
-              <Briefcase className="h-6 w-6 mr-3 text-cyan-400" />
-              Work Experience
-            </h2>
-              {Object.values(resumeData.resume.work).map((job: ResumeWork, index: number) => (
-                <ResumeWorkCard
+              <h2 className="text-3xl font-bold mb-8 flex items-center">
+                <Briefcase className="h-6 w-6 mr-3 text-cyan-400" />
+                Work Experience
+              </h2>
+              {Object.values(resumeData.resume.work).map(
+                (job: ResumeWork, index: number) => (
+                  <ResumeWorkCard
                     key={job.company + index}
                     isVisible={isVisible}
-                    work={job} />
-              ))}
+                    work={job}
+                  />
+                )
+              )}
             </>
           ) : (
             <div className="text-gray-400 text-center py-10">
