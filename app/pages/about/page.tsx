@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Hero from "./components/Hero";
 import Bio from "./components/Bio";
-import Musician from "./Musician";
+import Musician from "./components/Musician";
 import { Metadata } from "next";
 import Photography from "./Photographer";
 
@@ -55,7 +55,7 @@ const About = () => {
         <section className="relative z-10 px-6 lg:px-12 pb-20">
             <div className="max-w-7xl mx-auto space-y-20">
                 <Bio isVisible={isVisible} />
-                <Musician />
+                <Musician isVisible={isVisible} />
                 <Photography />
             </div>
         </section>
