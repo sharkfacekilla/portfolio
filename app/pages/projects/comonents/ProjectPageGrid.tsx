@@ -90,21 +90,22 @@ export default function ProjectPageGrid({ isVisible, projects }: NavbarProps) {
                           Technologies Used:
                         </p>
                         <div className="flex flex-wrap gap-1">
-                          {project.tech.slice(0, 3).map((tech, index) => (
+                          {project.tech.flatMap(t => t.technology)
+                          .slice(0, 3).map((tech, index) => (
                             <Badge
                               key={index}
                               variant="outline"
                               className="text-xs border-white/20 text-gray-400"
                             >
-                              {tech.technology}
+                              {tech}
                             </Badge>
                           ))}
-                          {project.tech.length > 3 && (
+                          {project.tech.flatMap(t=> t.technology).length > 3 && (
                             <Badge
                               variant="outline"
                               className="text-xs border-white/20 text-gray-400"
                             >
-                              +{project.tech.length - 3}
+                              +{project.tech.flatMap(t => t.technology).length - 3}
                             </Badge>
                           )}
                         </div>
@@ -121,20 +122,28 @@ export default function ProjectPageGrid({ isVisible, projects }: NavbarProps) {
                             <ArrowRight className="ml-2 h-3 w-3" />
                           </Button>
                         </Link>
-                        <Button2
-                          size="sm"
-                          variant="outline"
-                          className="border-white/20 text-gray-400 hover:text-white hover:border-cyan-400"
-                        >
-                          <Github className="h-3 w-3" />
-                        </Button2>
-                        <Button2
-                          size="sm"
-                          variant="outline"
-                          className="border-white/20 text-gray-400 hover:text-white hover:border-cyan-400"
-                        >
-                          <ExternalLink className="h-3 w-3" />
-                        </Button2>
+                        {project.githubLink &&
+                        <Link href={project.githubLink} target="_blank">
+                          <Button2
+                            size="sm"
+                            variant="outline"
+                            className="border-white/20 text-gray-400 hover:text-white hover:border-cyan-400"
+                          >
+                            <Github className="h-3 w-3" />
+                          </Button2>
+                        </Link>
+                        }
+                        {project.demoLink &&
+                        <Link href={project.demoLink} target="_blank">
+                          <Button2
+                            size="sm"
+                            variant="outline"
+                            className="border-white/20 text-gray-400 hover:text-white hover:border-cyan-400"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                          </Button2>
+                        </Link>
+                        }
                       </div>
                     </div>
                   </CardContent>
