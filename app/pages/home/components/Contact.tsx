@@ -11,10 +11,14 @@ let socialData = [
     href: "https://github.com/sharkfacekilla",
     label: "GitHub",
   },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  {
+    icon: Linkedin,
+    href: "https://www.linkedin.com/in/gpatenaude94/",
+    label: "LinkedIn",
+  },
   {
     icon: Mail,
-    href: "mailto:gage@example.com",
+    href: "mailto:gagepatenaude94@gmail.com",
     label: "Email",
   },
 ];
@@ -31,24 +35,32 @@ export default function Contact({ isVisible }: NavbarProps) {
                 : "translate-y-10 opacity-0"
             }`}
           >
-{/* <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-  Let&rsquo;s Build Something Amazing
-</h2>
-<p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-  Ready to bring your ideas to life? Let&rsquo;s discuss your next project.
-</p> */}
-
             <div className="flex justify-center space-x-6 mb-8">
-              {socialData.map((social, index) => (
-                <Link
-                  key={social.label}
-                  href={social.href}
-                  className="p-4 bg-white/5 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
-                  target="_blank"
-                >
-                  <social.icon className="h-6 w-6 text-gray-400 group-hover:text-cyan-400 transition-colors duration-300" />
-                </Link>
-              ))}
+              {socialData.map((social) => {
+                const isExternal = social.href.startsWith("mailto:");
+                if (isExternal) {
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      className="p-4 bg-white/5 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+                    >
+                      <social.icon className="h-6 w-6 text-gray-400 group-hover:text-cyan-400 transition-colors duration-300" />
+                    </a>
+                  );
+                } else {
+                  // For internal links, use Next.js Link
+                  return (
+                    <Link
+                      key={social.label}
+                      href={social.href}
+                      className="p-4 bg-white/5 rounded-full hover:bg-white/10 transition-all duration-300 hover:scale-110 group"
+                    >
+                      <social.icon className="h-6 w-6 text-gray-400 group-hover:text-cyan-400 transition-colors duration-300" />
+                    </Link>
+                  );
+                }
+              })}
             </div>
 
             <Link href="/pages/contact">
