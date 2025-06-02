@@ -6,6 +6,7 @@ import { ExternalLink } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import { Project } from "../utils/app-types";
+import Image from "next/image";
 
 interface CustomCardProps {
   project: Project;
@@ -26,16 +27,15 @@ const RecentProjectCard: React.FC<CustomCardProps> = ({ project }) => {
       <CardContent className="p-6 flex flex-col h-full">
         {" "}
         {/* Image Container */}
-        <div className="aspect-video rounded-lg mb-4 overflow-hidden flex-shrink-0">
-          {" "}
+        <div className="aspect-video rounded-lg mb-4 overflow-hidden relative flex-shrink-0">
           {project.img ? (
-            <img
+            <Image
               src={project.img}
               alt={`Image for ${project.name}`}
-              className="w-full h-full object-cover"
+              fill
+              className="object-cover"
             />
           ) : (
-            // Fallback if no image URL is provided
             <div className="w-full h-full bg-gradient-to-br from-cyan-500/10 to-blue-500/10 flex items-center justify-center text-4xl">
               No Image Yet
             </div>
@@ -94,9 +94,7 @@ const RecentProjectCard: React.FC<CustomCardProps> = ({ project }) => {
           )}
         </div>
         <Link href={`/pages/projects/${project.id}`}>
-          <Button
-            className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto"
-          >
+          <Button className="w-full text-cyan-400 hover:text-white hover:bg-cyan-500/20 group-hover:bg-cyan-500 group-hover:text-black transition-all duration-300 mt-auto">
             Learn More
             <ExternalLink className="ml-2 h-4 w-4" />
           </Button>

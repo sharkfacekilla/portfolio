@@ -27,24 +27,13 @@ const Musician = ({ isVisible }: NavbarProps) => {
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                Music has been my creative sanctuary since childhood. What began
-                with picking up an electric guitar at age seven has evolved into
-                a comprehensive musical journey spanning multiple instruments,
-                composition, and production.
+                {"Music has been my creative sanctuary since childhood. What began with picking up an electric guitar at age seven has evolved into a comprehensive musical journey spanning multiple instruments, composition, and production."}
               </p>
               <p>
-                During high school, I expanded into drums, which became pivotal
-                in shaping my understanding of rhythm and musical structure.
-                This foundation led me to form Supreme Remedy with fellow
-                musicians, where we crafted original compositions and performed
-                at local venues.
+                {"During high school, I expanded into drums, which became pivotal in shaping my understanding of rhythm and musical structure. This foundation led me to form Supreme Remedy with fellow musicians, where we crafted original compositions and performed at local venues."}
               </p>
               <p>
-                Today, I continue pushing creative boundaries through music
-                production, releasing tracks on platforms like Spotify. Music
-                serves as both creative outlet and inspiration, often
-                influencing my approach to problem-solving in development
-                projects.
+                {"Today, I continue pushing creative boundaries through music production, releasing tracks on platforms like Spotify. Music serves as both creative outlet and inspiration, often influencing my approach to problem-solving in development projects."}
               </p>
             </div>
             <div className="mt-4">
@@ -64,7 +53,6 @@ const Musician = ({ isVisible }: NavbarProps) => {
 
           <Card className="relative bg-transparent border-white/10 rounded-xl overflow-hidden h-[32rem]">
             <CardContent className="p-6 h-full flex flex-col">
-              {/* Image container with fixed height, rounded corners, border, overflow-hidden */}
               <div className="relative flex-grow rounded-xl overflow-hidden border-2 border-white/10">
                 <Image
                   src="/img/bandCover.JPG"
@@ -82,16 +70,12 @@ const Musician = ({ isVisible }: NavbarProps) => {
                   Supreme Remedy
                 </h3>
                 <div>
-                  <p className="text-sm text-gray-300 mb-3 text-center">
-                    Latest Release: "Got Time"
-                  </p>
-
+                  <p className="text-sm text-gray-300 mb-3 text-center">{`Latest Release: "Got Time"`}</p>
                   <Spotify
                     link="https://open.spotify.com/album/63EBH2gtv9hVK0iu5t6snZ?si=dCetXGmjTfeFCYNxYoth8Q"
                     width="100%"
                     height={80}
                   />
-
                   <Link
                     href="https://open.spotify.com/album/63EBH2gtv9hVK0iu5t6snZ?si=dCetXGmjTfeFCYNxYoth8Q"
                     target="_blank"

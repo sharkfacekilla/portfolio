@@ -38,23 +38,13 @@ export default function Photography({ isVisible }: NavbarProps) {
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                Photography represents my newest creative pursuit, born from
-                witnessing my sister's artistic talent and feeling inspired to
-                explore visual storytelling myself. What started as casual
-                experimentation has grown into a genuine passion for capturing
-                the world's beauty.
+                {"Photography represents my newest creative pursuit, born from witnessing my sister's artistic talent and feeling inspired to explore visual storytelling myself. What started as casual experimentation has grown into a genuine passion for capturing the world's beauty."}
               </p>
               <p>
-                I gravitate toward nature photography and street scenes, drawn
-                to the challenge of finding extraordinary moments in ordinary
-                settings. Long exposure shots and architectural photography
-                particularly fascinate me, offering opportunities to play with
-                light and perspective.
+                {"I gravitate toward nature photography and street scenes, drawn to the challenge of finding extraordinary moments in ordinary settings. Long exposure shots and architectural photographyparticularly fascinate me, offering opportunities to play with light and perspective."}
               </p>
               <p>
-                Currently building my portfolio on Flickr, I'm working toward
-                creating a dedicated web platform to showcase my photographic
-                journey and share the stories behind each captured moment.
+                {"Currently building my portfolio on Flickr, I'm working toward creating a dedicated web platform to showcase my photographic journey and share the stories behind each captured moment."}
               </p>
             </div>
             <div className="mt-4">

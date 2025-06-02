@@ -101,7 +101,7 @@ export default function ProjectDetails({ isVisible, project }: ProjectProps) {
                           Array.isArray(project.users) &&
                           project.users.length > 0 ? (
                             project.users.map((item, index) => (
-                              <div>
+                              <div key={index}>
                                 <h4 className="font-medium text-white mb-2">
                                   {item.name}
                                 </h4>

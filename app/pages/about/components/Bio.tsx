@@ -85,26 +85,13 @@ export default function Bio({ isVisible }: NavbarProps) {
             </h2>
             <div className="space-y-4 text-gray-300 leading-relaxed">
               <p>
-                Since discovering my first computer at age three, technology has
-                been the driving force behind my curiosity and creativity. What
-                started as childhood fascination with how things work has
-                evolved into a deep passion for building digital solutions that
-                make a real difference.
+                {"Since discovering my first computer at age three, technology has been the driving force behind my curiosity and creativity. What started as childhood fascination with how things work has evolved into a deep passion for building digital solutions that make a real difference."}
               </p>
               <p>
-                As a recent graduate from Camosun College's Information &
-                Computer Systems program, I've immersed myself in the world of
-                full-stack development, mastering technologies like React,
-                Laravel, and modern web frameworks. But my journey extends far
-                beyond just writing code—it's about crafting experiences that
-                users love and solving problems that matter.
+                {"As a recent graduate from Camosun College's Information & Computer Systems program, I've immersed myself in the world of full-stack development, mastering technologies like React, Laravel, and modern web frameworks. But my journey extends far beyond just writing code—it's about crafting experiences that users love and solving problems that matter."}
               </p>
               <p>
-                When I'm not debugging code or architecting new features, you'll
-                find me creating music, capturing moments through photography,
-                or exploring the latest technological innovations. I believe
-                that diverse interests fuel creativity, and creativity drives
-                innovation.
+                {"When I'm not debugging code or architecting new features, you'll find me creating music, capturing moments through photography, or exploring the latest technological innovations. I believe that diverse interests fuel creativity, and creativity drives innovation."}
               </p>
             </div>
 
