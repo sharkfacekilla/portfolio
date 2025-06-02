@@ -31,6 +31,29 @@ export type Project = {
   demoLink: string;
 };
 
+export type Resume = {
+   resume: {
+    highlights: string[];
+    technical_skills: string[];
+    education: {
+      title: string;
+      school: string;
+      start_date: string;
+      end_date: string;
+      skills: string[];
+    };
+    work: {
+      company: string;
+      job_title: string;
+      start_date: string;
+      end_date: string;
+      responsibilities: string[];
+    }[];
+    future_projects: string[];
+    extracurricular: string[];
+  };
+}
+
 export type TechCategory = {
   name: string;
   technology: string[];
