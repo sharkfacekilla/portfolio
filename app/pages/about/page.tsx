@@ -6,6 +6,10 @@ import Bio from "./components/Bio";
 import Musician from "./components/Musician";
 import { Metadata } from "next";
 import Photography from "./components/Photographer";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import CallToAction from "./components/Action";
 
 // export const metadata: Metadata = {
 //   title: "Gage Patenaude | About Me",
@@ -53,11 +57,14 @@ const About = () => {
         </div>
         <Hero isVisible={isVisible} />
         <section className="relative z-10 px-6 lg:px-12 pb-20">
-            <div className="max-w-7xl mx-auto space-y-20">
-                <Bio isVisible={isVisible} />
-                <Musician isVisible={isVisible} />
-                <Photography isVisible={isVisible}/>
+          <div className="max-w-7xl mx-auto space-y-20">
+            <Bio isVisible={isVisible} />
+            <Musician isVisible={isVisible} />
+            <Photography isVisible={isVisible} />
+            <div className="pb-32 pt-20">
+               <CallToAction />
             </div>
+          </div>
         </section>
       </div>
     </>
