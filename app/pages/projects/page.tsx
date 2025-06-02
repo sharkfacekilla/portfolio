@@ -14,8 +14,6 @@ export default function Page() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    setIsVisible(true);
-
     const handleMouseMove = (e: MouseEvent) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
@@ -34,8 +32,12 @@ export default function Page() {
 
         //display in descending order, most rescent first.
         setProjects(
-          [...data.projects].sort((a: Project, b: Project) => parseInt(b.id) - parseInt(a.id))
+          [...data.projects].sort(
+            (a: Project, b: Project) => parseInt(b.id) - parseInt(a.id)
+          )
         );
+        //delay setting visible for animation to play
+        setTimeout(() => setIsVisible(true), 400);
       } catch (error) {
         console.error("Error fetching projects:", error);
       }
@@ -64,8 +66,16 @@ export default function Page() {
             }}
           />
         </div>
-        <ProjectPageHero isVisible={isVisible} />
-        <ProjectPageGrid isVisible={isVisible} projects={projects} />
+        {projects.length > 0 ? (
+          <>
+            <ProjectPageHero isVisible={isVisible} />
+            <ProjectPageGrid isVisible={isVisible} projects={projects} />
+          </>
+        ) : (
+          <div className="flex justify-center items-center min-h-screen text-gray-400 text-center">
+            Loading projects...
+          </div>
+        )}
       </div>
     </>
   );
