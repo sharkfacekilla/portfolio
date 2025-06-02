@@ -31,26 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 		--background-end-rgb: 24, 24, 27;
 	}
 }
-
-/* ::-webkit-scrollbar {
-	display: none;
-} */
+body {
+}
 
 @layer utilities {
 	.text-balance {
 		text-wrap: balance;
 	}
-
-	/* @variants responsive {
-		.no-scrollbar::-webkit-scrollbar {
-			display: none;
-		}
-
-		.no-scrollbar {
-			-ms-overflow-style: none;
-			scrollbar-width: none;
-		}
-	} */
 }
 
 .bg-aboutMe {
@@ -61,14 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 	background-image: linear-gradient(to right, rgba(0, 0, 0), rgba(0, 0, 0, 0)), url('/img/me2Edited.jpg');
 
 }
-
-/* .bg-tech {
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-image: url('/img/tech.png');
-	background-attachment: fixed;
-} */
 
 .nav {
 	transition: 0.5s ease-in;
