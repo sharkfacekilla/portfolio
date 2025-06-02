@@ -1,102 +1,130 @@
 {
     "resume": {
-        "highlights": {
-            "1": "Demonstrating efficient skills in full stack application building with tools such as React, Laravel and PostreSQL. ",
-            "2": "Presenting efficient and clear communication in both written and oral methods.",
-            "3": "Exceling in a team environment, as well as independently."
-        },
-       "technical_skills": {
-            "1": "HTML",
-            "2": "CSS",
-            "3": "Tailwind CSS",
-            "4": "JavaScript",
-            "5": "TypeScript",
-            "6": "React",
-            "7": "Next.js",
-            "8": "Node.js",
-            "9": "Python",
-            "10": "Java",
-            "11": "C",
-            "12": "C++",
-            "13": "C#",
-            "14": "Swift",
-            "15": "MongoDB",
-            "16": "SQL",
-            "17": "PostgreSQL",
-            "18": "Laravel",
-            "19": "AWS",
-            "20": "Unity"
-        },
-        "education": {
-            "title": "Information & Computer Systems Diploma Program",
-            "school": "Camosun College, Victoria, B.C.",
-            "start_date": "September 2022",
-            "end_date": "September 2024",
-            "skills": {
-                "1": "Graduated from the Information and Computer Systems Diploma program.",
-                "2": "Wrote, edited, and debugged programs in various languages, such as Java, Python, C, C++, C#, and iOS Development with Swift",
-                "3": "Demonstrated a mobile-first approach by creating fully responsive websites using HTML, CSS and JavaScript",
-                "4": "Created full-stack applications using React/Next.js, or React/Laravel, with TailwindCSS syling, and deployment with Amazon Web Services."
+        "highlights": [
+            "Demonstrating efficient skills in full stack application building with tools such as React, Laravel and PostreSQL. ",
+            "Presenting efficient and clear communication in both written and oral methods.",
+            "Exceling in a team environment, as well as independently."
+        ],
+        "technical_skills": [
+            {
+                "name": "Frontend",
+                "skills": [
+                    "HTML",
+                    "CSS",
+                    "Tailwind CSS",
+                    "JavaScript",
+                    "TypeScript",
+                    "React",
+                    "Next.js"
+                ]
+            },
+            {
+                "name": "Backend",
+                "skills": [
+                    "Node.js",
+                    "Python",
+                    "Java",
+                    "Laravel",
+                    "AWS"
+                ]
+            },
+            {
+                "name": "Databases",
+                "skills": [
+                    "MongoDB",
+                    "SQL",
+                    "PostgreSQL"
+                ]
+            },
+            {
+                "name": "Languages (General)",
+                "skills": [
+                    "C",
+                    "C++",
+                    "C#",
+                    "Swift"
+                ]
+            },
+            {
+                "name": "Game Development",
+                "skills": [
+                    "Unity"
+                ]
             }
-        },
+        ],
+        "education": [
+            {
+                "title": "Information & Computer Systems Diploma Program",
+                "school": "Camosun College, Victoria, B.C.",
+                "start_date": "September 2022",
+                "end_date": "September 2024",
+                "skills": [
+                    "Graduated from the Information and Computer Systems Diploma program.",
+                    "Wrote, edited, and debugged programs in various languages, such as Java, Python, C, C++, C#, and iOS Development with Swift",
+                    "Demonstrated a mobile-first approach by creating fully responsive websites using HTML, CSS and JavaScript",
+                    "Created full-stack applications using React/Next.js, or React/Laravel, with TailwindCSS syling, and deployment with Amazon Web Services."
+                ]
+            }
+        ],
         "work": {
             "sbux": {
                 "company": "Starbucks Canada, Victoria, B.C.",
                 "job_title": "Shift Supervisor",
                 "start_date": "November 2017",
                 "end_date": "Present",
-                "responsibilities": {
-                    "1": "Guiding a team daily, navigating though challenges together, resulting in some record breaking sales for the store.",
-                    "2": "Facilitating the onboarding and training of new hires, and ensuring proper training requirements and understanding are both met though verifying learning and confidence skills.",
-                    "3": "Apply quick problem solving of both customer issues, and business issues as they arise, with minimal impact to operations."                }
+                "responsibilities": [
+                    "Guiding a team daily, navigating though challenges together, resulting in some record breaking sales for the store.",
+                    "Facilitating the onboarding and training of new hires, and ensuring proper training requirements and understanding are both met though verifying learning and confidence skills.",
+                    "Apply quick problem solving of both customer issues, and business issues as they arise, with minimal impact to operations."
+                ]
             },
             "shaw": {
                 "company": "Shaw Communications",
                 "job_title": "Loyalty Care Representative",
                 "start_date": "February 2015",
                 "end_date": "November 2017",
-                "responsibilities": {
-                    "1": "Curated genuine connections with customers with high satisfaction rating.",
-                    "2": "Consulted customer questions and concerns quickly and efficiently.",
-                    "3": "Recommended changes to services to best suit needs, and informed on services that might be unknown, and benefits over competitors.",
-                    "4": "Reported to supervisor weekly in both written and oral communication."
-                }
+                "responsibilities": [
+                    "Curated genuine connections with customers with high satisfaction rating.",
+                    "Consulted customer questions and concerns quickly and efficiently.",
+                    "Recommended changes to services to best suit needs, and informed on services that might be unknown, and benefits over competitors.",
+                    "Reported to supervisor weekly in both written and oral communication."
+                ]
             },
             "target": {
                 "company": "Target Canada",
                 "job_title": "Signage Team Member",
                 "start_date": "April 2013",
                 "end_date": "February 2015",
-                "responsibilities" : {
-                    "1": "Implemented planograms around the store down to the smallest details.",
-                    "2": "Oversaw deliveries of store signage and fixtures and implemented them on time.",
-                    "3": "Advised customers on products and services offered to meet their needs to great satisfaction."
-                }
+                "responsibilities": [
+                    "Implemented planograms around the store down to the smallest details.",
+                    "Oversaw deliveries of store signage and fixtures and implemented them on time.",
+                    "Advised customers on products and services offered to meet their needs to great satisfaction."
+                ]
             },
             "mcdonalds": {
                 "company": "McDonalds Canada",
                 "job_title": "Team Leader",
                 "start_date": "November 2009",
                 "end_date": "April 2013",
-                "responsibilities": {
-                    "1": "Supervised a small team daily.",
-                    "2": "Oversaw and implemented a strict cleaning routine to great results.",
-                    "3": "Hired and mentored new candidates.",
-                    "4": "Assisted manager with scheduling, ordering, inventory, and waste control needs."
-                }
+                "responsibilities": [
+                    "Supervised a small team daily.",
+                    "Oversaw and implemented a strict cleaning routine to great results.",
+                    "Hired and mentored new candidates.",
+                    "Assisted manager with scheduling, ordering, inventory, and waste control needs."
+                ]
             }
         },
-        "future_projects": {
-            "1": "GigPlanr: A Setlist Builder for Musicians, by Musicians.",
-            "2": "Plans to overhaul band website, complete with shop section, photo gallery, more in-depth bio section and a place to showcase released music.",
-            "3": "Plans to develop an organized, modern environment to showcase photography."
-        },
-        "extracurricular": {
-            "1": "Engineering music recording sessions with artists/bands.",
-            "2": "Writing and performing original music, along with some cover songs.",
-            "3": "Photography.",
-            "4": "Creating software.",
-            "5": "Reading a good book."
-        }
+        "future_projects": [
+            "GigPlanr: A Setlist Builder for Musicians, by Musicians.",
+            "Plans to overhaul band website, complete with shop section, photo gallery, more in-depth bio section and a place to showcase released music.",
+            "Plans to develop an organized, modern environment to showcase photography."
+        ],
+        "extracurricular": [
+            "Engineering music recording sessions with artists/bands.",
+            "Writing and performing original music, along with some cover songs.",
+            "Photography.",
+            "Creating software.",
+            "Reading a good book."
+        ]
     }
 }

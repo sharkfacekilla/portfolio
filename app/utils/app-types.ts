@@ -31,29 +31,6 @@ export type Project = {
   demoLink: string;
 };
 
-export type Resume = {
-   resume: {
-    highlights: string[];
-    technical_skills: string[];
-    education: {
-      title: string;
-      school: string;
-      start_date: string;
-      end_date: string;
-      skills: string[];
-    };
-    work: {
-      company: string;
-      job_title: string;
-      start_date: string;
-      end_date: string;
-      responsibilities: string[];
-    }[];
-    future_projects: string[];
-    extracurricular: string[];
-  };
-}
-
 export type TechCategory = {
   name: string;
   technology: string[];
@@ -71,4 +48,50 @@ export type ProjectParams = {
 export type NavbarProps = {
   isVisible: boolean;
   projects?: Project[];
+};
+
+export type Resume = {
+  highlights: StringList;
+  technical_skills: TechSkills[];
+  education: ResumeEducation[];
+  work: WorkHistory;
+  future_projects: StringList;
+  extracurricular: StringList;
+};
+
+export type TechSkills = {
+  name: string;
+  skills: StringList;
+};
+
+export type ResumeEducation = {
+  title: string;
+  school: string;
+  start_date: string;
+  end_date: string;
+  skills: StringList;
+};
+
+export type ResumeWork = {
+  company: string;
+  job_title: string;
+  start_date: string;
+  end_date: string;
+  responsibilites: JobResponsibilities;
+};
+
+export type StringList = string[];
+export type JobResponsibilities = StringList
+
+export type WorkHistory = {
+  [key: string] : ResumeWork;
+};
+
+export type ResumeJsonData = {
+  resume: Resume;
+};
+
+export type ResumeHighlightsProps= {
+  isVisible: boolean;
+  highlights: StringList
 };

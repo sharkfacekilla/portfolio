@@ -2,7 +2,8 @@
 import { Metadata } from "next";
 import { useEffect, useState } from "react";
 import ResumeHero from "./components/ResumeHero";
-import { Resume } from "@/app/utils/app-types";
+import { Resume, ResumeJsonData } from "@/app/utils/app-types";
+import ResumeHighlights from "./components/ResumeHighlights";
 
 /**
  * Resume Page.
@@ -10,7 +11,7 @@ import { Resume } from "@/app/utils/app-types";
 export default function ResumePage() {
   const [isVisible, setIsVisible] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  const [resume, setResume] = useState<Resume[]>([]);
+  const [resumeData, setResumeData] = useState<ResumeJsonData | null>(null);
 
   useEffect(() => {
     setIsVisible(true);
@@ -23,12 +24,12 @@ export default function ResumePage() {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-    useEffect(() => {
+  useEffect(() => {
     const fetchResume = async () => {
       try {
         const response = await fetch("/resume.json");
-        const data = await response.json();
-        setResume(data);
+        const data : ResumeJsonData = await response.json();
+        setResumeData(data);
         console.log(data);
       } catch (err) {
         console.error("Error fetching resume", err);
@@ -58,7 +59,16 @@ export default function ResumePage() {
           }}
         />
       </div>
-      <ResumeHero isVisible={isVisible} />
+      <section className="relative z-10 px-6 lg:px-12 pb-20">
+        <div className="max-w-7xl mx-auto space-y-12">
+          <ResumeHero isVisible={isVisible} />
+          {resumeData ? (
+              <ResumeHighlights isVisible={isVisible} highlights={resumeData.resume.highlights} />
+          ) : (
+            <div className="text-gray-400 text-center py-10">Loading resume...</div>
+          )}
+        </div>
+      </section>
     </div>
   );
 }
