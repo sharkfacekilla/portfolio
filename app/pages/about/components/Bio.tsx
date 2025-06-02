@@ -3,9 +3,13 @@ import Image from "next/image";
 import { NavbarProps } from "@/app/utils/app-types";
 import {
   Calendar,
+  Camera,
+  Code2,
   Coffee,
   Heart,
+  Lightbulb,
   MapPin,
+  Music,
   Target,
   User,
   Zap,
@@ -16,6 +20,37 @@ import { Card, CardContent } from "@/components/ui/card";
  * Renders a bio component. Includes heading, background, and image.
  * @returns Biography Component.
  */
+const interests = [
+  {
+    icon: <Code2 className="h-6 w-6" />,
+    title: "Full-Stack Development",
+    description:
+      "Crafting seamless digital experiences from concept to deployment",
+    details:
+      "Passionate about building scalable web applications using modern technologies like React, Next.js, and Laravel.",
+  },
+  {
+    icon: <Music className="h-6 w-6" />,
+    title: "Music Production",
+    description: "Creating melodies that resonate with the soul",
+    details:
+      "From electric guitar riffs to electronic beats, I explore diverse genres and collaborate with fellow musicians.",
+  },
+  {
+    icon: <Camera className="h-6 w-6" />,
+    title: "Photography",
+    description: "Capturing moments that tell compelling stories",
+    details:
+      "Specializing in nature and street photography, always seeking that perfect shot that speaks volumes.",
+  },
+  {
+    icon: <Lightbulb className="h-6 w-6" />,
+    title: "Problem Solving",
+    description: "Turning complex challenges into elegant solutions",
+    details:
+      "Whether debugging code or optimizing workflows, I thrive on finding innovative approaches to difficult problems.",
+  },
+];
 const values = [
   {
     icon: <Target className="h-5 w-5" />,
@@ -125,6 +160,40 @@ export default function Bio({ isVisible }: NavbarProps) {
                   {value.title}
                 </h3>
                 <p className="text-gray-400">{value.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+      <div
+        className={`transition-all duration-1000 delay-700 ${
+          isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+        }`}
+      >
+        <h2 className="text-3xl font-bold text-center mb-12">
+          Interests & Passions
+        </h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          {interests.map((interest, index) => (
+            <Card
+              key={interest.title}
+              className="bg-white/5 border-white/10 hover:bg-white/10 transition-all duration-300 group"
+            >
+              <CardContent className="p-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-cyan-500/30 transition-colors">
+                    <div className="text-cyan-400">{interest.icon}</div>
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-semibold text-white mb-2">
+                      {interest.title}
+                    </h3>
+                    <p className="text-cyan-400 mb-3">{interest.description}</p>
+                    <p className="text-gray-300 text-sm leading-relaxed">
+                      {interest.details}
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           ))}
