@@ -48,6 +48,20 @@
             }
         ],
         "work": {
+                "cows": {
+                "company": "Computers on Wheels Consulting Inc.",
+                "job_title": "Office Assistant/IT Technician",
+                "start_date": "February 2026",
+                "end_date": "Present",
+                "location": "Victoria, B.C.",
+                "description": "Providing comprehensive IT support for a diverse client base, ranging from custom builds and system deployments, to network troubleshooting and internal operational management.",
+                "responsibilities": [
+                    "Perform custom PC builds including hardware selection & purchasing, procure pre-built systems, fresh operating system installation to remove bloatware, software deployment, and other configuration based on customer needs.",
+                    "Provide troubleshooting for diverse technical issues, including OS-level errors, software conflicts, and hardware failures.",
+                    "Manage daily business office operations, including accounting tasks, organization, and general administrative requests as required by company needs.",
+                    "Diagnose and resolve local network connectivity issues, and troubleshoot smartphone device functionality."
+                ]
+            },
             "sbux": {
                 "company": "Starbucks Canada",
                 "job_title": "Shift Supervisor",
