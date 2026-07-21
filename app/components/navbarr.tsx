@@ -51,7 +51,9 @@ const Navbar = ({ isVisible }: NavbarProps) => {
 
         {/* Desktop Contact button */}
         <div className="hidden md:block">
-          <Link href="/pages/contact" legacyBehavior>
+          <Link href="/pages/contact">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
             <Button
               className={`bg-cyan-500 hover:bg-cyan-600 text-black font-semibold transition-all duration-1000 delay-300 ${
                 isVisible
@@ -76,7 +78,6 @@ const Navbar = ({ isVisible }: NavbarProps) => {
           </button>
         </div>
       </nav>
-
       {/* Mobile dropdown menu */}
       {menuOpen && (
         <div className="md:hidden fixed top-16 right-4 left-4 bg-black/90 rounded-md p-4 flex flex-col space-y-4 z-50">
@@ -91,7 +92,9 @@ const Navbar = ({ isVisible }: NavbarProps) => {
             </Link>
           ))}
           {/* Contact button inside dropdown */}
-          <Link href="/pages/contact" legacyBehavior>
+          <Link href="/pages/contact">
+            {/* @next-codemod-error This Link previously used the now removed `legacyBehavior` prop, and has a child that might not be an anchor. The codemod bailed out of lifting the child props to the Link. Check that the child component does not render an anchor, and potentially move the props manually to Link. */
+            }
             <Button
               onClick={() => setMenuOpen(false)}
               className="bg-cyan-500 hover:bg-cyan-600 text-black font-semibold w-full"

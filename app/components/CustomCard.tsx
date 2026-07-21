@@ -29,7 +29,7 @@ const CustomCard: React.FC<CustomCardProps> = ({project}) => {
                 <div style={{ display: 'flex', flexDirection: 'column', height: '100%', justifyContent: 'space-between' }}>
                     <Typography gutterBottom variant="h5" component="div">{project.name}</Typography>
                     <Typography variant="body1" >{project.shortDesc} </Typography>
-                    <Link href={dynamicRoute} passHref >
+                    <Link href={dynamicRoute}>
                         <Button variant="contained" className="mb-5 mt-5 bg-blue hover:bg-light-blue">Learn More</Button>
                     </Link>
                     <Divider className="bg-white" />
@@ -37,7 +37,7 @@ const CustomCard: React.FC<CustomCardProps> = ({project}) => {
                 </div>
             </CardContent>
         </Card>
-    )
+    );
 }
 
 export default CustomCard;
