@@ -17,3 +17,6 @@ updates:
       radix-ui:
         patterns:
           - "@radix-ui/*"
+      mui:
+        patterns:
+          - "@mui/*"
