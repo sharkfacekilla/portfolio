@@ -11,9 +11,9 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@mui/icons-material": "^5.15.20",
-    "@mui/material": "^5.16.0",
-    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@mui/icons-material": "^9.2.0",
+    "@mui/material": "^9.2.0",
+    "@mui/styled-engine-sc": "^9.1.1",
     "@radix-ui/react-dialog": "^1.1.20",
     "@radix-ui/react-slot": "^1.3.0",
     "@radix-ui/react-tabs": "^1.1.18",
